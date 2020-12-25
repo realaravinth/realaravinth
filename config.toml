@@ -4,18 +4,33 @@ title = "realaravinth | Aravinth Manivannan"
 theme        = "hello-friend-ng"
 paginate     = 10
 
+[author]
+  name = "Aravinth Manivannan"
+
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04"
-  homeSubtitle = "Free Software Activist. Studen Developer"
+  homeSubtitle = "Free Software Activist. Student Developer"
 
   description = "My new homepage or blog"
   keywords = "homepage, blog"
   images = [""]
     # Default theme "light" or "dark"
   defaultTheme = "dark"
+
+  [[params.social]]
+  name = "github"
+  url = "https://github.com/realaravinth"
+
+  [[params.social]]
+  name = "email"
+  url = "mailto:realaravinth@batsense.net"
+
+  [[params.social]]
+  name = "matrix"
+  url = "https://matrix.to/#/@realaravinth:matrix.batsense.net"
 
 [taxonomies]
     category = "blog"
@@ -24,7 +39,7 @@ paginate     = 10
 
 [languages]
 	[languages.en]
-	title = "Aravinth Manivannan | realaravinth"
+	title = "realaravinth | Aravinth Manivannan"
 	keywords = ""
 	copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
