@@ -28,6 +28,11 @@ of charge. Below is a list with descriptions of each.
   both command line and web interfaces with support for Markdown.
   Learn more about it at [getdnote.com](https://www.getdnote.com/)
 
+- **[Vikunja](https://tasks.bastsense.net/):** A super-charged, Trello
+  like todo list manager. It has native clients for both Android and iOS
+  but I prefer using the web app as it has more features. Learn more
+  about the project at [vikunja.io](https://vikunja.io/).
+
 
 
 [*]: These are private services so registrations are not open to public.
