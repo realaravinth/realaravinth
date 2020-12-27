@@ -1,6 +1,6 @@
 ---
 title: 'Services'
-date: 2020-12-25
+date: 2020-12-27
 draft: false
 ---
 
@@ -10,9 +10,11 @@ of charge. Below is a list with descriptions of each.
 
 - **[Gotify](https://gotify.batsense.net/)<sup>\*</sup>:** A push
   notification service with support for Linux and Android clients.
+  Learn more about it at [gotify.net](https://gotify.net/)
 
 - **[Linx](https://linx.batsense.net):** A pastebin-Mozilla Send hybrid.
   Both text(with syntax highlighting) and files can be uploaded to it.
+  Learn more about it at https://github.com/andreimarcu/linx-server
 
 - **[Matrix](https://matrix.batsense.net):** A decentralised chat
   platform that supports the Signal protocol. Learn more about it at
@@ -20,7 +22,12 @@ of charge. Below is a list with descriptions of each.
 
 - **[Miniflux](https://feeds.batsense.net/)<sup>\*</sup>:** A
   lightweight, web-based feed reader, and an absolute pleasure to use at
-  that!
+  that! Learn more about it at [miniflux.app](https://miniflux.app/)
+
+- **[Dnote](https://notes.batsense.net/):** A notebook service with
+  both command line and web interfaces with support for Markdown.
+  Learn more about it at [getdnote.com](https://www.getdnote.com/)
+
 
 
 [*]: These are private services so registrations are not open to public.
