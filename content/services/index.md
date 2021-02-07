@@ -7,6 +7,9 @@ draft: false
 I host a variety of services that are available for anyone to use free
 of charge. Below is a list with descriptions of each.
 
+- **[Dnote](https://notes.batsense.net/):** A notebook service with
+  both command line and web interfaces with support for Markdown.
+  Learn more about it at [getdnote.com](https://www.getdnote.com/)
 
 - **[Gotify](https://gotify.batsense.net/)<sup>\*</sup>:** A push
   notification service with support for Linux and Android clients.
@@ -24,16 +27,25 @@ of charge. Below is a list with descriptions of each.
   lightweight, web-based feed reader, and an absolute pleasure to use at
   that! Learn more about it at [miniflux.app](https://miniflux.app/)
 
-- **[Dnote](https://notes.batsense.net/):** A notebook service with
-  both command line and web interfaces with support for Markdown.
-  Learn more about it at [getdnote.com](https://www.getdnote.com/)
+- **[Nitter](https://nitter.batsense.net/):** A free and
+  open source alternative Twitter front-end focused on privacy. Learn
+  more about it at [https://github.com/zedeus/nitter](https://github.com/zedeus/nitter)
 
-- **[Vikunja](https://tasks.bastsense.net/):** A super-charged, Trello
+- **[Searx](https://searx.batsense.net):** Searx is a
+  [metasearch](https://en.wikipedia.org/wiki/Metasearch_engine) engine,
+  aggregating the results of other [search
+  engines](https://searx.batsense.net/preferences) while not storing
+  information about its users. Learn more about it at its [about
+  page](https://searx.batsense.net/about).
+
+- **[Teddit](https://teddit.batsense.net/):** Teddit is a free and open
+  source alternative Reddit front-end focused on privacy. Learn more about
+  it at its [about page](https://teddit.bastsense.net/about)
+
+- **[Vikunja](https://tasks.batsense.net/):** A super-charged, Trello
   like todo list manager. It has native clients for both Android and iOS
   but I prefer using the web app as it has more features. Learn more
   about the project at [vikunja.io](https://vikunja.io/).
-
-
 
 [*]: These are private services so registrations are not open to public.
 Please contact me for signing up.
