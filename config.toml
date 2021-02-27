@@ -14,7 +14,7 @@ paginate     = 10
   dateformNumTime = "2006-01-02 15:04"
   homeSubtitle = "Free Software Activist. Student Developer"
 
-  description = "My new homepage or blog"
+  description = "Aravinth Manivannan | Student Developer, dWeb Freak.
   keywords = "homepage, blog"
   images = [""]
     # Default theme "light" or "dark"
