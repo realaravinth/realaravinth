@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://batsense.net/tags/mcaptcha/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/posts/04-03-21-mcaptcha/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/posts/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/</loc>
+    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://batsense.net/services/</loc>
     <lastmod>2020-12-27T00:00:00+00:00</lastmod>
   </url>
@@ -10,11 +35,6 @@
   <url>
     <loc>https://batsense.net/keys/</loc>
     <lastmod>2020-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -28,12 +48,7 @@
   </url>
   
   <url>
-    <loc>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/</loc>
+    <loc>https://batsense.net/posts/26-12-2020-matrix-certificate-error/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,20 +58,15 @@
   </url>
   
   <url>
-    <loc>https://batsense.net/tags/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://batsense.net/about/</loc>
   </url>
   
   <url>
-    <loc>https://batsense.net/blog/</loc>
+    <loc>https://batsense.net/contact/</loc>
   </url>
   
   <url>
-    <loc>https://batsense.net/contact/</loc>
+    <loc>https://batsense.net/posts/</loc>
   </url>
   
   <url>
