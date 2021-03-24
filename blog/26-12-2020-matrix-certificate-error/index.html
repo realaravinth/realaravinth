@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Aravinth Manivannan ">
+<meta name="description" content="Matrix is probably the largest federated network in production (Mastadon might be close). I run an instance at https://matrix.batsense.net and I absolutely love it. It was also the project that got me into the whole decentralization thing. I loved the idea that I could run a server that can play along with a bunch of other servers that are run by different parties and they would all somehow magically work!" />
+<meta name="keywords" content=", matrix, KISS, sysadmin" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/" />
+
+
+    <title>
+        
+            My Matrix (mis)adventures :: realaravinth | Aravinth Manivannan 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+
+
+<meta itemprop="name" content="My Matrix (mis)adventures">
+<meta itemprop="description" content="Matrix is probably the largest federated network in production (Mastadon might be close). I run an instance at https://matrix.batsense.net and I absolutely love it. It was also the project that got me into the whole decentralization thing. I loved the idea that I could run a server that can play along with a bunch of other servers that are run by different parties and they would all somehow magically work!">
+<meta itemprop="datePublished" content="2020-12-22T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-12-22T00:00:00+00:00" />
+<meta itemprop="wordCount" content="570">
+<meta itemprop="image" content="https://batsense.net/"/>
+
+
+
+<meta itemprop="keywords" content="matrix,KISS,sysadmin," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://batsense.net/"/>
+
+<meta name="twitter:title" content="My Matrix (mis)adventures"/>
+<meta name="twitter:description" content="Matrix is probably the largest federated network in production (Mastadon might be close). I run an instance at https://matrix.batsense.net and I absolutely love it. It was also the project that got me into the whole decentralization thing. I loved the idea that I could run a server that can play along with a bunch of other servers that are run by different parties and they would all somehow magically work!"/>
+
+
+
+    <meta property="og:title" content="My Matrix (mis)adventures" />
+<meta property="og:description" content="Matrix is probably the largest federated network in production (Mastadon might be close). I run an instance at https://matrix.batsense.net and I absolutely love it. It was also the project that got me into the whole decentralization thing. I loved the idea that I could run a server that can play along with a bunch of other servers that are run by different parties and they would all somehow magically work!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://batsense.net/blog/26-12-2020-matrix-certificate-error/" />
+<meta property="og:image" content="https://batsense.net/"/>
+<meta property="article:published_time" content="2020-12-22T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-12-22T00:00:00+00:00" /><meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-12-22 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">realaravinth</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://batsense.net/about">About</a></li><li><a href="https://batsense.net/blog">Blog</a></li><li><a href="https://batsense.net/contact">Contact</a></li><li><a href="https://batsense.net/services">Services</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/">My Matrix (mis)adventures</a></h2>
+
+            
+
+            
+
+            <div class="post-content">
+                <p>Matrix is probably the largest federated network in production (Mastadon
+might be close). I run an instance at <a href="https://matrix.batsense.net">https://matrix.batsense.net</a> and I
+absolutely love it. It was also the project that got me into the whole
+decentralization thing. I loved the idea that I could run a server that
+can play along with a bunch of other servers that are run by different
+parties and they would all somehow magically work!</p>
+<h2 id="error">Error</h2>
+<p>Deployment was fairly straight forward, the project&rsquo;s README
+files were sufficiently detailed but after about six months of running
+the server, my instance broke! The federation was no longer working. I
+could still chat with people that are on my own server but I could
+interact with rooms on other servers or even on matrix.org.</p>
+<p>The initial error massages were vague. The client complained that it had
+hit some JSON related error. So I went to look for solutions on the
+project&rsquo;s issue tracker. There was an open issue that said that when the
+person started doing IPv6 DNS lookups, their instance broke. This was
+also the time when my ISP moved us to IPv6 lookups so I figured that was
+what was causing problems. At this time, I wasn&rsquo;t really using matrix
+that much so it didn&rsquo;t bother me. I figured, eventually, massive project
+such as matrix might roll out a patch. Several weeks and several updates
+later, the issue still persisted. So I tried my hands at it once again.</p>
+<h2 id="diagnosis">Diagnosis</h2>
+<p>See, decentralization is complicated. Some matrix dev on Hackernews
+remarked that building a decentralized system is six times harder than
+building a centralized system. The bug that I was experiencing, wasn&rsquo;t
+really a bug. I misdiagnosed it to be one in the first place. I use
+Let&rsquo;s encrypt for TLS and their certs are valid for a maximum of three
+months. So when I hit that &ldquo;bug&rdquo;, I was through two cycles and was
+beginning the third. Synapse, the matrix homeserver variant that I run,
+listens on two ports: one for regular client-server interactions and the
+other for federation. The client-server port is proxied by an Nginx
+instance so all TLS stuff is delegated by the Nginx instance. The
+federation port, however, is directly exposed and all TLS stuff is
+handled by Synapse itself. That means Synapse is configured to read and
+do TLS stuff with the TLS certs. That means, my stupid self has two
+copies of the same TLS cert at two places. Now you could quickly see how
+stupid this is and the problems that it could cause. During the third
+cycle, I didn&rsquo;t refresh Synapse&rsquo;s copy of the certs. It was using stale
+certs. TLS is mandatory for federation in matrix. So naturally, my
+federation was broken!</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<ul>
+<li>I am stupid</li>
+<li>Maintain sysadmin notes to record all quirks of the systems that you
+administer</li>
+<li>Build simpler services: The more the number of levers to pull on, the
+more likely someone is going to screw up. The second port for
+federation feels necessary. It is a HTTP endpoint so I don&rsquo;t see why
+it needs to be separated. It could&rsquo;ve simply be scoped differently.
+That way, the maintenance and deployment complexity can be
+significantly reduced. In this case, firewall rules can become simpler
+and the federation stuff will be handled by the Nginx instance itself.</li>
+</ul>
+<p>But seriously, I should have maintained notes. Three months  without
+federation over a stupid error is nuts.</p>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://batsense.net/tags/matrix/">matrix</a></span>
+        <span class="tag"><a href="https://batsense.net/tags/kiss/">KISS</a></span>
+        <span class="tag"><a href="https://batsense.net/tags/sysadmin/">sysadmin</a></span>
+        
+    </p>
+
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            
+                <span><a href="https://batsense.net/">Aravinth Manivannan</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://batsense.net/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
