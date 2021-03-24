@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Aravinth Manivannan ">
+<meta name="description" content="While working on Identity, I noticed some of the endpoints were computationally expensive. The target platforms for Shuttlecraft systems are cheap computers such as Raspberry Pis so I learned a new language and picked up a new web framework among many things, to make things go faster. And those computationally expensive endpoints were dog slow and vulnerable to denial-of-service attacks if left unprotected.
+I came up with the following ways to rate-limit those endpoints:" />
+<meta name="keywords" content=", mCaptcha" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://batsense.net/posts/04-03-21-mcaptcha/" />
+
+
+    <title>
+        
+            mCaptcha - to hell with captchas! :: realaravinth | Aravinth Manivannan 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+
+
+<meta itemprop="name" content="mCaptcha - to hell with captchas!">
+<meta itemprop="description" content="While working on Identity, I noticed some of the endpoints were computationally expensive. The target platforms for Shuttlecraft systems are cheap computers such as Raspberry Pis so I learned a new language and picked up a new web framework among many things, to make things go faster. And those computationally expensive endpoints were dog slow and vulnerable to denial-of-service attacks if left unprotected.
+I came up with the following ways to rate-limit those endpoints:">
+<meta itemprop="datePublished" content="2021-03-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-03-04T00:00:00+00:00" />
+<meta itemprop="wordCount" content="675">
+<meta itemprop="image" content="https://batsense.net/"/>
+
+
+
+<meta itemprop="keywords" content="mCaptcha," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://batsense.net/"/>
+
+<meta name="twitter:title" content="mCaptcha - to hell with captchas!"/>
+<meta name="twitter:description" content="While working on Identity, I noticed some of the endpoints were computationally expensive. The target platforms for Shuttlecraft systems are cheap computers such as Raspberry Pis so I learned a new language and picked up a new web framework among many things, to make things go faster. And those computationally expensive endpoints were dog slow and vulnerable to denial-of-service attacks if left unprotected.
+I came up with the following ways to rate-limit those endpoints:"/>
+
+
+
+    <meta property="og:title" content="mCaptcha - to hell with captchas!" />
+<meta property="og:description" content="While working on Identity, I noticed some of the endpoints were computationally expensive. The target platforms for Shuttlecraft systems are cheap computers such as Raspberry Pis so I learned a new language and picked up a new web framework among many things, to make things go faster. And those computationally expensive endpoints were dog slow and vulnerable to denial-of-service attacks if left unprotected.
+I came up with the following ways to rate-limit those endpoints:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://batsense.net/posts/04-03-21-mcaptcha/" />
+<meta property="og:image" content="https://batsense.net/"/>
+<meta property="article:published_time" content="2021-03-04T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-04T00:00:00+00:00" /><meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-03-04 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">realaravinth</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://batsense.net/about">About</a></li><li><a href="https://batsense.net/contact">Contact</a></li><li><a href="https://batsense.net/posts">Posts</a></li><li><a href="https://batsense.net/services">Services</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://batsense.net/posts/04-03-21-mcaptcha/">mCaptcha - to hell with captchas!</a>
+      </h1>
+
+      
+
+      <div class="post-content">
+        <p>While working on <a href="https://github.com/shuttlecraft/identity">Identity</a>, I
+noticed some of the endpoints were computationally expensive. The target
+platforms for Shuttlecraft systems are cheap computers such as Raspberry
+Pis so I learned a <a href="https://rust-lang.org">new language</a> and picked up a
+new <a href="https://actix.rs">web framework</a> among many things, to make things
+go faster. And those computationally expensive endpoints were dog slow
+and vulnerable to denial-of-service attacks if left unprotected.</p>
+<p>I came up with the following ways to rate-limit those endpoints:</p>
+<ol>
+<li>Captcha: reCaptcha/hCAptcha types</li>
+<li>IP based filtering: <code>x</code> requests per IP address during a specific
+interval of time</li>
+<li>Do nothing: there&rsquo;s only so much that you can do :p</li>
+</ol>
+<p>Let&rsquo;s analyse each one of these solutions.</p>
+<h2 id="1-captcha">1. Captcha:</h2>
+<h3 id="pros">Pros:</h3>
+<ul>
+<li>Captcha widgets are the norm for detecting bot activity.</li>
+<li>Large companies like Google and Cloudflare are invested in making
+captchas work.</li>
+<li>Machine learning is used study bot activity and flag users down
+whenever there&rsquo;s a resemblance.</li>
+<li>No user learning curve: netizens are familiar with captchas</li>
+</ul>
+<h3 id="cons">Cons:</h3>
+<ul>
+<li>
+<p><strong>Proprietary software:</strong> what is the backend doing? What sort of
+algorithms are they using? Do they exhibit unfair bias when letting
+users through? We will never know. We have to take them by their word
+and have no way of verifying their claims. They can, in effect, ban
+users from visiting your website if they wanted to do.</p>
+</li>
+<li>
+<p><strong>Privacy invasive:</strong> Captchas mine data. I have Google domains
+blacklisted by default and every time I visit a site that uses
+Google&rsquo;s reCaptcha, I am forced to temporarily whitelist them. I don&rsquo;t
+like doing that.</p>
+</li>
+<li>
+<p><strong>Annoying:</strong> It sucks that I have to manually solve captchas to tell
+a website that I am, in fact, a legitimate user. We should have
+automated this stuff a long time ago!</p>
+</li>
+</ul>
+<h5 id="anecdote"></h5>
+<blockquote>
+<p><strong>True story:</strong> My university has a student portal that we use to submit
+assignments and view scorecards. They have a dumb captcha at the
+sign-in page to keep bots away. The IT staff figured they&rsquo;ll be better
+protected if they replace it with reCaptcha. And they did.
+<figure>
+    <img src="/img/blog/04-03-21-mcaptcha/portal-dumb-captcha.png"
+         alt="dumb captcha university portal"/> <figcaption>
+            <p>dumb captcha university portal</p>
+        </figcaption>
+</figure>
+ &gt;
+I have terrible luck with captcha systems. They always flag me as
+a bot. So after this change, when I went online to upload an
+assignment, I had to solve 49 captchas <em>and</em> get flagged as a bot and do
+another 49 only to get flagged as a bot again. Only this time, Google
+wouldn&rsquo;t let me try again and asked me to &ldquo;try again later&rdquo;.</p>
+<p>Luckily I wasn&rsquo;t alone. You see, my university is behind a
+<a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT</a> so
+10,000 people share a single public IP address. From Google&rsquo;s
+perspective, we would appear as a giant bot that generates a lot of
+traffic(stopped using Google search after I moved there because of all
+the captchas that they made me solve).</p>
+<p>The next day, the IT team rolled back to the old dumb captchas</p>
+</blockquote>
+<h2 id="2-ip-based-filtering">2. IP based filtering:</h2>
+<h3 id="pros-1">Pros:</h3>
+<ul>
+<li>
+<p><strong>Easy to implement:</strong> IP addresses are ubiquitous on the internet</p>
+</li>
+<li>
+<p><strong>Stateful:</strong> Unless and until users are hopping between networks,
+they&rsquo;ll have the same IP address throughout their session with the
+site. So it&rsquo;s trivially easy to use it as an ID to rate-limit clients.</p>
+</li>
+</ul>
+<h3 id="cons-1">Cons:</h3>
+<p>There&rsquo;s only one that I could think of:</p>
+<ul>
+<li><strong>Doesn&rsquo;t work for people behind NAT:</strong> When multiple users are
+using the same IP address, there isn&rsquo;t an effective way to uniquely
+identify each one of them. So an IP-based mechanism would fail in such
+situations.</li>
+</ul>
+<p><a href="#anecdote">See previous section</a> for anecdotal evidence.</p>
+<h2 id="3-dont-do-anything">3. Don&rsquo;t do anything:</h2>
+<p>Not really an option.</p>
+<hr>
+<p>So what we need is something that that will work behind NATs, is privacy
+respecting but most importantly, it should be free(as in freedom)</p>
+<h2 id="enter-mcaptcha">Enter mCaptcha</h2>
+<p>mCaptcha is a proof-of-work(PoW) based rate-limiting system that uses
+variable difficulty.</p>
+<p>When a user visits a mCaptcha enabled website,
+their client automatically generates a PoW to qualify for performing an
+action(submitting forms, etc.). This enforces a rate-limit.</p>
+<p>When the server is under load, the difficulty will rise to make the
+clients spend more time preparing the request than the server processing
+the request. This makes DoS attacks expensive for the attackers as well.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://batsense.net/tags/mcaptcha/">mCaptcha</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        675 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2021-03-04 00:00
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+      <div class="pagination">
+        <div class="pagination__title">
+          <span class="pagination__title-h">Read other posts</span>
+          <hr />
+        </div>
+
+        <div class="pagination__buttons">
+          
+
+          
+            <span class="button next">
+              <a href="https://batsense.net/posts/26-12-2020-matrix-certificate-error/">
+                <span class="button__text">My Matrix (mis)adventures</span>
+                <span class="button__icon">→</span>
+              </a>
+            </span>
+          
+        </div>
+      </div>
+    
+
+
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            
+                <span><a href="https://batsense.net/">Aravinth Manivannan</a></span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://batsense.net/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>
