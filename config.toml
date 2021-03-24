@@ -33,7 +33,7 @@ paginate     = 10
   url = "https://matrix.to/#/@realaravinth:matrix.batsense.net"
 
 [taxonomies]
-    category = "blog"
+    category = "posts"
     tag      = "tags"
     series   = "series"
 
@@ -55,9 +55,9 @@ paginate     = 10
 
   # And you can even create generic menu
   [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/blog"
+    identifier = "posts"
+    name       = "posts"
+    url        = "/posts"
   [[menu.main]]
     identifier = "contact"
     name       = "Contact"
