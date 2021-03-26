@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 22 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://batsense.net/tags/kiss/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Matrix (mis)adventures</title>
-      <link>https://batsense.net/posts/26-12-2020-matrix-certificate-error/</link>
+      <link>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</link>
       <pubDate>Tue, 22 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://batsense.net/posts/26-12-2020-matrix-certificate-error/</guid>
+      <guid>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</guid>
       <description>Matrix is probably the largest federated network in production (Mastadon might be close). I run an instance at https://matrix.batsense.net and I absolutely love it. It was also the project that got me into the whole decentralization thing. I loved the idea that I could run a server that can play along with a bunch of other servers that are run by different parties and they would all somehow magically work!</description>
     </item>
     

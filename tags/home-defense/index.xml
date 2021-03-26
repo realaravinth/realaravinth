@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home-defense on realaravinth | Aravinth Manivannan</title>
+    <link>https://batsense.net/tags/home-defense/</link>
+    <description>Recent content in home-defense on realaravinth | Aravinth Manivannan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Fri, 26 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://batsense.net/tags/home-defense/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home defense adventures with Hikvision CCTV cameras</title>
+      <link>https://batsense.net/blog/26-03-21-hikvision-cctv/</link>
+      <pubDate>Fri, 26 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://batsense.net/blog/26-03-21-hikvision-cctv/</guid>
+      <description>We recently got robbed, so we decided to secure the house with some CCTV cameras. Ours is a modest setup with nine 5MP cameras and a DVR recording all the footage from those cameras at 1080p. The DVR can connect to Hikvision&amp;rsquo;s cloud infrastructure so that owners can see live footage using the internet., which I don&amp;rsquo;t like. I mean, in the past few years, I&amp;rsquo;ve moved all my online life from Big Brothers to my servers for privacy reasons, so giving free access to live footage of my house to companies is certainly not acceptable.</description>
+    </item>
+    
+  </channel>
+</rss>
