@@ -15,6 +15,10 @@ of charge. Below is a list with descriptions of each.
   notification service with support for Linux and Android clients.
   Learn more about it at [gotify.net](https://gotify.net/)
 
+- **[Experimental][Libreddit](https://libreddit.batsense.net):** A Free
+  and open source Reddit front-end focused on privacy. Learn more about
+  the project at https://github.com/spikecodes/libreddit
+
 - **[Linx](https://linx.batsense.net):** A pastebin-Mozilla Send hybrid.
   Both text(with syntax highlighting) and files can be uploaded to it.
   Learn more about it at https://github.com/andreimarcu/linx-server
