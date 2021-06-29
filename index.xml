@@ -36,7 +36,7 @@ I came up with the following ways to rate-limit those endpoints:</description>
       <description>I host a variety of services that are available for anyone to use free of charge. Below is a list with descriptions of each.
   Dnote: A notebook service with both command line and web interfaces with support for Markdown. Learn more about it at getdnote.com
   Gotify*: A push notification service with support for Linux and Android clients. Learn more about it at gotify.net
-  Linx: A pastebin-Mozilla Send hybrid.</description>
+  [Experimental]Libreddit: A Free and open source Reddit front-end focused on privacy.</description>
     </item>
     
     <item>
