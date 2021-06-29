@@ -12,4 +12,4 @@ breaking software.
 I spend most of my time working on [mCaptcha](https://mcaptcha.org) - a
 Proof of Work based, privacy-focused CAPTCHA system.
 
-**- Résumé:** [click here to download](/realaravinth-résumé.pdf)
+**- Résumé:** [click here to download](/realaravinth-resume.pdf)
