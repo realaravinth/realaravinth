@@ -67,6 +67,10 @@ paginate     = 10
     name       = "Services"
     url        = "/services"
   [[menu.main]]
+    identifier = "donate"
+    name       = "Donate"
+    url        = "/donate"
+  [[menu.main]]
     identifier = "about"
     name       = "About"
     url        = "/about"
