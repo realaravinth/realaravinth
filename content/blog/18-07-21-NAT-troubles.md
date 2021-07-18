@@ -1,6 +1,6 @@
 ---
 title: NAT Troubles or how my ISP screwed me over
-tags: ['NAT', 'frp', 'self-hosting' 'rant' 'ACTF Fibernet']
+tags: ['NAT', 'frp', 'self-hosting', 'rant', 'ACT Fibernet']
 date: 2021-07-18
 draft: false
 ---
@@ -11,6 +11,8 @@ dashboard was lit up like a Christmas tree. I'm not new to having
 downtimes, but this was the most unusual one: the servers were alright,
 the internet connection was fine, but the services were
 inaccessible. I had a bad feeling about this one.
+
+![Inbox full of alerts](/img/blog/18-07-21-NAT-troubles/inbox-nightmare.png)
 
 You see, most of my internet presence comes out of my bedroom. This
 website, my search engine, and even [my favourite instant
