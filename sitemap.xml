@@ -3,13 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://batsense.net/donate/</loc>
-    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
+    <loc>https://batsense.net/tags/act-fibernet/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://batsense.net/blog/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/frp/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/nat/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/blog/18-07-21-nat-troubles/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/rant/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/self-hosting/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/</loc>
+    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/donate/</loc>
+    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -34,16 +74,6 @@
   
   <url>
     <loc>https://batsense.net/tags/nginx/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/</loc>
     <lastmod>2021-03-26T00:00:00+00:00</lastmod>
   </url>
   

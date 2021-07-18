@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ACT Fibernet on realaravinth | Aravinth Manivannan</title>
+    <link>https://batsense.net/tags/act-fibernet/</link>
+    <description>Recent content in ACT Fibernet on realaravinth | Aravinth Manivannan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://batsense.net/tags/act-fibernet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NAT Troubles or how my ISP screwed me over</title>
+      <link>https://batsense.net/blog/18-07-21-nat-troubles/</link>
+      <pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://batsense.net/blog/18-07-21-nat-troubles/</guid>
+      <description>Couple of days ago, I woke with my inbox filled with alerts from my monitoring service, the dashboard was lit up like a Christmas tree. I&amp;rsquo;m not new to having downtimes, but this was the most unusual one: the servers were alright, the internet connection was fine, but the services were inaccessible. I had a bad feeling about this one.
+You see, most of my internet presence comes out of my bedroom.</description>
+    </item>
+    
+  </channel>
+</rss>
