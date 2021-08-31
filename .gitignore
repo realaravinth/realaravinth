@@ -1,3 +1,10 @@
 public/
 mysite.tar.gz
 node_modules/
+resume/.log
+resume/resume.aux
+resume/resume.log
+resume/resume.out
+resume/resume.pdf
+resume/resume/skills.log
+resume/texput.log
