@@ -21,7 +21,7 @@ jobs:
           # extended: true
 
       - name: build resume
-        run: cd resume/ && docker run --volume="$(pwd):/src"  --rm -it realaravinth/resume:latest lualatex resume.tex
+        run: cd resume/ && docker run --volume="$(pwd):/src" --rm realaravinth/resume:latest lualatex resume.tex
 
       - name: copy resumt
         run: cp resume/resume.pdf static/realaravinth-resume.pdf
