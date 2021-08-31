@@ -20,6 +20,9 @@ jobs:
           hugo-version: '0.75.1'
           # extended: true
 
+      - name: build resume
+        run: cd resume/ && ./build.sh
+
       - name: Build
         run: hugo -D
 
