@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sun, 18 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://batsense.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://batsense.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ideal backup situation</title>
+      <link>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</link>
+      <pubDate>Fri, 10 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</guid>
+      <description>I&amp;rsquo;ve been playing fast and loose with backups, and I&amp;rsquo;ve been extremely fortunate to have not suffered any serious system failures or data loses. I recently recovered from systems failures on my Raspberry Pis caused by upgrading Debian Buster to Bullseye. The outage wasn&amp;rsquo;t a because of a bug in Bullseye, the upgrade modified some parameters /boot/firmware/config.txt which, for some reason, prevented the board from booting.
+Also around the same period, my place was being renovated, and the construction workers had nicked the main power supply lines.</description>
+    </item>
+    
     <item>
       <title>NAT Troubles or how my ISP screwed me over</title>
       <link>https://batsense.net/blog/18-07-21-nat-troubles/</link>

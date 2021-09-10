@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://batsense.net/tags/act-fibernet/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
+    <loc>https://batsense.net/blog/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://batsense.net/blog/</loc>
+    <loc>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/rant/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/self-hosting/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/sysadmin/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/</loc>
+    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://batsense.net/tags/act-fibernet/</loc>
     <lastmod>2021-07-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,26 +54,6 @@
   
   <url>
     <loc>https://batsense.net/blog/18-07-21-nat-troubles/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/rant/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/self-hosting/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/</loc>
     <lastmod>2021-07-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -109,11 +119,6 @@
   
   <url>
     <loc>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/sysadmin/</loc>
     <lastmod>2020-12-22T00:00:00+00:00</lastmod>
   </url>
   
