@@ -2,6 +2,7 @@
 title: Math and second systems effect
 tags: ['math', 'opinon', 'personal']
 date: 2021-09-13
+description: "My thoughts on math and how it's is suffering from second systems effect"
 draft: false
 ---
 

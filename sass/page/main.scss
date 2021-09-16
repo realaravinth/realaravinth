@@ -1,0 +1,44 @@
+//@import '../_vars';
+@import '../components/_page.scss';
+
+.page__container {
+  width: 50%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.page__group {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__group-title {
+  margin: 20px auto;
+//  color: $dark-black;
+}
+
+.page__group-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__group-content img {
+  width: 100%;
+  margin: auto;
+}
+
+.page__group-content {
+  @include md;
+}
+
+.page__preview-banner {
+  width: 10%;
+  height:  #{'min(250px, 50vh)'};
+  margin: 20px auto;
+}
+
+.page__banner {
+  width: 100%;
+  height:  #{'max(450px, 50vh)'};
+  margin: 20px auto;
+}

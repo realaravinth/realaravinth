@@ -2,6 +2,8 @@
 title: mCaptcha - to hell with captchas!
 tags: ['mCaptcha']
 date: 2021-03-04
+description: "Introducing mCaptcha - A no-nonsense CAPTCHA system with
+seamless UX"
 draft: false
 ---
 

@@ -1,0 +1,48 @@
+@mixin md {
+  img {
+    width: 100%;
+    margin: auto;
+  }
+
+  table {
+    border-collapse: collapse;
+    caption-side: bottom;
+    border-color: #e9ecef;
+    text-align: center;
+	width: 100%;
+  }
+
+  table > thead {
+    vertical-align: bottom;
+    border-bottom: 1px solid #cdc8ca;
+    text-align: center;
+  }
+
+  table {
+    th {
+      text-align: center;
+    }
+    td {
+      margin: auto;
+      padding: 10px;
+      border-bottom: 1px solid #edddd1;
+    }
+  }
+
+  p,
+  h2,
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@mixin md_mobile {
+  table {
+    overflow-x: scroll;
+  }
+
+  table td {
+    padding: 5px;
+  }
+}

@@ -1,4 +1,4 @@
-{% import "macros/nav.html" as nav %}
+{% import "macros.html" as macros %}
 
 <nav class="nav__container">
   <input type="checkbox" class="nav__toggle" id="nav__toggle" />
@@ -18,11 +18,11 @@
   <div class="nav__link-group">
 
 
-  {{ nav::nav_link(link="/about/", name="About") }}
-  {{ nav::nav_link(link="/blog/", name="Blog") }}
-  {{ nav::nav_link(link="/contact/", name="Contact") }}
-  {{ nav::nav_link(link="/donate/", name="Donate") }}
-  {{ nav::nav_link(link="/services/", name="Services") }}
+  {{ macros::nav_link(link="/about/", name="About") }}
+  {{ macros::nav_link(link="/blog/", name="Blog") }}
+  {{ macros::nav_link(link="/contact/", name="Contact") }}
+  {{ macros::nav_link(link="/donate/", name="Donate") }}
+  {{ macros::nav_link(link="/services/", name="Services") }}
 
   </div>
 </nav>

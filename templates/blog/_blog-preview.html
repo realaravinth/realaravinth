@@ -1,0 +1,30 @@
+<section class="main__group--card-beige">
+  <div class="main__group-title">
+    <h2>Latest posts</h2>
+    <a href="./blog" class="main__group-action">View all posts</a>
+  </div>
+  <div class="main__group-content">
+    <div class="main__group-content--center">
+      {% for subsection in section.subsections %} {% set s =
+      get_section(path=subsection) %} {% if s.title == "Posts" %}
+      <ul class="blog-preview__container">
+        {% set count = 0 %} {% for page in s.pages %}
+        <a href="{{ page.permalink | safe }}" class="blog-preview__post-link">
+          <li class="blog-preview__post">
+            <img
+              class="blog-preview__banner"
+              src="{{ page.extra.banner }}"
+              alt="blog post banner"
+            />
+              <h3 class="blog-preview__title">{{ page.title }}
+              <p class="blog-preview__meta">{{ page.reading_time }} min read</p>
+			  </h3>
+              <p class="blog-preview__lead">{{ page.description | safe }} </p>
+          </li>
+        </a>
+        {% set count = count + 1 %} {% if count == 1 %} {% break %} {% endif %}
+        {% endfor %}
+      </ul>
+      {% endif %} {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,30 @@
+{% extends "base.html" %} {% block meta %}
+
+{% set title = "Posts" %}
+{% set description = title ~ " | Aravinth Manivannan" %}
+{{ macros::get_meta_tags(title=title, description=description) }}
+
+{% endblock meta %} {% block content %}
+<div class="page__container">
+    <h1 class="page__group-title--blog">{{ section.title }}</h1>
+    <div class="page__group-content">
+            <ul class="page__link-list">
+                {% for page in section.pages %}                
+                  <a href="{{ page.permalink | safe }}" class="link-list__item">
+                    <li>
+                        <h2>{{ page.title }}</h2>
+						<span>{{ page.description | safe }} </span>
+						
+                        <p class="blog__meta">
+                          Posted {{  page.day }} 
+						  {{ macros::get_month(month=page.month) }},
+                          {{ page.year }} by {{ config.extra.author }} 
+						  - <b>{{ page.reading_time }} min read</b>
+                        </p>
+                    </li>
+                  </a>
+                {% endfor %}
+            </ul>
+    </div>
+</div>
+{% endblock content %}

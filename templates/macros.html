@@ -54,7 +54,7 @@
         <iframe 
           width="560"
           height="315"
-          src="https://www.youtube-nocookie.com/embed/{{ id }}" 
+          src="https://tube.batsense.net/embed/{{ id }}" 
 		  class="event__youtube"
           title="YouTube video player" 
           frameborder="0"
@@ -65,20 +65,27 @@
 {% endmacro embed_youtube %}
 
 {% macro get_meta_tags(title, description) %}
-   {% set title = title ~ " | WiOS" %}
+
+   {% set title = title ~ " :: realaravinth | Aravinth Manivannan " %}
 	<meta charset="UTF-8" />
 	<title>{{ title }}</title>
 	<meta name="referrer" content="no-referrer-when-downgrade" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<meta name="description" content="{{ description }}" />
-	<meta name="author" content="WiOS Tech Team" />
+    <meta name="author" content="{{ config.extra.author }}" />
 
 	<meta property="og:title" content="{{ title }}" />
 	<meta property="og:type" content="article" />
     <meta property="og:url" content="{{ config.base_url }}" />
-	<meta property="og:image" content="{{ macros::cache_bust(path='/logo-100x100.png') }}" />
+	<meta property="og:image" content="{{ macros::cache_bust(path='/android-chrome-192x192.png') }}" />
 	<meta property="og:description" content="{{ description }}" />
-	<meta property="og:site_name" content="WiOS - Women in Open Source VIT AP" />
+	<meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
 
 {% endmacro get_meta_tags %}
+
+{% macro nav_link(link, name) %}
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="{{ link }}">{{ name }}</a>
+  </div>
+{% endmacro nav_link %}

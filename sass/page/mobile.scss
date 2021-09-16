@@ -1,0 +1,13 @@
+@import '../components/_page.scss';
+
+.page__container {
+  width: 85%;
+}
+
+.page__group-content {
+  @include md_mobile;
+}
+
+.page__banner {
+  height: auto;
+}

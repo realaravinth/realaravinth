@@ -1,18 +1,47 @@
+{% set description = "My Homepage" %} {% set title = "realaravinth | Aravinth
+Manivannan" %}
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="{{ get_url(path='/main.css') }}" />
     <link
       rel="stylesheet"
       media="screen and (max-width: 1200px)"
       href="{{ get_url(path='/mobile.css') }}"
     />
-    <title>realaravinth | Aravinth Manivannan</title>
+
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{{ title }}</title>
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="{{ description }}" />
+    <meta name="author" content="{{ config.extra.author }}" />
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ config.base_url }}" />
+    <meta
+      property="og:image"
+      content="{{ get_url(path='/android-chrome-192x192.png', cachebust=true) }}"
+    />
+    <meta property="og:description" content="{{ description }}" />
+    <meta
+      property="og:site_name"
+      content="realaravinth | Aravinth Manivannan"
+    />
   </head>
+
   <body class="home__container">
-    {% include "nav.html" %}
+    <header>{% include "nav.html" %}</header>
 
     <section class="home__content-container">
       <div class="home__content">
