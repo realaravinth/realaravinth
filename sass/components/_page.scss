@@ -1,11 +1,22 @@
+@import "./_link.scss";
+
 @mixin md {
 	img {
 		max-width: 100%;
 		display: block;
 	}
 
+	video {
+		max-width: 100%;
+		display: block;
+	}
+
 	li {
 		margin-left: 40px;
+	}
+
+	a:hover {
+		@include a_hover;
 	}
 
 	code {
@@ -41,8 +52,7 @@
 	p,
 	h2,
 	h3 {
-		margin-top: 20px;
-		margin-bottom: 20px;
+		margin: 40px 0;
 	}
 
 	pre {
@@ -76,13 +86,10 @@
 		margin-left: 25px;
 	}
 
-
 	p,
 	h1,
 	h2,
 	h3 {
-		margin-top: 10px;
-		margin-bottom: 10px;
+		margin: 30px 0px;
 	}
-
 }

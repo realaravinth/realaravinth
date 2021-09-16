@@ -1,11 +1,10 @@
-//@import '../_vars';
+@import "../components/_link";
 
 .nav__container {
 	display: flex;
 	flex-direction: row;
 
 	box-sizing: border-box;
-	//  background-color: $light-blue;
 	width: 100%;
 	padding-top: 5px;
 }
@@ -55,6 +54,10 @@
 	text-decoration: none;
 }
 
+.nav__logo-container:hover {
+	@include a_hover;
+}
+
 .nav__toggle {
 	display: none;
 }
@@ -85,5 +88,8 @@
 
 .nav__link {
 	text-decoration: none;
-	//  color: $dark-black !important;
+}
+
+.nav__link:hover {
+	@include a_hover;
 }
