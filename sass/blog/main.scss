@@ -1,0 +1,72 @@
+@import "../components/page";
+
+$std-trans: 0.3s;
+
+.blog__content {
+	@include md;
+}
+
+.blog__container {
+	margin: auto;
+	max-width: 50%;
+}
+
+.blog__list {
+	list-style: none;
+}
+
+.blog__post-item,
+.blog__post-item:visited {
+	text-decoration: none;
+	//	color: $dark-black;
+	color: inherit;
+}
+
+.blog__title {
+	margin: 35px 0;
+}
+
+.blog__post-item {
+	display: block;
+	margin: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted black;
+}
+
+.blog__post-item:last-child {
+	border-bottom: none;
+}
+
+.blog__post-description {
+	font-size: 0.9rem;
+	margin: 5px 0;
+}
+
+.blog__post-meta {
+	font-size: 0.7rem;
+}
+
+//.blog__post-item,
+//.blog__post-item:visited {
+//	text-decoration: none;
+//	//	color: $dark-black;
+//	color: inherit;
+//	display: block;
+//
+//	width: 45%;
+//	padding: 20px;
+//	padding-bottom: 20px;
+//	margin: 20px auto;
+//	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+//}
+//
+//.blog__post-item:hover {
+//	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+//	transition-duration: $std-trans;
+//}
+//
+
+.blog__post-title {
+	font-size: 1.2rem;
+	font-weight: 550;
+}
