@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - sysadmin</title>
+	<link href="https://batsense.net/tags/sysadmin/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-09-10T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/sysadmin/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Ideal backup situation</title>
+		<published>2021-09-10T00:00:00+00:00</published>
+		<updated>2021-09-10T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/" type="text/html"/>
+		<id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
+		<content type="html">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
+fortunate to have not suffered any serious system failures or data
+loses. I recently recovered from systems failures on my Raspberry Pis
+caused by upgrading Debian Buster to Bullseye. The outage wasn&#x27;t a
+because of a bug in Bullseye, the upgrade modified some parameters
+&lt;code&gt;&#x2F;boot&#x2F;firmware&#x2F;config.txt&lt;&#x2F;code&gt; which, for some reason, prevented the board
+from booting.&lt;&#x2F;p&gt;
+&lt;p&gt;Also around the same period, my place was being renovated, and the
+construction workers had nicked the main power supply lines. As a
+result, we were experiencing some wild voltage fluctuations and power
+outages. I thought I burnt my boards from either one of these two
+things. It was time to set up a proper backup mechanism.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;requirement&quot;&gt;Requirement&lt;&#x2F;h2&gt;
+&lt;p&gt;I have roughly 3 TB of storage across multiple devices and none of these
+were being backed up. Going by the
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Backup#3-2-1_rule&quot;&gt;3-2-1&lt;&#x2F;a&gt;, I would
+require at least 9 TB + 3 TB of storage(3*3 + some additional space for
+versioned backups --- most backup systems these days are chunk snapshot
+systems so versioning is very efficient). But since I&#x27;m broke and can&#x27;t
+afford offsite storage, my requirements are down to 6 TB + 2 TB.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-current-solution&quot;&gt;My current solution&lt;&#x2F;h2&gt;
+&lt;p&gt;I bought two 4 TB disks and setup &lt;a href=&quot;https:&#x2F;&#x2F;www.borgbackup.org&#x2F;&quot;&gt;Borg&lt;&#x2F;a&gt;
+backup jobs to run at night. I currently have 7 daily, 4 weekly and 4
+monthly snapshots on the first disk and the second disk contains 4
+weekly and 4 monthly snapshots, and is unplugged and stored at a
+different part of the house.&lt;&#x2F;p&gt;
+&lt;p&gt;Ideally, it should be plugged in at a different part of the house, away
+from my server rack, but I neither have the hardware nor the
+infrastructure to implement that.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ideal-solution&quot;&gt;Ideal solution&lt;&#x2F;h2&gt;
+&lt;p&gt;My current set up will work in most cases. I live in a calm neighborhood
+in a very safe city(not prone to natural calamities and such) but
+&lt;em&gt;ideally&lt;&#x2F;em&gt; there should be at least one copy of offsite backup. So I did
+some math to see how much it would cost me:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;aws-s3&quot;&gt;AWS S3&lt;&#x2F;h3&gt;
+&lt;p&gt;AWS is usually the cheapest and there&#x27;s probably an adapter available
+for Borg&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pricing:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;aws.amazon.com&#x2F;s3&#x2F;pricing&#x2F;&quot;&gt;$0.023&#x2F;GB-month for the first
+50 TB&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;cost:&lt;&#x2F;strong&gt; $0.023 * 3 * 1024 = $70.656&#x2F;month&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But I don&#x27;t like AWS or anything Amazon&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tarsnap&quot;&gt;Tarsnap&lt;&#x2F;h3&gt;
+&lt;p&gt;Tarsnap is developed by &lt;a href=&quot;https:&#x2F;&#x2F;www.daemonology.net&#x2F;blog&#x2F;&quot;&gt;Dr. Colin
+Percival&lt;&#x2F;a&gt; and is quite popular.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pricing:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;www.tarsnap.com&#x2F;&quot;&gt;$0.25&#x2F;GB-month + $0.25&#x2F;GB
+bandwidth&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;cost:&lt;&#x2F;strong&gt; $0.25 * 3 * 1024 = $768&#x2F;month + bandwidth costs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And is also quite expensive!&lt;&#x2F;p&gt;
+&lt;p&gt;I can&#x27;t afford either of these solutions. My current setup set cost me
+roughly ₹16,000 or $220 or the two months worth of AWS rent. Which is
+ridiculous. So here&#x27;s my proposal:&lt;&#x2F;p&gt;
+&lt;p&gt;As the internet becomes more diverse and more decentralised, home
+servers will become a common thing. This means more folks, like myself,
+will be on the lookout for cheap backup and failover solutions.
+Normally, these home servers won&#x27;t be at 100% utilization(I&#x27;m currently
+at 20% across the fleet) so forming rings of trust among friends and
+family will be mutually beneficial. This way, the participants within
+the ring can rely on each other&#x27;s facilities for backups and
+failover situations for a fraction of what a cloud-based solution would
+cost.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, there should be proper measures taken to prevent unauthorized
+access and trespassing, but they are implementation details.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>My Matrix (mis)adventures</title>
+		<published>2020-12-22T00:00:00+00:00</published>
+		<updated>2020-12-22T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/" type="text/html"/>
+		<id>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</id>
+		<content type="html">&lt;p&gt;Matrix is probably the largest federated network in production (Mastadon
+might be close). I run an instance at https:&#x2F;&#x2F;matrix.batsense.net and I
+absolutely love it. It was also the project that got me into the whole
+decentralization thing. I loved the idea that I could run a server that
+can play along with a bunch of other servers that are run by different
+parties and they would all somehow magically work!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;error&quot;&gt;Error&lt;&#x2F;h2&gt;
+&lt;p&gt;Deployment was fairly straight forward, the project&#x27;s README
+files were sufficiently detailed but after about six months of running
+the server, my instance broke! The federation was no longer working. I
+could still chat with people that are on my own server but I could
+interact with rooms on other servers or even on matrix.org. &lt;&#x2F;p&gt;
+&lt;p&gt;The initial error massages were vague. The client complained that it had
+hit some JSON related error. So I went to look for solutions on the
+project&#x27;s issue tracker. There was an open issue that said that when the
+person started doing IPv6 DNS lookups, their instance broke. This was
+also the time when my ISP moved us to IPv6 lookups so I figured that was
+what was causing problems. At this time, I wasn&#x27;t really using matrix
+that much so it didn&#x27;t bother me. I figured, eventually, massive project
+such as matrix might roll out a patch. Several weeks and several updates
+later, the issue still persisted. So I tried my hands at it once again. &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;diagnosis&quot;&gt;Diagnosis&lt;&#x2F;h2&gt;
+&lt;p&gt;See, decentralization is complicated. Some matrix dev on Hackernews
+remarked that building a decentralized system is six times harder than
+building a centralized system. The bug that I was experiencing, wasn&#x27;t
+really a bug. I misdiagnosed it to be one in the first place. I use
+Let&#x27;s encrypt for TLS and their certs are valid for a maximum of three
+months. So when I hit that &amp;quot;bug&amp;quot;, I was through two cycles and was
+beginning the third. Synapse, the matrix homeserver variant that I run,
+listens on two ports: one for regular client-server interactions and the
+other for federation. The client-server port is proxied by an Nginx
+instance so all TLS stuff is delegated by the Nginx instance. The
+federation port, however, is directly exposed and all TLS stuff is
+handled by Synapse itself. That means Synapse is configured to read and
+do TLS stuff with the TLS certs. That means, my stupid self has two
+copies of the same TLS cert at two places. Now you could quickly see how
+stupid this is and the problems that it could cause. During the third
+cycle, I didn&#x27;t refresh Synapse&#x27;s copy of the certs. It was using stale
+certs. TLS is mandatory for federation in matrix. So naturally, my
+federation was broken!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons learned&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I am stupid&lt;&#x2F;li&gt;
+&lt;li&gt;Maintain sysadmin notes to record all quirks of the systems that you
+administer&lt;&#x2F;li&gt;
+&lt;li&gt;Build simpler services: The more the number of levers to pull on, the
+more likely someone is going to screw up. The second port for
+federation feels necessary. It is a HTTP endpoint so I don&#x27;t see why
+it needs to be separated. It could&#x27;ve simply be scoped differently.
+That way, the maintenance and deployment complexity can be
+significantly reduced. In this case, firewall rules can become simpler
+and the federation stuff will be handled by the Nginx instance itself. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But seriously, I should have maintained notes. Three months  without
+federation over a stupid error is nuts.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

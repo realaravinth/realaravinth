@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - cctv</title>
+	<link href="https://batsense.net/tags/cctv/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-03-26T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/cctv/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Home defense adventures with Hikvision CCTV cameras</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2021-03-26T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/26-03-21-hikvision-cctv/" type="text/html"/>
+		<id>https://batsense.net/blog/26-03-21-hikvision-cctv/</id>
+		<content type="html">&lt;p&gt;We recently got robbed, so we decided to secure the house with some CCTV
+cameras. Ours is a modest setup with nine 5MP cameras and a DVR
+recording all the footage from those cameras at 1080p. The DVR can
+connect to Hikvision&#x27;s cloud infrastructure so that owners can see live
+footage using the internet., which I don&#x27;t like. I mean, in the past few
+years, I&#x27;ve moved all my online life from Big Brothers to my servers for
+privacy reasons, so giving free access to live footage of my house to
+companies is certainly not acceptable.&lt;&#x2F;p&gt;
+&lt;p&gt;So I decided to set up the DVR in an isolated network(without access to
+the internet), expose its web interface(the DVR has a web interface) via
+a reverse proxy to the internet. This post is an attempt to record my
+findings. &lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m using Nginx for reverse proxying. Setting up the reverse proxy
+wasn&#x27;t straightforward. The web interface has many quirks and no
+documentation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;first-attempt-simple-reverse-proxy&quot;&gt;First Attempt: simple reverse proxy&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;    	proxy_pass http:&#x2F;&#x2F;dvr-ip-address;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;   listen 443 ssl;
+&lt;&#x2F;span&gt;&lt;span&gt;   listen 80;
+&lt;&#x2F;span&gt;&lt;span&gt;--- snip ---
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This setup exposed the web interface, I was able to log in, but video
+playback wasn&#x27;t working. It would work when I directly access
+&lt;code&gt;http:&#x2F;&#x2F;dvr-ip-address&lt;&#x2F;code&gt; but not through the reverse proxy.&lt;&#x2F;p&gt;
+&lt;p&gt;I poked around with browser dev tools for a bit and learned that video
+was handled by WebSocket connections. And so:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;second-attempt-there-s-a-websocket-component&quot;&gt;Second Attempt: there&#x27;s a WebSocket component!&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    # some static files were taking forever to download
+&lt;&#x2F;span&gt;&lt;span&gt;    # so I hooked it up with a cache
+&lt;&#x2F;span&gt;&lt;span&gt;    proxy_cache hikvision;
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_pass http:&#x2F;&#x2F;dvr-ip-address;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_http_version 1.1;
+&lt;&#x2F;span&gt;&lt;span&gt;        # Ensuring it can use websockets
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Upgrade $http_upgrade;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Connection &amp;quot;upgrade&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_redirect     http:&#x2F;&#x2F; $scheme:&#x2F;&#x2F;;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        # These sets the timeout so that the websocket can stay alive
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_connect_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_send_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_read_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 443 ssl;
+&lt;&#x2F;span&gt;&lt;span&gt;	listen 80;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Some files were taking forever to download, so I hooked it up with a
+cache to speed things up. Video playback wouldn&#x27;t work even with these
+modifications. So I had to dig deeper with the browser dev tools. &lt;&#x2F;p&gt;
+&lt;p&gt;Server ports are hardcoded in the frontend application. The DVR system
+listens on four ports:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;WebSocket server for video playback (with and without TLS, separate
+ports)&lt;&#x2F;li&gt;
+&lt;li&gt;controls, authentication, etc. (with and without TLS, dedicated ports)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Instead of having the back-end handle HTTP to HTTPS redirection, the
+ports are hardcoded in the frontend. The TLS WebSocket server
+listens on &lt;code&gt;7682&lt;&#x2F;code&gt; while the plain text WebSocket server listens on
+&lt;code&gt;7681&lt;&#x2F;code&gt;. And the frontend, depending on the URI scheme, toggles between
+the ports. The reverse proxy had TLS configured, so it was trying to
+contact &lt;code&gt;wss:&#x2F;&#x2F;example.com:7682&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;third-and-final-attempt-work-already&quot;&gt;Third and Final attempt: work already :&#x2F;&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;# server handling configuration, authentication, etc.
+&lt;&#x2F;span&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    proxy_cache hikvision;
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_pass http:&#x2F;&#x2F;dvr-ip-address;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 443 ssl; # managed by Certbot
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 80;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;# websocket server
+&lt;&#x2F;span&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 7682 ssl;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;        # nginx talks to backend in plain text
+&lt;&#x2F;span&gt;&lt;span&gt;        # and hence 7682-7681 plumbing
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_pass http:&#x2F;&#x2F;dvr-ip-address:7681;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_http_version 1.1;
+&lt;&#x2F;span&gt;&lt;span&gt;        # Ensuring it can use websockets
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Upgrade $http_upgrade;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Connection &amp;quot;upgrade&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_redirect     http:&#x2F;&#x2F; $scheme:&#x2F;&#x2F;;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        # These sets the timeout so that the websocket can stay alive
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_connect_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_send_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_read_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;I opened port &lt;code&gt;7682&lt;&#x2F;code&gt; on the reverse proxy to
+and forward it to port &lt;code&gt;7681&lt;&#x2F;code&gt; on the back-end for video playback and it
+works!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;There are a lot of weird things about the Hikvision DVR&#x27;s web interface.
+There was an SSH toggle switch that wouldn&#x27;t work(I dug up its manual on
+the internet, apparently my model doesn&#x27;t have SSH). The root is not at
+&lt;code&gt;&#x2F;&lt;&#x2F;code&gt; but they have a redirect to &lt;code&gt;&#x2F;doc&#x2F;something&lt;&#x2F;code&gt;, which is weird.
+There&#x27;s a separate WebSocket server that listens on a separate port when
+they could have simply scoped it to a certain path on the main server.
+The web interface is practically useless on mobile devices: video
+decoding is done client-side with WASM. So mobile devices struggle to
+process feeds from two cameras simultaneously. I understand that these
+systems are designed to Just Work™ but software design should be
+intuitive and it certainly shouldn&#x27;t take a whole day to set up a simple
+reverse proxy!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

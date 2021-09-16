@@ -48,4 +48,55 @@
         <loc>https://batsense.net/services/</loc>
         <lastmod>2020-12-27</lastmod>
     </url>
+    <url>
+        <loc>https://batsense.net/tags/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/act-fibernet/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/cctv/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/frp/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/hikvision/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/home-defense/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/kiss/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/math/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/matrix/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/mcaptcha/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/nat/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/nginx/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/opinon/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/personal/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/rant/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/self-hosting/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/sysadmin/</loc>
+    </url>
 </urlset>

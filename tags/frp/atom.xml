@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - frp</title>
+	<link href="https://batsense.net/tags/frp/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-07-18T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/frp/atom.xml</id>
+	<entry xml:lang="en">
+		<title>NAT Troubles or how my ISP screwed me over</title>
+		<published>2021-07-18T00:00:00+00:00</published>
+		<updated>2021-07-18T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/18-07-21-nat-troubles/" type="text/html"/>
+		<id>https://batsense.net/blog/18-07-21-nat-troubles/</id>
+		<content type="html">&lt;p&gt;Couple of days ago, I woke with my inbox filled with alerts from my
+&lt;a href=&quot;https:&#x2F;&#x2F;stats.uptimerobot.com&#x2F;EQ7VJHWylx&quot;&gt;monitoring service&lt;&#x2F;a&gt;, the
+dashboard was lit up like a Christmas tree. I&#x27;m not new to having
+downtimes, but this was the most unusual one: the servers were alright,
+the internet connection was fine, but the services were
+inaccessible. I had a bad feeling about this one.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;18-07-21-NAT-troubles&#x2F;inbox-nightmare.png&quot; alt=&quot;Inbox full of alerts&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You see, most of my internet presence comes out of my bedroom. This
+website, my search engine, and even &lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&quot;&gt;my favourite instant
+messaging platform&lt;&#x2F;a&gt; is operated right out of my
+bedroom. This has been possible because I&#x27;ve had a publicly accessible
+IP address. It&#x27;s dynamically allocated but thanks to
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dynamic_DNS&quot;&gt;DDNS&lt;&#x2F;a&gt;, it works! Everything
+was fine until my ISP decided to put me behind a NAT. I told them that
+I&#x27;m okay with paying for a static IP, but they said they only offer
+static IPs for enterprise accounts. I love my ISP, I think they are
+great but a static IP costs ₹200&#x2F;month(~$3) only, but they want me to
+upgrade to a plan that costs four times more than what I&#x27;m paying now.&lt;&#x2F;p&gt;
+&lt;p&gt;I can&#x27;t buy an enterprise connection and I can&#x27;t migrate the fleet to
+the could because it&#x27;s expensive, and my parents will disown me. The only
+logical option is to switch to an ISP that offers static IPs. But in the
+meantime I have set up a tunnel between my servers and a cheap
+DigitalOcean box using
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fatedier&#x2F;frp#rewriting-the-http-host-header&quot;&gt;&lt;code&gt;frp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s only been a few hours since the tunnel was set up but so far,
+everything seems to be okay. There&#x27;s a client and a server component,
+the client is run on machines behind NAT and the server on a machine
+that&#x27;s exposed to the internet. The client connects to the server and
+sets up a reverse tunnel. They support a wide range of protocols
+including &lt;code&gt;HTTP&lt;&#x2F;code&gt;, &lt;code&gt;HTTPS&lt;&#x2F;code&gt;, &lt;code&gt;UDP&lt;&#x2F;code&gt; and &lt;code&gt;TCP&lt;&#x2F;code&gt;. Compared to my previous
+setup, performance is a little
+sluggish, but that&#x27;s expected since the application now sits behind
+two reverse proxies instead of one. But it&#x27;s usable.&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s an example &lt;code&gt;frpc&lt;&#x2F;code&gt;(&lt;code&gt;frp&lt;&#x2F;code&gt; client) configuration for &lt;code&gt;HTTP&lt;&#x2F;code&gt; and
+&lt;code&gt;HTTPS&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ini&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-ini &quot;&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[libreddit-https]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;type &lt;&#x2F;span&gt;&lt;span&gt;= https
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_ip &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;127.0.0.1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_port &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;443
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_encryption &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_compression &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;host_header_rewrite &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;custom_domains &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[libreddit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;type &lt;&#x2F;span&gt;&lt;span&gt;= http
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_ip &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;127.0.0.1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_port &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;80
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_encryption &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_compression &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;host_header_rewrite &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;custom_domains &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Hopefully &lt;code&gt;IPv6&lt;&#x2F;code&gt; deployment increases and this post is rendered useless
+but if there&#x27;s someone out there who&#x27;s trying to get past the NAT and
+requires assistance, feel free to contact me!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

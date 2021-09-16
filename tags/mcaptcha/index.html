@@ -24,20 +24,20 @@
 
    
 	<meta charset="UTF-8" />
-	<title>My Matrix (mis)adventures :: realaravinth | Aravinth Manivannan </title>
+	<title>mCaptcha :: realaravinth | Aravinth Manivannan </title>
 	<meta name="referrer" content="no-referrer-when-downgrade" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta name="description" content="My Matrix (mis)adventures" />
+	<meta name="description" content="mCaptcha" />
     <meta name="author" content="Aravinth Manivannan" />
 
-	<meta property="og:title" content="My Matrix (mis)adventures :: realaravinth | Aravinth Manivannan " />
+	<meta property="og:title" content="mCaptcha :: realaravinth | Aravinth Manivannan " />
 	<meta property="og:type" content="article" />
     <meta property="og:url" content="https:&#x2F;&#x2F;batsense.net" />
 	<meta property="og:image" content="
   https://batsense.net/android-chrome-192x192.png?h=c0fdb61ed8b4e52d9d18dabcf759acf8b99f426d8210f2f922c823873e1341ab" 
 " />
-	<meta property="og:description" content="My Matrix (mis)adventures" />
+	<meta property="og:description" content="mCaptcha" />
 	<meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
 
 
@@ -100,76 +100,55 @@
       <main>
         
 
-<div class="page__container">
-  <h1 class="page__group-title">My Matrix (mis)adventures</h1>
-    <p class="blog__post-meta"> 
-      22 
+<div class="blog__container">
+    <h1 class="blog__title">#mCaptcha</h1>
+      <ul class="blog__list">
+                          
+              <li class="blog__post-item">
+              <a href="https://batsense.net/blog/04-03-21-mcaptcha/" class="blog__post-link">
+                <h2 class="blog__post-title">mCaptcha - to hell with captchas!</h2>
+                  <p class="blog__post-meta"> 
+                    4 
+	 March
+	
+,
+                    2021 &middot; <b>4 min read</b>
+                  </p>
+
+	  			<p class="blog__post-description">Introducing mCaptcha - A no-nonsense CAPTCHA system with seamless UX </p>
+                </a>
+				<div class="blog__post-tag-container">
+                  
+                    <a class="blog__post-tag" href="/tags/mCaptcha">#mCaptcha</a>
+                  
+				</div>
+              </li>
+                          
+              <li class="blog__post-item">
+              <a href="https://batsense.net/keys/" class="blog__post-link">
+                <h2 class="blog__post-title">keys</h2>
+                  <p class="blog__post-meta"> 
+                    25 
 	 December
 	
 ,
-      2020 &middot; <b>3 min read</b>
-    </p>
+                    2020 &middot; <b>3 min read</b>
+                  </p>
 
-	<div class="blog__content">
-    <p>Matrix is probably the largest federated network in production (Mastadon
-might be close). I run an instance at https://matrix.batsense.net and I
-absolutely love it. It was also the project that got me into the whole
-decentralization thing. I loved the idea that I could run a server that
-can play along with a bunch of other servers that are run by different
-parties and they would all somehow magically work!</p>
-<h2 id="error">Error</h2>
-<p>Deployment was fairly straight forward, the project's README
-files were sufficiently detailed but after about six months of running
-the server, my instance broke! The federation was no longer working. I
-could still chat with people that are on my own server but I could
-interact with rooms on other servers or even on matrix.org. </p>
-<p>The initial error massages were vague. The client complained that it had
-hit some JSON related error. So I went to look for solutions on the
-project's issue tracker. There was an open issue that said that when the
-person started doing IPv6 DNS lookups, their instance broke. This was
-also the time when my ISP moved us to IPv6 lookups so I figured that was
-what was causing problems. At this time, I wasn't really using matrix
-that much so it didn't bother me. I figured, eventually, massive project
-such as matrix might roll out a patch. Several weeks and several updates
-later, the issue still persisted. So I tried my hands at it once again. </p>
-<h2 id="diagnosis">Diagnosis</h2>
-<p>See, decentralization is complicated. Some matrix dev on Hackernews
-remarked that building a decentralized system is six times harder than
-building a centralized system. The bug that I was experiencing, wasn't
-really a bug. I misdiagnosed it to be one in the first place. I use
-Let's encrypt for TLS and their certs are valid for a maximum of three
-months. So when I hit that &quot;bug&quot;, I was through two cycles and was
-beginning the third. Synapse, the matrix homeserver variant that I run,
-listens on two ports: one for regular client-server interactions and the
-other for federation. The client-server port is proxied by an Nginx
-instance so all TLS stuff is delegated by the Nginx instance. The
-federation port, however, is directly exposed and all TLS stuff is
-handled by Synapse itself. That means Synapse is configured to read and
-do TLS stuff with the TLS certs. That means, my stupid self has two
-copies of the same TLS cert at two places. Now you could quickly see how
-stupid this is and the problems that it could cause. During the third
-cycle, I didn't refresh Synapse's copy of the certs. It was using stale
-certs. TLS is mandatory for federation in matrix. So naturally, my
-federation was broken!</p>
-<h2 id="lessons-learned">Lessons learned</h2>
-<ul>
-<li>I am stupid</li>
-<li>Maintain sysadmin notes to record all quirks of the systems that you
-administer</li>
-<li>Build simpler services: The more the number of levers to pull on, the
-more likely someone is going to screw up. The second port for
-federation feels necessary. It is a HTTP endpoint so I don't see why
-it needs to be separated. It could've simply be scoped differently.
-That way, the maintenance and deployment complexity can be
-significantly reduced. In this case, firewall rules can become simpler
-and the federation stuff will be handled by the Nginx instance itself. </li>
-</ul>
-<p>But seriously, I should have maintained notes. Three months  without
-federation over a stupid error is nuts.</p>
-
-  </div>
+	  			<p class="blog__post-description"> </p>
+                </a>
+				<div class="blog__post-tag-container">
+                  
+                    <a class="blog__post-tag" href="/tags/mCaptcha">#mCaptcha</a>
+                  
+				</div>
+              </li>
+          
+      </ul>
 </div>
-
+  
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://batsense.net/rss.xml">
+  
 
       </main>
       <footer>
