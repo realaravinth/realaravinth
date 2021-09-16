@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Static & Dynamic Code Analysers</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="plugin/highlight/monokai.css"
+      id="highlight-theme"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>
+              Static Analysis
+            </h1>
+          </section>
+          <section>
+            <ul>
+              <h2>
+                How does it work?
+              </h2>
+              <li>Tries to makes sense of source code</li>
+              <li>Recognises anti-paterns</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>
+              Dynamic Analysis
+            </h1>
+          </section>
+          <section>
+            <h2>
+              How does it work?
+            </h2>
+            Monitors execution during runtime and yells at you when it decects
+            errors
+          </section>
+          <section>
+            <h2>
+              Stack and Heap memory
+            </h2>
+          </section>
+          <section>
+            <h2>
+              Heap memory
+            </h2>
+
+            <ul>
+              <li>Slow</li>
+              <li>Unlimited</li>
+              <li>Unmanged</li>
+              <li>Can leak</li>
+              <li>Can fragment</li>
+            </ul>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="./img/450px-External_Fragmentation.png" alt="heap" />
+          </section>
+          <section>
+            <h2>
+              Stack memory
+            </h2>
+
+            <ul style="display:inline-block">
+              <li>Crazy fast</li>
+              <li>Limited(8MB on Linux)</li>
+              <li>Automatically managed</li>
+              <br>
+              <br>
+              <br>
+              <br>
+            </ul>
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <img  style="display:inline-block" width="35%"src="./img/350px-ProgramCallStack2_en.png" alt="call stack" />
+          </section>
+          <section>
+			  <h1>Valgrind</h1>
+			  <p>(rhymes with "tinned")</p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+
+    </script>
+  </body>
+</html>
