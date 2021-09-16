@@ -1,48 +1,70 @@
 @mixin md {
-  img {
-    width: 100%;
-    margin: auto;
-  }
+	img {
+		max-width: 100%;
+		display: block;
+	}
 
-  table {
-    border-collapse: collapse;
-    caption-side: bottom;
-    border-color: #e9ecef;
-    text-align: center;
-	width: 100%;
-  }
+	code {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
 
-  table > thead {
-    vertical-align: bottom;
-    border-bottom: 1px solid #cdc8ca;
-    text-align: center;
-  }
+	table {
+		border-collapse: collapse;
+		caption-side: bottom;
+		border-color: #e9ecef;
+		text-align: center;
+		width: 100%;
+	}
 
-  table {
-    th {
-      text-align: center;
-    }
-    td {
-      margin: auto;
-      padding: 10px;
-      border-bottom: 1px solid #edddd1;
-    }
-  }
+	table > thead {
+		vertical-align: bottom;
+		border-bottom: 1px solid #cdc8ca;
+		text-align: center;
+	}
 
-  p,
-  h2,
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+	table {
+		th {
+			text-align: center;
+		}
+		td {
+			margin: auto;
+			padding: 10px;
+			border-bottom: 1px solid #edddd1;
+		}
+	}
+
+	p,
+	h2,
+	h3 {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	pre {
+		padding: 10px 10px 10px 20px;
+		border-radius: 8px;
+		font-size: 0.95rem;
+		overflow: auto;
+	}
+	pre {
+		font-family: monospace, monospace;
+		font-display: auto;
+		font-size: 1em;
+	}
 }
 
 @mixin md_mobile {
-  table {
-    overflow-x: scroll;
-  }
+	table {
+		overflow-x: scroll;
+	}
 
-  table td {
-    padding: 5px;
-  }
+	table td {
+		padding: 5px;
+	}
+
+	pre {
+		white-space: pre-wrap;
+		word-wrap: break-word;
+	}
 }

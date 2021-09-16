@@ -22,11 +22,6 @@
   flex-direction: column;
 }
 
-.page__group-content img {
-  width: 100%;
-  margin: auto;
-}
-
 .page__group-content {
   @include md;
 }
