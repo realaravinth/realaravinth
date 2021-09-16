@@ -1,0 +1,11 @@
+{% set soruce = source %}
+{% set attr = attr %}
+{% set width = width %}
+<video 
+  {% if style %}
+    style={{ style }}
+  {% endif %}
+
+  controls {{ attr }} width="{{width}}">
+  <source src="{{ source }}" type="video/mp4" />
+</video>

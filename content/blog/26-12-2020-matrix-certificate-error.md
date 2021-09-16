@@ -2,6 +2,8 @@
 title: "My Matrix (mis)adventures" 
 tags: [ "matrix", "KISS", "sysadmin" ]
 date: 2020-12-22
+description: "Keep it simple, stupid. Because there are many like me out
+there :)"
 draft: false
 ---
 

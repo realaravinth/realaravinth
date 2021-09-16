@@ -2,6 +2,7 @@
 title: "Home defense adventures with Hikvision CCTV cameras"
 tags: [ "home-defense", "hikvision", "cctv", "nginx" ]
 date: 2021-03-26
+description: "There's nothing like an undocumented plug-this-to-the-internet-and-well-spy-on-you CCTV system!"
 draft: false
 ---
 

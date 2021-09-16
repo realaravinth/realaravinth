@@ -2,6 +2,8 @@
 title: Ideal backup situation
 tags: ['self-hosting', 'rant', 'sysadmin']
 date: 2021-09-10
+description: "Toughts on backup and what an ideal backup situation
+should be like"
 draft: false
 ---
 

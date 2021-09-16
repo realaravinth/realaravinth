@@ -44,4 +44,9 @@ collapsed under it's own weight.
 
 But then again, I might simply lack the lobes for it :)
 
-{{< video style="margin:auto;" src="/img/blog/13-09-2021-math-second-systems-effect/firengi-meme.mp4">}}
+{{ video(
+		source="/img/blog/13-09-2021-math-second-systems-effect/firengi-meme.mp4", 
+		attr="autoplay loop muted playsinline" 
+		width="350px" 
+		style="display:block;margin:auto;")
+}}
