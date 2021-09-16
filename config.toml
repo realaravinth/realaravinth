@@ -1,76 +1,16 @@
-baseURL = "https://batsense.net/"
-languageCode = "en-us"
-title = "realaravinth | Aravinth Manivannan"
-theme        = "hello-friend-ng"
-paginate     = 10
+# The URL the site will be built for
+base_url = "https://batsense.net"
 
-[author]
-  name = "Aravinth Manivannan"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
 
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-  homeSubtitle = "Free Software Activist. Student Developer"
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
 
-  description = "Aravinth Manivannan | Student Developer, dWeb Freak."
-  keywords = "homepage, blog"
-  images = [""]
-    # Default theme "light" or "dark"
-  defaultTheme = "dark"
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
 
-  [[params.social]]
-  name = "github"
-  url = "https://github.com/realaravinth"
-
-  [[params.social]]
-  name = "email"
-  url = "mailto:realaravinth@batsense.net"
-
-  [[params.social]]
-  name = "matrix"
-  url = "https://matrix.to/#/@realaravinth:matrix.batsense.net"
-
-[taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
-
-[languages]
-	[languages.en]
-	title = "realaravinth | Aravinth Manivannan"
-	keywords = ""
-	copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-
-	readOtherPosts = "Read other posts"
-
-    [languages.en.params.logo]
-      logoText = "realaravinth"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/blog"
-  [[menu.main]]
-    identifier = "contact"
-    name       = "Contact"
-    url        = "/contact"
-  [[menu.main]]
-    identifier = "services"
-    name       = "Services"
-    url        = "/services"
-  [[menu.main]]
-    identifier = "donate"
-    name       = "Donate"
-    url        = "/donate"
-  [[menu.main]]
-    identifier = "about"
-    name       = "About"
-    url        = "/about"
+[extra]
+# Put all your custom variables here

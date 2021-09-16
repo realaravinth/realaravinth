@@ -1,0 +1,28 @@
+{% import "macros/nav.html" as nav %}
+
+<nav class="nav__container">
+  <input type="checkbox" class="nav__toggle" id="nav__toggle" />
+
+  <div class="nav__header">
+    <a class="nav__logo-container" href="/">
+      <span class="nav__home-btn">>realaravinth</span>
+      <span class="nav__cursor" style=" "></span>
+    </a>
+    <label class="nav__hamburger-menu" for="nav__toggle">
+      <span class="nav__hamburger-inner"></span>
+    </label>
+  </div>
+
+  <div class="nav__spacer"></div>
+
+  <div class="nav__link-group">
+
+
+  {{ nav::nav_link(link="/about/", name="About") }}
+  {{ nav::nav_link(link="/blog/", name="Blog") }}
+  {{ nav::nav_link(link="/contact/", name="Contact") }}
+  {{ nav::nav_link(link="/donate/", name="Donate") }}
+  {{ nav::nav_link(link="/services/", name="Services") }}
+
+  </div>
+</nav>

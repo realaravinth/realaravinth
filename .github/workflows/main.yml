@@ -3,34 +3,37 @@ name: github pages
 on:
   push:
     branches:
-      - master # Set a branch to deploy
+      - zola
+  pull_request:
+    branches:
+      - zola
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-18.04
+
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          submodules: true
+          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.75.1'
-          # extended: true
+      - name: Install Zola
+        run: ./scripts/ci.sh install
 
       - name: build resume
         run: cd resume/ && docker run --volume="$(pwd):/src" --rm realaravinth/resume:latest lualatex resume.tex
 
-      - name: copy resumt
+      - name: copy resume
         run: cp resume/resume.pdf static/realaravinth-resume.pdf
 
-      - name: Build
-        run: hugo -D
+      - name: Build production website
+        run: ./scripts/ci.sh build
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy 🚀
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/zola' }}
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          branch: zola-dist
+          token: ${{ secrets.GITHUB_TOKEN }}
+          folder: ./public
