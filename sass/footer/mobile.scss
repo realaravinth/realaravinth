@@ -1,0 +1,26 @@
+.footer__container {
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.footer__link {
+  font-size: 0.6rem;
+}
+
+.license__conatiner,
+.license__link {
+  font-size: 0.55rem;
+  text-align: center;
+}
+
+.footer__column {
+  margin: 5px auto;
+}
+
+.license__conatiner {
+	display: block;
+}
+
+.footer__column-divider {
+  display: none;
+}

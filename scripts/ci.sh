@@ -87,7 +87,7 @@ build() {
 }
 
 no_absolute_url() {
-	sed -i 's/https:\/\/staging.wios.co.in//g' $(find public -type f | grep html)
+	sed -i 's/https:\/\/batsense.net//g' $(find public -type f | grep html)
 }
 
 clean() {
