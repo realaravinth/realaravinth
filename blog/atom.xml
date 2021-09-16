@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - Posts</title>
+	<link href="https://batsense.net/blog/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net/blog/"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-09-13T00:00:00+00:00</updated>
+	<id>https://batsense.net/blog/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Math and second systems effect</title>
+		<published>2021-09-13T00:00:00+00:00</published>
+		<updated>2021-09-13T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/13-09-2021-math-second-systems-effect/" type="text/html"/>
+		<id>https://batsense.net/blog/13-09-2021-math-second-systems-effect/</id>
+		<content type="html">&lt;p&gt;I think math is suffering from &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Second-system_effect&quot;&gt;second-system
+effect&lt;&#x2F;a&gt;. Right from
+7th grade onwards, kids are taught about symmetric functions and whatnot but
+are rarely told where they become useful. And as years go by and
+as the kid advances in school, additional baggage is added to a
+point where the sole purpose of this ordeal, at least in my opinion, was to torture
+the kid into oblivion. &lt;&#x2F;p&gt;
+&lt;p&gt;This semester, I have graph theory at school. Graph theory is one of
+those things that feels like reading a quick start manual --- almost
+everything taught has some &lt;em&gt;real&lt;&#x2F;em&gt; and actionable purpose. Which is
+pretty cool. Now this isn&#x27;t because of some magical trait of the subject
+itself, it&#x27;s just that my 7th grade garbage is finally seeing some
+usefulness Also, it&#x27;s amazing how we spend years learning how to &lt;em&gt;read&lt;&#x2F;em&gt;
+math. I get it. Mathematical logic can&#x27;t have any exceptions and should
+hold true in all cases. So a perfect language to describe the perfect
+system. Sound familiar?&lt;&#x2F;p&gt;
+&lt;p&gt;Now it can be argued that math has been very successful to a point where
+entire fields of studies have been born out of it. But very few subjects
+are as notorious as math is. An other case in favour of it&#x27;s complexity
+is that the field is hundreds, if not thousands, of years old and the
+knowledge accumulated over such a long period will be inevitably
+complex. This is valid point but it doesn&#x27;t make the learner&#x27;s life any
+easier. &lt;&#x2F;p&gt;
+&lt;p&gt;In my opinion, a peek into the useful aspects of math every now and then
+should provide sufficient motivation to pursue its study. Mindlessly
+reading specification after specification without ever understanding its
+intended purpose will only serve to demotivate the learner.&lt;&#x2F;p&gt;
+&lt;p&gt;I could never do math. I always taught I wasn&#x27;t cut out for it and so it
+has never been my thing. But this recent experience makes me wonder if
+math is plagued by second-system syndrome and, at least in my case,
+collapsed under it&#x27;s own weight.&lt;&#x2F;p&gt;
+&lt;p&gt;But then again, I might simply lack the lobes for it :)&lt;&#x2F;p&gt;
+&lt;video 
+  
+    style=display:block;margin:auto;
+  
+
+  controls autoplay loop muted playsinline width=&quot;350px&quot;&gt;
+  &lt;source src=&quot;&amp;#x2F;img&amp;#x2F;blog&amp;#x2F;13-09-2021-math-second-systems-effect&amp;#x2F;firengi-meme.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
+&lt;&#x2F;video&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Ideal backup situation</title>
+		<published>2021-09-10T00:00:00+00:00</published>
+		<updated>2021-09-10T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/" type="text/html"/>
+		<id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
+		<content type="html">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
+fortunate to have not suffered any serious system failures or data
+loses. I recently recovered from systems failures on my Raspberry Pis
+caused by upgrading Debian Buster to Bullseye. The outage wasn&#x27;t a
+because of a bug in Bullseye, the upgrade modified some parameters
+&lt;code&gt;&#x2F;boot&#x2F;firmware&#x2F;config.txt&lt;&#x2F;code&gt; which, for some reason, prevented the board
+from booting.&lt;&#x2F;p&gt;
+&lt;p&gt;Also around the same period, my place was being renovated, and the
+construction workers had nicked the main power supply lines. As a
+result, we were experiencing some wild voltage fluctuations and power
+outages. I thought I burnt my boards from either one of these two
+things. It was time to set up a proper backup mechanism.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;requirement&quot;&gt;Requirement&lt;&#x2F;h2&gt;
+&lt;p&gt;I have roughly 3 TB of storage across multiple devices and none of these
+were being backed up. Going by the
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Backup#3-2-1_rule&quot;&gt;3-2-1&lt;&#x2F;a&gt;, I would
+require at least 9 TB + 3 TB of storage(3*3 + some additional space for
+versioned backups --- most backup systems these days are chunk snapshot
+systems so versioning is very efficient). But since I&#x27;m broke and can&#x27;t
+afford offsite storage, my requirements are down to 6 TB + 2 TB.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;my-current-solution&quot;&gt;My current solution&lt;&#x2F;h2&gt;
+&lt;p&gt;I bought two 4 TB disks and setup &lt;a href=&quot;https:&#x2F;&#x2F;www.borgbackup.org&#x2F;&quot;&gt;Borg&lt;&#x2F;a&gt;
+backup jobs to run at night. I currently have 7 daily, 4 weekly and 4
+monthly snapshots on the first disk and the second disk contains 4
+weekly and 4 monthly snapshots, and is unplugged and stored at a
+different part of the house.&lt;&#x2F;p&gt;
+&lt;p&gt;Ideally, it should be plugged in at a different part of the house, away
+from my server rack, but I neither have the hardware nor the
+infrastructure to implement that.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ideal-solution&quot;&gt;Ideal solution&lt;&#x2F;h2&gt;
+&lt;p&gt;My current set up will work in most cases. I live in a calm neighborhood
+in a very safe city(not prone to natural calamities and such) but
+&lt;em&gt;ideally&lt;&#x2F;em&gt; there should be at least one copy of offsite backup. So I did
+some math to see how much it would cost me:&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;aws-s3&quot;&gt;AWS S3&lt;&#x2F;h3&gt;
+&lt;p&gt;AWS is usually the cheapest and there&#x27;s probably an adapter available
+for Borg&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pricing:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;aws.amazon.com&#x2F;s3&#x2F;pricing&#x2F;&quot;&gt;$0.023&#x2F;GB-month for the first
+50 TB&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;cost:&lt;&#x2F;strong&gt; $0.023 * 3 * 1024 = $70.656&#x2F;month&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But I don&#x27;t like AWS or anything Amazon&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;tarsnap&quot;&gt;Tarsnap&lt;&#x2F;h3&gt;
+&lt;p&gt;Tarsnap is developed by &lt;a href=&quot;https:&#x2F;&#x2F;www.daemonology.net&#x2F;blog&#x2F;&quot;&gt;Dr. Colin
+Percival&lt;&#x2F;a&gt; and is quite popular.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;pricing:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;www.tarsnap.com&#x2F;&quot;&gt;$0.25&#x2F;GB-month + $0.25&#x2F;GB
+bandwidth&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;cost:&lt;&#x2F;strong&gt; $0.25 * 3 * 1024 = $768&#x2F;month + bandwidth costs&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And is also quite expensive!&lt;&#x2F;p&gt;
+&lt;p&gt;I can&#x27;t afford either of these solutions. My current setup set cost me
+roughly ₹16,000 or $220 or the two months worth of AWS rent. Which is
+ridiculous. So here&#x27;s my proposal:&lt;&#x2F;p&gt;
+&lt;p&gt;As the internet becomes more diverse and more decentralised, home
+servers will become a common thing. This means more folks, like myself,
+will be on the lookout for cheap backup and failover solutions.
+Normally, these home servers won&#x27;t be at 100% utilization(I&#x27;m currently
+at 20% across the fleet) so forming rings of trust among friends and
+family will be mutually beneficial. This way, the participants within
+the ring can rely on each other&#x27;s facilities for backups and
+failover situations for a fraction of what a cloud-based solution would
+cost.&lt;&#x2F;p&gt;
+&lt;p&gt;Of course, there should be proper measures taken to prevent unauthorized
+access and trespassing, but they are implementation details.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>NAT Troubles or how my ISP screwed me over</title>
+		<published>2021-07-18T00:00:00+00:00</published>
+		<updated>2021-07-18T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/18-07-21-nat-troubles/" type="text/html"/>
+		<id>https://batsense.net/blog/18-07-21-nat-troubles/</id>
+		<content type="html">&lt;p&gt;Couple of days ago, I woke with my inbox filled with alerts from my
+&lt;a href=&quot;https:&#x2F;&#x2F;stats.uptimerobot.com&#x2F;EQ7VJHWylx&quot;&gt;monitoring service&lt;&#x2F;a&gt;, the
+dashboard was lit up like a Christmas tree. I&#x27;m not new to having
+downtimes, but this was the most unusual one: the servers were alright,
+the internet connection was fine, but the services were
+inaccessible. I had a bad feeling about this one.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;18-07-21-NAT-troubles&#x2F;inbox-nightmare.png&quot; alt=&quot;Inbox full of alerts&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You see, most of my internet presence comes out of my bedroom. This
+website, my search engine, and even &lt;a href=&quot;https:&#x2F;&#x2F;matrix.org&quot;&gt;my favourite instant
+messaging platform&lt;&#x2F;a&gt; is operated right out of my
+bedroom. This has been possible because I&#x27;ve had a publicly accessible
+IP address. It&#x27;s dynamically allocated but thanks to
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Dynamic_DNS&quot;&gt;DDNS&lt;&#x2F;a&gt;, it works! Everything
+was fine until my ISP decided to put me behind a NAT. I told them that
+I&#x27;m okay with paying for a static IP, but they said they only offer
+static IPs for enterprise accounts. I love my ISP, I think they are
+great but a static IP costs ₹200&#x2F;month(~$3) only, but they want me to
+upgrade to a plan that costs four times more than what I&#x27;m paying now.&lt;&#x2F;p&gt;
+&lt;p&gt;I can&#x27;t buy an enterprise connection and I can&#x27;t migrate the fleet to
+the could because it&#x27;s expensive, and my parents will disown me. The only
+logical option is to switch to an ISP that offers static IPs. But in the
+meantime I have set up a tunnel between my servers and a cheap
+DigitalOcean box using
+&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fatedier&#x2F;frp#rewriting-the-http-host-header&quot;&gt;&lt;code&gt;frp&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s only been a few hours since the tunnel was set up but so far,
+everything seems to be okay. There&#x27;s a client and a server component,
+the client is run on machines behind NAT and the server on a machine
+that&#x27;s exposed to the internet. The client connects to the server and
+sets up a reverse tunnel. They support a wide range of protocols
+including &lt;code&gt;HTTP&lt;&#x2F;code&gt;, &lt;code&gt;HTTPS&lt;&#x2F;code&gt;, &lt;code&gt;UDP&lt;&#x2F;code&gt; and &lt;code&gt;TCP&lt;&#x2F;code&gt;. Compared to my previous
+setup, performance is a little
+sluggish, but that&#x27;s expected since the application now sits behind
+two reverse proxies instead of one. But it&#x27;s usable.&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s an example &lt;code&gt;frpc&lt;&#x2F;code&gt;(&lt;code&gt;frp&lt;&#x2F;code&gt; client) configuration for &lt;code&gt;HTTP&lt;&#x2F;code&gt; and
+&lt;code&gt;HTTPS&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;ini&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-ini &quot;&gt;&lt;code class=&quot;language-ini&quot; data-lang=&quot;ini&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[libreddit-https]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;type &lt;&#x2F;span&gt;&lt;span&gt;= https
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_ip &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;127.0.0.1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_port &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;443
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_encryption &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_compression &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;host_header_rewrite &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;custom_domains &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;[libreddit]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;type &lt;&#x2F;span&gt;&lt;span&gt;= http
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_ip &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;127.0.0.1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;local_port &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;80
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_encryption &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;use_compression &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;host_header_rewrite &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;custom_domains &lt;&#x2F;span&gt;&lt;span&gt;= libreddit.batsense.net
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Hopefully &lt;code&gt;IPv6&lt;&#x2F;code&gt; deployment increases and this post is rendered useless
+but if there&#x27;s someone out there who&#x27;s trying to get past the NAT and
+requires assistance, feel free to contact me!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Home defense adventures with Hikvision CCTV cameras</title>
+		<published>2021-03-26T00:00:00+00:00</published>
+		<updated>2021-03-26T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/26-03-21-hikvision-cctv/" type="text/html"/>
+		<id>https://batsense.net/blog/26-03-21-hikvision-cctv/</id>
+		<content type="html">&lt;p&gt;We recently got robbed, so we decided to secure the house with some CCTV
+cameras. Ours is a modest setup with nine 5MP cameras and a DVR
+recording all the footage from those cameras at 1080p. The DVR can
+connect to Hikvision&#x27;s cloud infrastructure so that owners can see live
+footage using the internet., which I don&#x27;t like. I mean, in the past few
+years, I&#x27;ve moved all my online life from Big Brothers to my servers for
+privacy reasons, so giving free access to live footage of my house to
+companies is certainly not acceptable.&lt;&#x2F;p&gt;
+&lt;p&gt;So I decided to set up the DVR in an isolated network(without access to
+the internet), expose its web interface(the DVR has a web interface) via
+a reverse proxy to the internet. This post is an attempt to record my
+findings. &lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;m using Nginx for reverse proxying. Setting up the reverse proxy
+wasn&#x27;t straightforward. The web interface has many quirks and no
+documentation.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;first-attempt-simple-reverse-proxy&quot;&gt;First Attempt: simple reverse proxy&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;    	proxy_pass http:&#x2F;&#x2F;dvr-ip-address;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;   listen 443 ssl;
+&lt;&#x2F;span&gt;&lt;span&gt;   listen 80;
+&lt;&#x2F;span&gt;&lt;span&gt;--- snip ---
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This setup exposed the web interface, I was able to log in, but video
+playback wasn&#x27;t working. It would work when I directly access
+&lt;code&gt;http:&#x2F;&#x2F;dvr-ip-address&lt;&#x2F;code&gt; but not through the reverse proxy.&lt;&#x2F;p&gt;
+&lt;p&gt;I poked around with browser dev tools for a bit and learned that video
+was handled by WebSocket connections. And so:&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;second-attempt-there-s-a-websocket-component&quot;&gt;Second Attempt: there&#x27;s a WebSocket component!&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    # some static files were taking forever to download
+&lt;&#x2F;span&gt;&lt;span&gt;    # so I hooked it up with a cache
+&lt;&#x2F;span&gt;&lt;span&gt;    proxy_cache hikvision;
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_pass http:&#x2F;&#x2F;dvr-ip-address;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_http_version 1.1;
+&lt;&#x2F;span&gt;&lt;span&gt;        # Ensuring it can use websockets
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Upgrade $http_upgrade;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Connection &amp;quot;upgrade&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_redirect     http:&#x2F;&#x2F; $scheme:&#x2F;&#x2F;;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        # These sets the timeout so that the websocket can stay alive
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_connect_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_send_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_read_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 443 ssl;
+&lt;&#x2F;span&gt;&lt;span&gt;	listen 80;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Some files were taking forever to download, so I hooked it up with a
+cache to speed things up. Video playback wouldn&#x27;t work even with these
+modifications. So I had to dig deeper with the browser dev tools. &lt;&#x2F;p&gt;
+&lt;p&gt;Server ports are hardcoded in the frontend application. The DVR system
+listens on four ports:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;WebSocket server for video playback (with and without TLS, separate
+ports)&lt;&#x2F;li&gt;
+&lt;li&gt;controls, authentication, etc. (with and without TLS, dedicated ports)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Instead of having the back-end handle HTTP to HTTPS redirection, the
+ports are hardcoded in the frontend. The TLS WebSocket server
+listens on &lt;code&gt;7682&lt;&#x2F;code&gt; while the plain text WebSocket server listens on
+&lt;code&gt;7681&lt;&#x2F;code&gt;. And the frontend, depending on the URI scheme, toggles between
+the ports. The reverse proxy had TLS configured, so it was trying to
+contact &lt;code&gt;wss:&#x2F;&#x2F;example.com:7682&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;third-and-final-attempt-work-already&quot;&gt;Third and Final attempt: work already :&#x2F;&lt;&#x2F;h2&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;# server handling configuration, authentication, etc.
+&lt;&#x2F;span&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    proxy_cache hikvision;
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_pass http:&#x2F;&#x2F;dvr-ip-address;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 443 ssl; # managed by Certbot
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 80;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;# websocket server
+&lt;&#x2F;span&gt;&lt;span&gt;server {
+&lt;&#x2F;span&gt;&lt;span&gt;    server_name example.com;
+&lt;&#x2F;span&gt;&lt;span&gt;    listen 7682 ssl;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    location &#x2F; {
+&lt;&#x2F;span&gt;&lt;span&gt;        # nginx talks to backend in plain text
+&lt;&#x2F;span&gt;&lt;span&gt;        # and hence 7682-7681 plumbing
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_pass http:&#x2F;&#x2F;dvr-ip-address:7681;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_http_version 1.1;
+&lt;&#x2F;span&gt;&lt;span&gt;        # Ensuring it can use websockets
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Upgrade $http_upgrade;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_set_header   Connection &amp;quot;upgrade&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_redirect     http:&#x2F;&#x2F; $scheme:&#x2F;&#x2F;;
+&lt;&#x2F;span&gt;&lt;span&gt;        
+&lt;&#x2F;span&gt;&lt;span&gt;        # These sets the timeout so that the websocket can stay alive
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_connect_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_send_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;        proxy_read_timeout 7m;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;I opened port &lt;code&gt;7682&lt;&#x2F;code&gt; on the reverse proxy to
+and forward it to port &lt;code&gt;7681&lt;&#x2F;code&gt; on the back-end for video playback and it
+works!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h2&gt;
+&lt;p&gt;There are a lot of weird things about the Hikvision DVR&#x27;s web interface.
+There was an SSH toggle switch that wouldn&#x27;t work(I dug up its manual on
+the internet, apparently my model doesn&#x27;t have SSH). The root is not at
+&lt;code&gt;&#x2F;&lt;&#x2F;code&gt; but they have a redirect to &lt;code&gt;&#x2F;doc&#x2F;something&lt;&#x2F;code&gt;, which is weird.
+There&#x27;s a separate WebSocket server that listens on a separate port when
+they could have simply scoped it to a certain path on the main server.
+The web interface is practically useless on mobile devices: video
+decoding is done client-side with WASM. So mobile devices struggle to
+process feeds from two cameras simultaneously. I understand that these
+systems are designed to Just Work™ but software design should be
+intuitive and it certainly shouldn&#x27;t take a whole day to set up a simple
+reverse proxy!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>mCaptcha - to hell with captchas!</title>
+		<published>2021-03-04T00:00:00+00:00</published>
+		<updated>2021-03-04T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/04-03-21-mcaptcha/" type="text/html"/>
+		<id>https://batsense.net/blog/04-03-21-mcaptcha/</id>
+		<content type="html">&lt;p&gt;While working on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shuttlecraft&#x2F;identity&quot;&gt;Identity&lt;&#x2F;a&gt;, I
+noticed some of the endpoints were computationally expensive. The target
+platforms for Shuttlecraft systems are cheap computers such as Raspberry
+Pis so I learned a &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;new language&lt;&#x2F;a&gt; and picked up a
+new &lt;a href=&quot;https:&#x2F;&#x2F;actix.rs&quot;&gt;web framework&lt;&#x2F;a&gt; among many things, to make things
+go faster. And those computationally expensive endpoints were dog slow
+and vulnerable to denial-of-service attacks if left unprotected.&lt;&#x2F;p&gt;
+&lt;p&gt;I came up with the following ways to rate-limit those endpoints:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Captcha: reCaptcha&#x2F;hCAptcha types&lt;&#x2F;li&gt;
+&lt;li&gt;IP based filtering: &lt;code&gt;x&lt;&#x2F;code&gt; requests per IP address during a specific
+interval of time&lt;&#x2F;li&gt;
+&lt;li&gt;Do nothing: there&#x27;s only so much that you can do :p&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Let&#x27;s analyse each one of these solutions.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1-captcha&quot;&gt;1. Captcha:&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;pros&quot;&gt;Pros:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Captcha widgets are the norm for detecting bot activity.&lt;&#x2F;li&gt;
+&lt;li&gt;Large companies like Google and Cloudflare are invested in making
+captchas work.&lt;&#x2F;li&gt;
+&lt;li&gt;Machine learning is used study bot activity and flag users down
+whenever there&#x27;s a resemblance.&lt;&#x2F;li&gt;
+&lt;li&gt;No user learning curve: netizens are familiar with captchas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;cons&quot;&gt;Cons:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Proprietary software:&lt;&#x2F;strong&gt; what is the backend doing? What sort of
+algorithms are they using? Do they exhibit unfair bias when letting
+users through? We will never know. We have to take them by their word
+and have no way of verifying their claims. They can, in effect, ban
+users from visiting your website if they wanted to do.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Privacy invasive:&lt;&#x2F;strong&gt; Captchas mine data. I have Google domains
+blacklisted by default and every time I visit a site that uses
+Google&#x27;s reCaptcha, I am forced to temporarily whitelist them. I don&#x27;t
+like doing that.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Annoying:&lt;&#x2F;strong&gt; It sucks that I have to manually solve captchas to tell
+a website that I am, in fact, a legitimate user. We should have
+automated this stuff a long time ago!&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id=&quot;anecdote&quot;&gt;&lt;&#x2F;h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;True story:&lt;&#x2F;strong&gt; My university has a student portal that we use to submit
+assignments and view scorecards. They have a dumb captcha at the
+sign-in page to keep bots away. The IT staff figured they&#x27;ll be better
+protected if they replace it with reCaptcha. And they did.
+{{&amp;lt; figure src=&amp;quot;&#x2F;img&#x2F;blog&#x2F;04-03-21-mcaptcha&#x2F;portal-dumb-captcha.png&amp;quot; caption=&amp;quot;dumb captcha university portal&amp;quot; alt=&amp;quot;dumb captcha university portal&amp;quot; &amp;gt;}} &amp;gt;
+I have terrible luck with captcha systems. They always flag me as
+a bot. So after this change, when I went online to upload an
+assignment, I had to solve 49 captchas &lt;em&gt;and&lt;&#x2F;em&gt; get flagged as a bot and do
+another 49 only to get flagged as a bot again. Only this time, Google
+wouldn&#x27;t let me try again and asked me to &amp;quot;try again later&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;Luckily I wasn&#x27;t alone. You see, my university is behind a
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Network_address_translation&quot;&gt;NAT&lt;&#x2F;a&gt; so
+10,000 people share a single public IP address. From Google&#x27;s
+perspective, we would appear as a giant bot that generates a lot of
+traffic(stopped using Google search after I moved there because of all
+the captchas that they made me solve).&lt;&#x2F;p&gt;
+&lt;p&gt;The next day, the IT team rolled back to the old dumb captchas&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;h2 id=&quot;2-ip-based-filtering&quot;&gt;2. IP based filtering:&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;pros-1&quot;&gt;Pros:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Easy to implement:&lt;&#x2F;strong&gt; IP addresses are ubiquitous on the internet&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Stateful:&lt;&#x2F;strong&gt; Unless and until users are hopping between networks,
+they&#x27;ll have the same IP address throughout their session with the
+site. So it&#x27;s trivially easy to use it as an ID to rate-limit clients.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;cons-1&quot;&gt;Cons:&lt;&#x2F;h3&gt;
+&lt;p&gt;There&#x27;s only one that I could think of:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Doesn&#x27;t work for people behind NAT:&lt;&#x2F;strong&gt; When multiple users are
+using the same IP address, there isn&#x27;t an effective way to uniquely
+identify each one of them. So an IP-based mechanism would fail in such
+situations.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;batsense.net&#x2F;blog&#x2F;04-03-21-mcaptcha&#x2F;#anecdote&quot;&gt;See previous section&lt;&#x2F;a&gt; for anecdotal evidence.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;3-don-t-do-anything&quot;&gt;3. Don&#x27;t do anything:&lt;&#x2F;h2&gt;
+&lt;p&gt;Not really an option.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;So what we need is something that that will work behind NATs, is privacy
+respecting but most importantly, it should be free(as in freedom)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;enter-mcaptcha&quot;&gt;Enter mCaptcha&lt;&#x2F;h2&gt;
+&lt;p&gt;mCaptcha is a proof-of-work(PoW) based rate-limiting system that uses
+variable difficulty.&lt;&#x2F;p&gt;
+&lt;p&gt;When a user visits a mCaptcha enabled website,
+their client automatically generates a PoW to qualify for performing an
+action(submitting forms, etc.). This enforces a rate-limit.&lt;&#x2F;p&gt;
+&lt;p&gt;When the server is under load, the difficulty will rise to make the
+clients spend more time preparing the request than the server processing
+the request. This makes DoS attacks expensive for the attackers as well.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>My Matrix (mis)adventures</title>
+		<published>2020-12-22T00:00:00+00:00</published>
+		<updated>2020-12-22T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/" type="text/html"/>
+		<id>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</id>
+		<content type="html">&lt;p&gt;Matrix is probably the largest federated network in production (Mastadon
+might be close). I run an instance at https:&#x2F;&#x2F;matrix.batsense.net and I
+absolutely love it. It was also the project that got me into the whole
+decentralization thing. I loved the idea that I could run a server that
+can play along with a bunch of other servers that are run by different
+parties and they would all somehow magically work!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;error&quot;&gt;Error&lt;&#x2F;h2&gt;
+&lt;p&gt;Deployment was fairly straight forward, the project&#x27;s README
+files were sufficiently detailed but after about six months of running
+the server, my instance broke! The federation was no longer working. I
+could still chat with people that are on my own server but I could
+interact with rooms on other servers or even on matrix.org. &lt;&#x2F;p&gt;
+&lt;p&gt;The initial error massages were vague. The client complained that it had
+hit some JSON related error. So I went to look for solutions on the
+project&#x27;s issue tracker. There was an open issue that said that when the
+person started doing IPv6 DNS lookups, their instance broke. This was
+also the time when my ISP moved us to IPv6 lookups so I figured that was
+what was causing problems. At this time, I wasn&#x27;t really using matrix
+that much so it didn&#x27;t bother me. I figured, eventually, massive project
+such as matrix might roll out a patch. Several weeks and several updates
+later, the issue still persisted. So I tried my hands at it once again. &lt;&#x2F;p&gt;
+&lt;h2 id=&quot;diagnosis&quot;&gt;Diagnosis&lt;&#x2F;h2&gt;
+&lt;p&gt;See, decentralization is complicated. Some matrix dev on Hackernews
+remarked that building a decentralized system is six times harder than
+building a centralized system. The bug that I was experiencing, wasn&#x27;t
+really a bug. I misdiagnosed it to be one in the first place. I use
+Let&#x27;s encrypt for TLS and their certs are valid for a maximum of three
+months. So when I hit that &amp;quot;bug&amp;quot;, I was through two cycles and was
+beginning the third. Synapse, the matrix homeserver variant that I run,
+listens on two ports: one for regular client-server interactions and the
+other for federation. The client-server port is proxied by an Nginx
+instance so all TLS stuff is delegated by the Nginx instance. The
+federation port, however, is directly exposed and all TLS stuff is
+handled by Synapse itself. That means Synapse is configured to read and
+do TLS stuff with the TLS certs. That means, my stupid self has two
+copies of the same TLS cert at two places. Now you could quickly see how
+stupid this is and the problems that it could cause. During the third
+cycle, I didn&#x27;t refresh Synapse&#x27;s copy of the certs. It was using stale
+certs. TLS is mandatory for federation in matrix. So naturally, my
+federation was broken!&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;lessons-learned&quot;&gt;Lessons learned&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I am stupid&lt;&#x2F;li&gt;
+&lt;li&gt;Maintain sysadmin notes to record all quirks of the systems that you
+administer&lt;&#x2F;li&gt;
+&lt;li&gt;Build simpler services: The more the number of levers to pull on, the
+more likely someone is going to screw up. The second port for
+federation feels necessary. It is a HTTP endpoint so I don&#x27;t see why
+it needs to be separated. It could&#x27;ve simply be scoped differently.
+That way, the maintenance and deployment complexity can be
+significantly reduced. In this case, firewall rules can become simpler
+and the federation stuff will be handled by the Nginx instance itself. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;But seriously, I should have maintained notes. Three months  without
+federation over a stupid error is nuts.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
