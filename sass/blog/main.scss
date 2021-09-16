@@ -1,10 +1,14 @@
 @import "../components/page";
-@import '../components/_link';
+@import "../components/_link";
 
 $std-trans: 0.3s;
 
 .blog__content {
 	@include md;
+
+	p {
+		margin: 30px 0;
+	}
 }
 
 .blog__container {
