@@ -3,10 +3,10 @@ name: github pages
 on:
   push:
     branches:
-      - zola
+      - master
   pull_request:
     branches:
-      - zola
+      - master
 
 jobs:
   build:
@@ -31,9 +31,9 @@ jobs:
         run: ./scripts/ci.sh build
 
       - name: Deploy 🚀
-        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/zola' }}
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          branch: zola-dist
+          branch: gh-pages
           token: ${{ secrets.GITHUB_TOKEN }}
           folder: ./public
