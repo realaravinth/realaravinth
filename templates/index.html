@@ -47,6 +47,19 @@ Manivannan" %}
       <div class="home__content">
         <h1 class="home__name">realaravinth | Aravinth Manivannan</h1>
         <p class="home__role">Free Software Activist. Student Developer</p>
+        <div class="home__socials">
+          <a href="https://github.com/realaravinth" target="_blank" rel="noopener" title="GitHub">
+            <img src="{{ get_url(path='/icons/github.svg', cachebust=true) }}" alt="GitHub icon">
+          </a>
+          &nbsp;
+          <a href="mailto:realaravinth@batsense.net" target="_blank" rel="noopener" title="email">
+            <img src="{{ get_url(path='/icons/email.svg', cachebust=true) }}" alt="Email icon">
+          </a>
+          &nbsp;
+          <a href="https://matrix.to/#/@realaravinth:matrix.batsense.net" target="_blank" rel="noopener" title="Matrix">
+            <img src="{{ get_url(path='/icons/matrix.svg', cachebust=true) }}" alt="Matrix icon">
+          </a>
+        </div>
         <p class="home__disclaimer">{{ config.extra.disclaimer }}</p>
       </div>
     </section>
