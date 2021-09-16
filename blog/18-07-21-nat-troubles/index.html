@@ -1,43 +1,218 @@
-<html>
-    <head>
-        <title>Zola</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Welcome to Zola!</h1>
-            <p>
-                You're seeing this page because we couldn't find a template to render.
-            </p>
-            <p>
-                To modify this page, create a <b>page.html</b> file in the templates directory or
-                <a href="https://www.getzola.org/documentation/themes/installing-and-using-themes/" target="_blank">install a theme</a>.
-                <br>
-                You can find what variables are available in this template in the <a href="https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;templates&#x2F;pages-sections&#x2F;#page-variables" target="_blank">documentation</a>.
-            </p>
-        </div>
-        <footer>
-            <a href="https://www.getzola.org/documentation/getting-started/cli-usage/" target="_blank">Get started with Zola</a>
-        </footer>
-        <style>
-            html {
-                line-height: 1.5;
-            }
-            h1 {
-                margin-bottom: 2rem;
-            }
-            .container {
-                font-family: "sans-serif";
-                text-align: center;
-                margin-top: 20vh;
-                padding: 2rem;
-                background: #e9e9e9;
-            }
-            footer {
-                position: fixed;
-                width: 100%;
-                bottom: 1rem;
-                text-align: center;
-            }
-        </style>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://batsense.net/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1200px)"
+      href="https://batsense.net/mobile.css"
+    />
+
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+
+
+
+
+   
+	<meta charset="UTF-8" />
+	<title>NAT Troubles or how my ISP screwed me over :: realaravinth | Aravinth Manivannan </title>
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="description" content="NAT Troubles or how my ISP screwed me over" />
+    <meta name="author" content="Aravinth Manivannan" />
+
+	<meta property="og:title" content="NAT Troubles or how my ISP screwed me over :: realaravinth | Aravinth Manivannan " />
+	<meta property="og:type" content="article" />
+    <meta property="og:url" content="https:&#x2F;&#x2F;batsense.net" />
+	<meta property="og:image" content="
+  https://batsense.net/android-chrome-192x192.png?h=c0fdb61ed8b4e52d9d18dabcf759acf8b99f426d8210f2f922c823873e1341ab" 
+" />
+	<meta property="og:description" content="NAT Troubles or how my ISP screwed me over" />
+	<meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
+
+
+
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav__container">
+  <input type="checkbox" class="nav__toggle" id="nav__toggle" />
+
+  <div class="nav__header">
+    <a class="nav__logo-container" href="/">
+      <span class="nav__home-btn">>realaravinth</span>
+      <span class="nav__cursor" style=" "></span>
+    </a>
+    <label class="nav__hamburger-menu" for="nav__toggle">
+      <span class="nav__hamburger-inner"></span>
+    </label>
+  </div>
+
+  <div class="nav__spacer"></div>
+
+  <div class="nav__link-group">
+
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;about&#x2F;">About</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;blog&#x2F;">Blog</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;contact&#x2F;">Contact</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;donate&#x2F;">Donate</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;services&#x2F;">Services</a>
+  </div>
+
+
+  </div>
+</nav>
+
+    </header>
+    <!-- See ../sass/main.scss. Required for pushing footer to the very 
+      bottom of the page -->
+    <div class="main__content-container">
+      <main>
+        
+
+<div class="page__container">
+  <h1 class="page__group-title">NAT Troubles or how my ISP screwed me over</h1>
+	<p class="blog__meta">
+      Posted 18 
+	 July
+	
+,
+        2021 by Aravinth Manivannan 
+      - <b>3 min read</b>
+    </p>
+	<div class="blog__content">
+    <p>Couple of days ago, I woke with my inbox filled with alerts from my
+<a href="https://stats.uptimerobot.com/EQ7VJHWylx">monitoring service</a>, the
+dashboard was lit up like a Christmas tree. I'm not new to having
+downtimes, but this was the most unusual one: the servers were alright,
+the internet connection was fine, but the services were
+inaccessible. I had a bad feeling about this one.</p>
+<p><img src="/img/blog/18-07-21-NAT-troubles/inbox-nightmare.png" alt="Inbox full of alerts" /></p>
+<p>You see, most of my internet presence comes out of my bedroom. This
+website, my search engine, and even <a href="https://matrix.org">my favourite instant
+messaging platform</a> is operated right out of my
+bedroom. This has been possible because I've had a publicly accessible
+IP address. It's dynamically allocated but thanks to
+<a href="https://en.wikipedia.org/wiki/Dynamic_DNS">DDNS</a>, it works! Everything
+was fine until my ISP decided to put me behind a NAT. I told them that
+I'm okay with paying for a static IP, but they said they only offer
+static IPs for enterprise accounts. I love my ISP, I think they are
+great but a static IP costs ₹200/month(~$3) only, but they want me to
+upgrade to a plan that costs four times more than what I'm paying now.</p>
+<p>I can't buy an enterprise connection and I can't migrate the fleet to
+the could because it's expensive, and my parents will disown me. The only
+logical option is to switch to an ISP that offers static IPs. But in the
+meantime I have set up a tunnel between my servers and a cheap
+DigitalOcean box using
+<a href="https://github.com/fatedier/frp#rewriting-the-http-host-header"><code>frp</code></a>.</p>
+<p>It's only been a few hours since the tunnel was set up but so far,
+everything seems to be okay. There's a client and a server component,
+the client is run on machines behind NAT and the server on a machine
+that's exposed to the internet. The client connects to the server and
+sets up a reverse tunnel. They support a wide range of protocols
+including <code>HTTP</code>, <code>HTTPS</code>, <code>UDP</code> and <code>TCP</code>. Compared to my previous
+setup, performance is a little
+sluggish, but that's expected since the application now sits behind
+two reverse proxies instead of one. But it's usable.</p>
+<p>Here's an example <code>frpc</code>(<code>frp</code> client) configuration for <code>HTTP</code> and
+<code>HTTPS</code>:</p>
+<pre data-lang="ini" style="background-color:#2b303b;color:#c0c5ce;" class="language-ini "><code class="language-ini" data-lang="ini"><span style="color:#b48ead;">[libreddit-https]
+</span><span style="color:#bf616a;">type </span><span>= https
+</span><span style="color:#bf616a;">local_ip </span><span>= </span><span style="color:#d08770;">127.0.0.1
+</span><span style="color:#bf616a;">local_port </span><span>= </span><span style="color:#d08770;">443
+</span><span style="color:#bf616a;">use_encryption </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">use_compression </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">host_header_rewrite </span><span>= libreddit.batsense.net
+</span><span style="color:#bf616a;">custom_domains </span><span>= libreddit.batsense.net
+</span><span>
+</span><span style="color:#b48ead;">[libreddit]
+</span><span style="color:#bf616a;">type </span><span>= http
+</span><span style="color:#bf616a;">local_ip </span><span>= </span><span style="color:#d08770;">127.0.0.1
+</span><span style="color:#bf616a;">local_port </span><span>= </span><span style="color:#d08770;">80
+</span><span style="color:#bf616a;">use_encryption </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">use_compression </span><span>= </span><span style="color:#d08770;">true
+</span><span style="color:#bf616a;">host_header_rewrite </span><span>= libreddit.batsense.net
+</span><span style="color:#bf616a;">custom_domains </span><span>= libreddit.batsense.net
+</span></code></pre>
+<p>Hopefully <code>IPv6</code> deployment increases and this post is rendered useless
+but if there's someone out there who's trying to get past the NAT and
+requires assistance, feel free to contact me!</p>
+
+  </div>
+</div>
+
+
+      </main>
+      <footer>
+  <div class="footer__container">
+    <div class="footer__column">
+		<span class="license__conatiner">
+        All text
+		&nbsp;
+        <a
+          class="license__link"
+		  rel="noreferrer"
+		  rel="noreferrer"
+          href="http://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank">CC-BY-SA</a>
+		&nbsp;
+        &
+		&nbsp;
+        <a
+          class="license__link"
+		  rel="noreferrer"
+          href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+          target="_blank"
+        >code AGPL</a>
+
+		&nbsp;
+    	<div class="footer__column-divider">|</div>
+
+        <a
+          class="license__link"
+		  rel="noreferrer"
+          href="https://www.eff.org/issues/do-not-track/amp/"
+          target="_blank"
+        >No AMP </a>
+		</span>
+    </div>
+    <div class="footer__column">
+        <p class="footer__disclaimer">All opinons expressed are personal</p>
+
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
 </html>

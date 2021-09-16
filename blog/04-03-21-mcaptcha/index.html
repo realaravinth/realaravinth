@@ -1,43 +1,263 @@
-<html>
-    <head>
-        <title>Zola</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Welcome to Zola!</h1>
-            <p>
-                You're seeing this page because we couldn't find a template to render.
-            </p>
-            <p>
-                To modify this page, create a <b>page.html</b> file in the templates directory or
-                <a href="https://www.getzola.org/documentation/themes/installing-and-using-themes/" target="_blank">install a theme</a>.
-                <br>
-                You can find what variables are available in this template in the <a href="https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;templates&#x2F;pages-sections&#x2F;#page-variables" target="_blank">documentation</a>.
-            </p>
-        </div>
-        <footer>
-            <a href="https://www.getzola.org/documentation/getting-started/cli-usage/" target="_blank">Get started with Zola</a>
-        </footer>
-        <style>
-            html {
-                line-height: 1.5;
-            }
-            h1 {
-                margin-bottom: 2rem;
-            }
-            .container {
-                font-family: "sans-serif";
-                text-align: center;
-                margin-top: 20vh;
-                padding: 2rem;
-                background: #e9e9e9;
-            }
-            footer {
-                position: fixed;
-                width: 100%;
-                bottom: 1rem;
-                text-align: center;
-            }
-        </style>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://batsense.net/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1200px)"
+      href="https://batsense.net/mobile.css"
+    />
+
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+
+
+
+
+   
+	<meta charset="UTF-8" />
+	<title>mCaptcha - to hell with captchas! :: realaravinth | Aravinth Manivannan </title>
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="description" content="mCaptcha - to hell with captchas!" />
+    <meta name="author" content="Aravinth Manivannan" />
+
+	<meta property="og:title" content="mCaptcha - to hell with captchas! :: realaravinth | Aravinth Manivannan " />
+	<meta property="og:type" content="article" />
+    <meta property="og:url" content="https:&#x2F;&#x2F;batsense.net" />
+	<meta property="og:image" content="
+  https://batsense.net/android-chrome-192x192.png?h=c0fdb61ed8b4e52d9d18dabcf759acf8b99f426d8210f2f922c823873e1341ab" 
+" />
+	<meta property="og:description" content="mCaptcha - to hell with captchas!" />
+	<meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
+
+
+
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav__container">
+  <input type="checkbox" class="nav__toggle" id="nav__toggle" />
+
+  <div class="nav__header">
+    <a class="nav__logo-container" href="/">
+      <span class="nav__home-btn">>realaravinth</span>
+      <span class="nav__cursor" style=" "></span>
+    </a>
+    <label class="nav__hamburger-menu" for="nav__toggle">
+      <span class="nav__hamburger-inner"></span>
+    </label>
+  </div>
+
+  <div class="nav__spacer"></div>
+
+  <div class="nav__link-group">
+
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;about&#x2F;">About</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;blog&#x2F;">Blog</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;contact&#x2F;">Contact</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;donate&#x2F;">Donate</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;services&#x2F;">Services</a>
+  </div>
+
+
+  </div>
+</nav>
+
+    </header>
+    <!-- See ../sass/main.scss. Required for pushing footer to the very 
+      bottom of the page -->
+    <div class="main__content-container">
+      <main>
+        
+
+<div class="page__container">
+  <h1 class="page__group-title">mCaptcha - to hell with captchas!</h1>
+	<p class="blog__meta">
+      Posted 4 
+	 March
+	
+,
+        2021 by Aravinth Manivannan 
+      - <b>4 min read</b>
+    </p>
+	<div class="blog__content">
+    <p>While working on <a href="https://github.com/shuttlecraft/identity">Identity</a>, I
+noticed some of the endpoints were computationally expensive. The target
+platforms for Shuttlecraft systems are cheap computers such as Raspberry
+Pis so I learned a <a href="https://rust-lang.org">new language</a> and picked up a
+new <a href="https://actix.rs">web framework</a> among many things, to make things
+go faster. And those computationally expensive endpoints were dog slow
+and vulnerable to denial-of-service attacks if left unprotected.</p>
+<p>I came up with the following ways to rate-limit those endpoints:</p>
+<ol>
+<li>Captcha: reCaptcha/hCAptcha types</li>
+<li>IP based filtering: <code>x</code> requests per IP address during a specific
+interval of time</li>
+<li>Do nothing: there's only so much that you can do :p</li>
+</ol>
+<p>Let's analyse each one of these solutions.</p>
+<h2 id="1-captcha">1. Captcha:</h2>
+<h3 id="pros">Pros:</h3>
+<ul>
+<li>Captcha widgets are the norm for detecting bot activity.</li>
+<li>Large companies like Google and Cloudflare are invested in making
+captchas work.</li>
+<li>Machine learning is used study bot activity and flag users down
+whenever there's a resemblance.</li>
+<li>No user learning curve: netizens are familiar with captchas</li>
+</ul>
+<h3 id="cons">Cons:</h3>
+<ul>
+<li>
+<p><strong>Proprietary software:</strong> what is the backend doing? What sort of
+algorithms are they using? Do they exhibit unfair bias when letting
+users through? We will never know. We have to take them by their word
+and have no way of verifying their claims. They can, in effect, ban
+users from visiting your website if they wanted to do.</p>
+</li>
+<li>
+<p><strong>Privacy invasive:</strong> Captchas mine data. I have Google domains
+blacklisted by default and every time I visit a site that uses
+Google's reCaptcha, I am forced to temporarily whitelist them. I don't
+like doing that.</p>
+</li>
+<li>
+<p><strong>Annoying:</strong> It sucks that I have to manually solve captchas to tell
+a website that I am, in fact, a legitimate user. We should have
+automated this stuff a long time ago!</p>
+</li>
+</ul>
+<h5 id="anecdote"></h5>
+<blockquote>
+<p><strong>True story:</strong> My university has a student portal that we use to submit
+assignments and view scorecards. They have a dumb captcha at the
+sign-in page to keep bots away. The IT staff figured they'll be better
+protected if they replace it with reCaptcha. And they did.
+{{&lt; figure src=&quot;/img/blog/04-03-21-mcaptcha/portal-dumb-captcha.png&quot; caption=&quot;dumb captcha university portal&quot; alt=&quot;dumb captcha university portal&quot; &gt;}} &gt;
+I have terrible luck with captcha systems. They always flag me as
+a bot. So after this change, when I went online to upload an
+assignment, I had to solve 49 captchas <em>and</em> get flagged as a bot and do
+another 49 only to get flagged as a bot again. Only this time, Google
+wouldn't let me try again and asked me to &quot;try again later&quot;.</p>
+<p>Luckily I wasn't alone. You see, my university is behind a
+<a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT</a> so
+10,000 people share a single public IP address. From Google's
+perspective, we would appear as a giant bot that generates a lot of
+traffic(stopped using Google search after I moved there because of all
+the captchas that they made me solve).</p>
+<p>The next day, the IT team rolled back to the old dumb captchas</p>
+</blockquote>
+<h2 id="2-ip-based-filtering">2. IP based filtering:</h2>
+<h3 id="pros-1">Pros:</h3>
+<ul>
+<li>
+<p><strong>Easy to implement:</strong> IP addresses are ubiquitous on the internet</p>
+</li>
+<li>
+<p><strong>Stateful:</strong> Unless and until users are hopping between networks,
+they'll have the same IP address throughout their session with the
+site. So it's trivially easy to use it as an ID to rate-limit clients.</p>
+</li>
+</ul>
+<h3 id="cons-1">Cons:</h3>
+<p>There's only one that I could think of:</p>
+<ul>
+<li><strong>Doesn't work for people behind NAT:</strong> When multiple users are
+using the same IP address, there isn't an effective way to uniquely
+identify each one of them. So an IP-based mechanism would fail in such
+situations.</li>
+</ul>
+<p><a href="https://batsense.net/blog/04-03-21-mcaptcha/#anecdote">See previous section</a> for anecdotal evidence.</p>
+<h2 id="3-don-t-do-anything">3. Don't do anything:</h2>
+<p>Not really an option.</p>
+<hr />
+<p>So what we need is something that that will work behind NATs, is privacy
+respecting but most importantly, it should be free(as in freedom)</p>
+<h2 id="enter-mcaptcha">Enter mCaptcha</h2>
+<p>mCaptcha is a proof-of-work(PoW) based rate-limiting system that uses
+variable difficulty.</p>
+<p>When a user visits a mCaptcha enabled website,
+their client automatically generates a PoW to qualify for performing an
+action(submitting forms, etc.). This enforces a rate-limit.</p>
+<p>When the server is under load, the difficulty will rise to make the
+clients spend more time preparing the request than the server processing
+the request. This makes DoS attacks expensive for the attackers as well.</p>
+
+  </div>
+</div>
+
+
+      </main>
+      <footer>
+  <div class="footer__container">
+    <div class="footer__column">
+		<span class="license__conatiner">
+        All text
+		&nbsp;
+        <a
+          class="license__link"
+		  rel="noreferrer"
+		  rel="noreferrer"
+          href="http://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank">CC-BY-SA</a>
+		&nbsp;
+        &
+		&nbsp;
+        <a
+          class="license__link"
+		  rel="noreferrer"
+          href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+          target="_blank"
+        >code AGPL</a>
+
+		&nbsp;
+    	<div class="footer__column-divider">|</div>
+
+        <a
+          class="license__link"
+		  rel="noreferrer"
+          href="https://www.eff.org/issues/do-not-track/amp/"
+          target="_blank"
+        >No AMP </a>
+		</span>
+    </div>
+    <div class="footer__column">
+        <p class="footer__disclaimer">All opinons expressed are personal</p>
+
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
 </html>

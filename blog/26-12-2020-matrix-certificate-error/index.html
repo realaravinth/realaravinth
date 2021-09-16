@@ -1,43 +1,217 @@
-<html>
-    <head>
-        <title>Zola</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Welcome to Zola!</h1>
-            <p>
-                You're seeing this page because we couldn't find a template to render.
-            </p>
-            <p>
-                To modify this page, create a <b>page.html</b> file in the templates directory or
-                <a href="https://www.getzola.org/documentation/themes/installing-and-using-themes/" target="_blank">install a theme</a>.
-                <br>
-                You can find what variables are available in this template in the <a href="https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;templates&#x2F;pages-sections&#x2F;#page-variables" target="_blank">documentation</a>.
-            </p>
-        </div>
-        <footer>
-            <a href="https://www.getzola.org/documentation/getting-started/cli-usage/" target="_blank">Get started with Zola</a>
-        </footer>
-        <style>
-            html {
-                line-height: 1.5;
-            }
-            h1 {
-                margin-bottom: 2rem;
-            }
-            .container {
-                font-family: "sans-serif";
-                text-align: center;
-                margin-top: 20vh;
-                padding: 2rem;
-                background: #e9e9e9;
-            }
-            footer {
-                position: fixed;
-                width: 100%;
-                bottom: 1rem;
-                text-align: center;
-            }
-        </style>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://batsense.net/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1200px)"
+      href="https://batsense.net/mobile.css"
+    />
+
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    
+
+
+
+
+   
+	<meta charset="UTF-8" />
+	<title>My Matrix (mis)adventures :: realaravinth | Aravinth Manivannan </title>
+	<meta name="referrer" content="no-referrer-when-downgrade" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="description" content="My Matrix (mis)adventures" />
+    <meta name="author" content="Aravinth Manivannan" />
+
+	<meta property="og:title" content="My Matrix (mis)adventures :: realaravinth | Aravinth Manivannan " />
+	<meta property="og:type" content="article" />
+    <meta property="og:url" content="https:&#x2F;&#x2F;batsense.net" />
+	<meta property="og:image" content="
+  https://batsense.net/android-chrome-192x192.png?h=c0fdb61ed8b4e52d9d18dabcf759acf8b99f426d8210f2f922c823873e1341ab" 
+" />
+	<meta property="og:description" content="My Matrix (mis)adventures" />
+	<meta property="og:site_name" content="realaravinth | Aravinth Manivannan" />
+
+
+
+
+  </head>
+  <body>
+    <header>
+      <nav class="nav__container">
+  <input type="checkbox" class="nav__toggle" id="nav__toggle" />
+
+  <div class="nav__header">
+    <a class="nav__logo-container" href="/">
+      <span class="nav__home-btn">>realaravinth</span>
+      <span class="nav__cursor" style=" "></span>
+    </a>
+    <label class="nav__hamburger-menu" for="nav__toggle">
+      <span class="nav__hamburger-inner"></span>
+    </label>
+  </div>
+
+  <div class="nav__spacer"></div>
+
+  <div class="nav__link-group">
+
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;about&#x2F;">About</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;blog&#x2F;">Blog</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;contact&#x2F;">Contact</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;donate&#x2F;">Donate</a>
+  </div>
+
+  
+  <div class="nav__link-container">
+    <a class="nav__link" rel="noreferrer" href="&#x2F;services&#x2F;">Services</a>
+  </div>
+
+
+  </div>
+</nav>
+
+    </header>
+    <!-- See ../sass/main.scss. Required for pushing footer to the very 
+      bottom of the page -->
+    <div class="main__content-container">
+      <main>
+        
+
+<div class="page__container">
+  <h1 class="page__group-title">My Matrix (mis)adventures</h1>
+	<p class="blog__meta">
+      Posted 22 
+	 December
+	
+,
+        2020 by Aravinth Manivannan 
+      - <b>3 min read</b>
+    </p>
+	<div class="blog__content">
+    <p>Matrix is probably the largest federated network in production (Mastadon
+might be close). I run an instance at https://matrix.batsense.net and I
+absolutely love it. It was also the project that got me into the whole
+decentralization thing. I loved the idea that I could run a server that
+can play along with a bunch of other servers that are run by different
+parties and they would all somehow magically work!</p>
+<h2 id="error">Error</h2>
+<p>Deployment was fairly straight forward, the project's README
+files were sufficiently detailed but after about six months of running
+the server, my instance broke! The federation was no longer working. I
+could still chat with people that are on my own server but I could
+interact with rooms on other servers or even on matrix.org. </p>
+<p>The initial error massages were vague. The client complained that it had
+hit some JSON related error. So I went to look for solutions on the
+project's issue tracker. There was an open issue that said that when the
+person started doing IPv6 DNS lookups, their instance broke. This was
+also the time when my ISP moved us to IPv6 lookups so I figured that was
+what was causing problems. At this time, I wasn't really using matrix
+that much so it didn't bother me. I figured, eventually, massive project
+such as matrix might roll out a patch. Several weeks and several updates
+later, the issue still persisted. So I tried my hands at it once again. </p>
+<h2 id="diagnosis">Diagnosis</h2>
+<p>See, decentralization is complicated. Some matrix dev on Hackernews
+remarked that building a decentralized system is six times harder than
+building a centralized system. The bug that I was experiencing, wasn't
+really a bug. I misdiagnosed it to be one in the first place. I use
+Let's encrypt for TLS and their certs are valid for a maximum of three
+months. So when I hit that &quot;bug&quot;, I was through two cycles and was
+beginning the third. Synapse, the matrix homeserver variant that I run,
+listens on two ports: one for regular client-server interactions and the
+other for federation. The client-server port is proxied by an Nginx
+instance so all TLS stuff is delegated by the Nginx instance. The
+federation port, however, is directly exposed and all TLS stuff is
+handled by Synapse itself. That means Synapse is configured to read and
+do TLS stuff with the TLS certs. That means, my stupid self has two
+copies of the same TLS cert at two places. Now you could quickly see how
+stupid this is and the problems that it could cause. During the third
+cycle, I didn't refresh Synapse's copy of the certs. It was using stale
+certs. TLS is mandatory for federation in matrix. So naturally, my
+federation was broken!</p>
+<h2 id="lessons-learned">Lessons learned</h2>
+<ul>
+<li>I am stupid</li>
+<li>Maintain sysadmin notes to record all quirks of the systems that you
+administer</li>
+<li>Build simpler services: The more the number of levers to pull on, the
+more likely someone is going to screw up. The second port for
+federation feels necessary. It is a HTTP endpoint so I don't see why
+it needs to be separated. It could've simply be scoped differently.
+That way, the maintenance and deployment complexity can be
+significantly reduced. In this case, firewall rules can become simpler
+and the federation stuff will be handled by the Nginx instance itself. </li>
+</ul>
+<p>But seriously, I should have maintained notes. Three months  without
+federation over a stupid error is nuts.</p>
+
+  </div>
+</div>
+
+
+      </main>
+      <footer>
+  <div class="footer__container">
+    <div class="footer__column">
+		<span class="license__conatiner">
+        All text
+		&nbsp;
+        <a
+          class="license__link"
+		  rel="noreferrer"
+		  rel="noreferrer"
+          href="http://creativecommons.org/licenses/by-sa/4.0/"
+          target="_blank">CC-BY-SA</a>
+		&nbsp;
+        &
+		&nbsp;
+        <a
+          class="license__link"
+		  rel="noreferrer"
+          href="https://www.gnu.org/licenses/agpl-3.0.en.html"
+          target="_blank"
+        >code AGPL</a>
+
+		&nbsp;
+    	<div class="footer__column-divider">|</div>
+
+        <a
+          class="license__link"
+		  rel="noreferrer"
+          href="https://www.eff.org/issues/do-not-track/amp/"
+          target="_blank"
+        >No AMP </a>
+		</span>
+    </div>
+    <div class="footer__column">
+        <p class="footer__disclaimer">All opinons expressed are personal</p>
+
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
 </html>
