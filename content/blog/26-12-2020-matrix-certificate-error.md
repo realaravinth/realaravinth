@@ -1,11 +1,11 @@
----
-title: "My Matrix (mis)adventures" 
-tags: [ "matrix", "KISS", "sysadmin" ]
-date: 2020-12-22
-description: "Keep it simple, stupid. Because there are many like me out
-there :)"
-draft: false
----
++++
+title = "My Matrix (mis)adventures" 
+date = "2020-12-22"
+description = "Keep it simple, stupid. Because there are many like me out there :)"
+draft = false
+[taxonomies]
+tags = [ "matrix", "KISS", "sysadmin" ]
++++
 
 Matrix is probably the largest federated network in production (Mastadon
 might be close). I run an instance at https://matrix.batsense.net and I

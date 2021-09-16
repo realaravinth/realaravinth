@@ -16,3 +16,7 @@ highlight_code = true
 # Put all your custom variables here
 disclaimer = "All opinions expressed are personal"
 author = "Aravinth Manivannan"
+taxonomies = [
+    { name = "tags", feed = true},
+    { name = "blog", feed = true},
+]

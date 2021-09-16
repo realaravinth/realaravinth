@@ -1,11 +1,11 @@
----
-title: Ideal backup situation
-tags: ['self-hosting', 'rant', 'sysadmin']
-date: 2021-09-10
-description: "Toughts on backup and what an ideal backup situation
-should be like"
-draft: false
----
++++
+title = "Ideal backup situation"
+date = "2021-09-10"
+description = "Toughts on backup and what an ideal backup situation should be like"
+draft = false
+[taxonomies]
+tags = ['self-hosting', 'rant', 'sysadmin']
++++
 
 I've been playing fast and loose with backups, and I've been extremely
 fortunate to have not suffered any serious system failures or data

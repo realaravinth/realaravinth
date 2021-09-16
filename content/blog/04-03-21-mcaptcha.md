@@ -1,11 +1,12 @@
----
-title: mCaptcha - to hell with captchas!
-tags: ['mCaptcha']
-date: 2021-03-04
-description: "Introducing mCaptcha - A no-nonsense CAPTCHA system with
-seamless UX"
-draft: false
----
++++
+title = "mCaptcha - to hell with captchas!"
+date = "2021-03-04"
+description = "Introducing mCaptcha - A no-nonsense CAPTCHA system with seamless UX"
+draft = false
+
+[taxonomies]
+tags = ['mCaptcha']
++++
 
 While working on [Identity](https://github.com/shuttlecraft/identity), I
 noticed some of the endpoints were computationally expensive. The target

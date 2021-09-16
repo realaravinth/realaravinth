@@ -1,10 +1,11 @@
----
-title: "Home defense adventures with Hikvision CCTV cameras"
-tags: [ "home-defense", "hikvision", "cctv", "nginx" ]
-date: 2021-03-26
-description: "There's nothing like an undocumented plug-this-to-the-internet-and-well-spy-on-you CCTV system!"
-draft: false
----
++++
+title = "Home defense adventures with Hikvision CCTV cameras"
+date = "2021-03-26"
+description = "There's nothing like an undocumented plug-this-to-the-internet-and-well-spy-on-you CCTV system!"
+draft = false
+[taxonomies]
+tags = [ "home-defense", "hikvision", "cctv", "nginx" ]
++++
 
 We recently got robbed, so we decided to secure the house with some CCTV
 cameras. Ours is a modest setup with nine 5MP cameras and a DVR

@@ -1,10 +1,11 @@
----
-title: NAT Troubles or how my ISP screwed me over
-tags: ['NAT', 'frp', 'self-hosting', 'rant', 'ACT Fibernet']
-date: 2021-07-18
-description: "NATs are a pain and I just got put behind one"
-draft: false
----
++++
+title = "NAT Troubles or how my ISP screwed me over"
+date = "2021-07-18"
+description = "NATs are a pain and I just got put behind one"
+draft = false
+[taxonomies]
+tags = ['NAT', 'frp', 'self-hosting', 'rant', 'ACT Fibernet']
++++
 
 Couple of days ago, I woke with my inbox filled with alerts from my
 [monitoring service](https://stats.uptimerobot.com/EQ7VJHWylx), the

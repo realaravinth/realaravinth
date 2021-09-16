@@ -1,14 +1,8 @@
 @import '../components/page';
-.link-list__item,
-.link-list__item:visited {
-  // see https://github.com/sass/node-sass/issues/2815
-  width: #{'min(85%, 400px)'};
-  padding: 25px;
-  margin: auto;
-}
 
-.link-list__meta {
-  font-size: 0.7rem;
+
+.blog__container {
+	max-width: 95%;
 }
 
 .blog__content {

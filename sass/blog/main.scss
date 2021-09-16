@@ -29,7 +29,7 @@ $std-trans: 0.3s;
 	display: block;
 	margin: 10px;
 	padding-bottom: 10px;
-	border-bottom: 1px dotted black;
+	border-bottom: 1px dashed black;
 }
 
 .blog__post-item:last-child {
@@ -39,6 +39,11 @@ $std-trans: 0.3s;
 .blog__post-description {
 	font-size: 0.9rem;
 	margin: 5px 0;
+}
+
+.blog__post-tags {
+	font-size: 0.7rem;
+	font-family: monospace, monospace;
 }
 
 .blog__post-meta {

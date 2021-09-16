@@ -28,15 +28,9 @@ footer {
 
 .footer__link {
 	text-decoration: none;
-	//color: $dark-black;
-}
-
-.license__link {
-	// color: $deep-red;
 }
 
 .footer__column-divider {
-	//  color: $dark-black;
 	font-weight: 500;
 	opacity: 0.7;
 	margin: 0 5px;
@@ -45,8 +39,8 @@ footer {
 .footer__icon {
 	margin: auto 5px;
 	height: 20px;
-	filter: invert(26%) sepia(74%) saturate(541%) hue-rotate(298deg)
-		brightness(94%) contrast(99%);
+//	filter: invert(26%) sepia(74%) saturate(541%) hue-rotate(298deg)
+//		brightness(94%) contrast(99%);
 }
 
 .footer__disclaimer {

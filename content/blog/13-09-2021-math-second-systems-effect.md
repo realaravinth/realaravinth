@@ -1,10 +1,11 @@
----
-title: Math and second systems effect
-tags: ['math', 'opinon', 'personal']
-date: 2021-09-13
-description: "My thoughts on math and how it's is suffering from second systems effect"
-draft: false
----
++++
+title = "Math and second systems effect"
+date = "2021-09-13"
+description = "My thoughts on math and how it's is suffering from second systems effect"
+draft = false
+[taxonomies]
+tags = ['math', 'opinon', 'personal']
++++
 
 I think math is suffering from [second-system
 effect](https://en.wikipedia.org/wiki/Second-system_effect). Right from
