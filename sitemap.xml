@@ -1,141 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://batsense.net/blog/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/rant/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/self-hosting/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/sysadmin/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/</loc>
-    <lastmod>2021-09-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/act-fibernet/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/frp/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/nat/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/18-07-21-nat-troubles/</loc>
-    <lastmod>2021-07-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/donate/</loc>
-    <lastmod>2021-05-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/cctv/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/hikvision/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/26-03-21-hikvision-cctv/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/home-defense/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/nginx/</loc>
-    <lastmod>2021-03-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/mcaptcha/</loc>
-    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/04-03-21-mcaptcha/</loc>
-    <lastmod>2021-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/services/</loc>
-    <lastmod>2020-12-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/keys/</loc>
-    <lastmod>2020-12-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/kiss/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/tags/matrix/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</loc>
-    <lastmod>2020-12-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/blog/</loc>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>https://batsense.net/series/</loc>
-  </url>
-  
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://batsense.net/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/about/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/04-03-21-mcaptcha/</loc>
+        <lastmod>2021-03-04</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</loc>
+        <lastmod>2021-09-10</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/13-09-2021-math-second-systems-effect/</loc>
+        <lastmod>2021-09-13</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/18-07-21-nat-troubles/</loc>
+        <lastmod>2021-07-18</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/26-03-21-hikvision-cctv/</loc>
+        <lastmod>2021-03-26</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</loc>
+        <lastmod>2020-12-22</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/contact/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/donate/</loc>
+        <lastmod>2021-05-27</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/keys/</loc>
+        <lastmod>2020-12-25</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/services/</loc>
+        <lastmod>2020-12-27</lastmod>
+    </url>
 </urlset>
