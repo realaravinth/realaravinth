@@ -1,0 +1,26 @@
+@import "../components/page";
+
+$std-trans: 0.3s;
+
+.tag__item-link,
+.tag__item-link:visited {
+	text-decoration: none;
+	color: black;
+}
+
+.tag__item-link {
+	display: flex;
+	align-items: center;
+}
+
+
+.tag__item {
+	border-bottom: 1px dashed black;
+	margin: 10px;
+	padding: 10px;
+}
+.tag__item-title {
+	font-size: 1.4rem;
+	font-weight: 550;
+	flex: 2;
+}

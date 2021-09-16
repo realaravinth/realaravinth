@@ -9,8 +9,8 @@
     <h1 class="blog__title">{{ section.title }}</h1>
       <ul class="blog__list">
           {% for page in section.pages %}                
-            <a href="{{ page.permalink | safe }}" class="blog__post-item">
-              <li>
+              <li class="blog__post-item">
+              <a href="{{ page.permalink | safe }}" class="blog__post-link">
                 <h2 class="blog__post-title">{{ page.title }}</h2>
                   <p class="blog__post-meta"> 
                     {{  page.day }} {{ macros::get_month(month=page.month) }},
@@ -18,14 +18,13 @@
                   </p>
 
 	  			<p class="blog__post-description">{{ page.description | safe }} </p>
-
-                  <p class="blog__post-tags">
-                    {% for tag in page.taxonomies.tags %}
-                      #{{ tag }}
-                    {% endfor %}
-                  </p>
+                </a>
+				<div class="blog__post-tag-container">
+                  {% for t in page.taxonomies.tags %}
+                    <a class="blog__post-tag" href="/tags/{{t}}">#{{ t }}</a>
+                  {% endfor %}
+				</div>
               </li>
-            </a>
           {% endfor %}
       </ul>
 </div>

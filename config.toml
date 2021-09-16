@@ -7,6 +7,11 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+taxonomies = [
+       {name = "tags", feed = true}, # each tag will have its own feed
+   {name = "categories", paginate_by = 5},  # 5 items per page for a term
+]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -16,7 +21,5 @@ highlight_code = true
 # Put all your custom variables here
 disclaimer = "All opinions expressed are personal"
 author = "Aravinth Manivannan"
-taxonomies = [
-    { name = "tags", feed = true},
-    { name = "blog", feed = true},
-]
+
+     

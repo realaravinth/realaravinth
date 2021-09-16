@@ -6,17 +6,19 @@
 
 {% endblock meta %} {% block content %}
 <div class="blog__container">
-    <h1 class="blog__title">{{ section.title }}</h1>
+    <h1 class="blog__title">{{ taxonomy.name }}</h1>
       <ul class="blog__list">
-          {% for page in section.pages %}                
-            <a href="{{ page.permalink | safe }}" class="blog__post-item">
-              <li>
-                <h2 class="blog__post-title">{{ page.title }}</h2>
-	  			<p class="blog__post-description">{{ page.description | safe }} </p>
-                <p class="blog__post-meta"> 
-                  {{  page.day }} {{ macros::get_month(month=page.month) }},
-                  {{ page.year }} &middot; <b>{{ page.reading_time }} min read</b>
-                </p>
+          {% for term in terms %}                
+              <li class="tag__item">
+				<a href="{{ term.permalink | safe }}" class="tag__item-link">
+				  <h2 class="tag__item-title">#{{ term.name }}</h2>
+                  {% set length = term.pages | length %}
+                  {% set entry = "entries" %}
+                  {% if length == 1 %}
+                    {% set entry = "entry" %}
+                  {% endif %}
+                  <span class="tag__meta">{{ term.pages | length }} {{ entry }}</span>
+                </a>
               </li>
             </a>
           {% endfor %}

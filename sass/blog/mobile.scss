@@ -1,10 +1,9 @@
-@import '../components/page';
-
+@import "../components/page";
 
 .blog__container {
 	max-width: 95%;
 }
 
 .blog__content {
-  @include md_mobile;
+	@include md_mobile;
 }

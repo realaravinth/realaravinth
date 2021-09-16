@@ -1,20 +1,34 @@
 {% extends "base.html" %} {% block meta %}
 
-{% set description = page.title %}
-{{ macros::get_meta_tags(title=page.title, description=description) }}
+{% set description = term.name %}
+{{ macros::get_meta_tags(title=description, description=description) }}
 
 {% endblock meta %} {% block content %}
 
-<div class="page__container">
-  <h1 class="page__group-title">{{ page.title }}</h1>
-	<p class="blog__meta">
-      Posted {{  page.day }} {{ macros::get_month(month=page.month) }},
-        {{ page.year }} by {{ config.extra.author }} 
-      - <b>{{ page.reading_time }} min read</b>
-    </p>
-	<div class="blog__content">
-    {{ page.content | safe }}
-  </div>
-</div>
+<div class="blog__container">
+    <h1 class="blog__title">#{{ term.name }}</h1>
+      <ul class="blog__list">
+          {% for page in term.pages %}                
+              <li class="blog__post-item">
+              <a href="{{ page.permalink | safe }}" class="blog__post-link">
+                <h2 class="blog__post-title">{{ page.title }}</h2>
+                  <p class="blog__post-meta"> 
+                    {{  page.day }} {{ macros::get_month(month=page.month) }},
+                    {{ page.year }} &middot; <b>{{ page.reading_time }} min read</b>
+                  </p>
 
+	  			<p class="blog__post-description">{{ page.description | safe }} </p>
+                </a>
+				<div class="blog__post-tag-container">
+                  {% for t in page.taxonomies.tags %}
+                    <a class="blog__post-tag" href="/tags/{{t}}">#{{ t }}</a>
+                  {% endfor %}
+				</div>
+              </li>
+          {% endfor %}
+      </ul>
+</div>
+  {% block rss %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+  {% endblock %}
 {% endblock content %}
