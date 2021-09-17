@@ -36,7 +36,8 @@ footer {
 	@include a_hover;
 }
 
-.footer__column-divider {
+.footer__column-divider,
+.footer__column-divider--mobile-visible {
 	font-weight: 500;
 	opacity: 0.7;
 	margin: 0 5px;
