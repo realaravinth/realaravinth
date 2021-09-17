@@ -1,7 +1,7 @@
 +++
 title = "Math and second systems effect"
 date = "2021-09-13"
-description = "My thoughts on math and how it's is suffering from second systems effect"
+description = "My thoughts on math and why it is suffering from second systems effect"
 draft = false
 [taxonomies]
 tags = ['math', 'opinon', 'personal']
@@ -27,13 +27,13 @@ system. Sound familiar?
 
 Now it can be argued that math has been very successful to a point where
 entire fields of studies have been born out of it. But very few subjects
-are as notorious as math is. An other case in favour of it's complexity
+are as notorious as math is. Another case in favour of its complexity
 is that the field is hundreds, if not thousands, of years old and the
 knowledge accumulated over such a long period will be inevitably
-complex. This is valid point but it doesn't make the learner's life any
+complex. This is valid point, but it doesn't make the learner's life any
 easier. 
 
-In my opinion, a peek into the useful aspects of math every now and then
+In my opinion, a peek into the useful aspects of math occasionally
 should provide sufficient motivation to pursue its study. Mindlessly
 reading specification after specification without ever understanding its
 intended purpose will only serve to demotivate the learner.
@@ -41,7 +41,7 @@ intended purpose will only serve to demotivate the learner.
 I could never do math. I always taught I wasn't cut out for it and so it
 has never been my thing. But this recent experience makes me wonder if
 math is plagued by second-system syndrome and, at least in my case,
-collapsed under it's own weight.
+collapsed under its own weight.
 
 But then again, I might simply lack the lobes for it :)
 
