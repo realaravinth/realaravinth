@@ -41,11 +41,4 @@ jobs:
       - name: deploy
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         run: >-
-          curl --location --request POST 'https://deploy.batsense.net/api/v1/update' \
-          --header 'Content-Type: application/json' \
-          --data-raw "{
-              \"secret\": \"$token\",
-              \"branch\": \"gh-pages\"
-          }"
-        with:
-          token: ${{ secrets.DEPLOY_TOKEN }}
+          curl --location --request POST "https://deploy.batsense.net/api/v1/update" --header 'Content-Type: application/json' --data-raw "{ \"secret\": \"${{ secrets.DEPLOY_TOKEN }}\", \"branch\": \"gh-pages\" }"
