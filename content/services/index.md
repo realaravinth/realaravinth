@@ -21,6 +21,11 @@ of charge. Below is a list with descriptions of each.
     and open source Reddit front-end focused on privacy. Learn more about
     the project at https://github.com/spikecodes/libreddit
 
+-   **[Experimental][libmedium](https://libmedium.batsense.net):** A
+    Free and open source `medium.com` front-end focused on privacy
+    written by yours truly. Learn more about the project at
+    https://github.com/realaravinth/libmedium
+
 -   **[Gitea](https://git.batsense.net):** A git-based FOSS software forge
     complete with bug tracker and basic collaboration tools. A modest CI
     infrastructure is available on request but I want to add more storage
