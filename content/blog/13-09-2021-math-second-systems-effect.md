@@ -4,7 +4,7 @@ date = "2021-09-13"
 description = "My thoughts on math and why it is suffering from second systems effect"
 draft = false
 [taxonomies]
-tags = ['math', 'opinon', 'personal']
+tags = ['math', 'opinion', 'personal']
 +++
 
 I think math is suffering from [second-system
