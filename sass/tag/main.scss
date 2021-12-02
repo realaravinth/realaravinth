@@ -5,7 +5,6 @@ $std-trans: 0.3s;
 .tag__item-link,
 .tag__item-link:visited {
 	text-decoration: none;
-	color: black;
 }
 
 .tag__item-link {
@@ -15,7 +14,7 @@ $std-trans: 0.3s;
 
 
 .tag__item {
-	border-bottom: 1px dashed black;
+	border-bottom: 1px dashed #333;
 	margin: 10px;
 	padding: 10px;
 }
