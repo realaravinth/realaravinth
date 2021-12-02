@@ -3,10 +3,12 @@ title = 'keys'
 draft = false
 date = "2020-12-25"
 [taxonomies]
-tags = ['mCaptcha']
+tags = ['SSH', 'PGP']
 +++
 
 ## GPG Key
+
+- Download: [`realaravinth-gpg.asc`](/realaravinth-gpg.asc)
 
 ```GPG
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -169,6 +171,8 @@ zKdOEDuIPIv4f7HhhCDCylGwfwqar5XJwnHQrBXLpwlTm4neDsnEOvOzyd8=
 
 
 ## SSH Key
+
+- Download: [`realaravinth-ssh.pub`](/realaravinth-ssh.pub)
 
 ```ssh
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/wXdHpwpY/4ubhYTmuNdGepQp
