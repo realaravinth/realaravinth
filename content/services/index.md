@@ -68,3 +68,7 @@ Please contact me for signing up.
 
 Please note that I am running these services from my home network so
 downtimes are unavoidable.
+
+## Privacy Policy
+
+See [privacy policy](/privacy-policy)
