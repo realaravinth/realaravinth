@@ -6,7 +6,6 @@
         <a
           class="license__link"
           rel="noreferrer"
-          rel="noreferrer"
           href="http://creativecommons.org/licenses/by-sa/4.0/"
           target="_blank"
           >CC-BY-SA</a
@@ -19,7 +18,7 @@
           target="_blank"
           >AGPL</a
         >
-        <span class="footer__column-divider--mobile-visible">|</span>
+        &nbsp;|&nbsp;
         <a
           class="license__link"
           rel="noreferrer"
@@ -27,11 +26,10 @@
           target="_blank"
           >No AMP</a
         >
+      | {{ config.extra.disclaimer }}
       </span>
-        <div class="footer__column-divider">|</div>
-      <p class="footer__disclaimer">{{ config.extra.disclaimer }}</p>
     </div>
-    <div class="footer__column">
+    <div class="footer__column--center">
       <a href="/blog/atom.xml" target="_blank" rel="noopener" title="RSS">
         <img
           src="{{ get_url(path='/icons/rss.svg', cachebust=true) }}"
@@ -39,6 +37,19 @@
           alt="Email icon"
         />
       </a>
+    </div>
+    <div class="footer__column">
+      <a href="/about" title="Privacy Policy">About</a>
+      <span class="footer__column-divider--mobile-only">|</span>
+      <a href="/privacy-policy" title="Privacy Policy">Privacy</a>
+      <span class="footer__column-divider--mobile-only">|</span>
+      <a
+        href="https://stats.uptimerobot.com/EQ7VJHWylx"
+        rel="noreferrer"
+        target="_blank"
+        title="Status"
+        >Status</a
+      >
     </div>
   </div>
 </footer>
