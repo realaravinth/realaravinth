@@ -91,10 +91,16 @@
         <loc>https://batsense.net/tags/personal/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/pgp/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/rant/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/self-hosting/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/ssh/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/sysadmin/</loc>

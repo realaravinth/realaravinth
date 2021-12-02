@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - PGP</title>
+	<link href="https://batsense.net/tags/pgp/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-12-25T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/pgp/atom.xml</id>
+	<entry xml:lang="en">
+		<title>keys</title>
+		<published>2020-12-25T00:00:00+00:00</published>
+		<updated>2020-12-25T00:00:00+00:00</updated>
+		<link href="https://batsense.net/keys/" type="text/html"/>
+		<id>https://batsense.net/keys/</id>
+		<content type="html">&lt;h2 id=&quot;gpg-key&quot;&gt;GPG Key&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download: &lt;a href=&quot;&#x2F;realaravinth-gpg.asc&quot;&gt;&lt;code&gt;realaravinth-gpg.asc&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;GPG&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-GPG &quot;&gt;&lt;code class=&quot;language-GPG&quot; data-lang=&quot;GPG&quot;&gt;&lt;span&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;mQGNBF7jJtMBDADwoO98P31bTkBmWlkICljq8o+S9ltFab9f9l6Npox+qbCnZUCd
+&lt;&#x2F;span&gt;&lt;span&gt;Y+p1jCmRc+6iBh4N2p5kP&#x2F;02z6BkW7BhVtPKU9Zg1nvkhluCUSMixUlpn&#x2F;dUYw2J
+&lt;&#x2F;span&gt;&lt;span&gt;j41lqqmvpytI5Gr9xwFbPuLxzccMge1hqlVli1eZJTQyhZnv3Og2xj6kmThgaCDO
+&lt;&#x2F;span&gt;&lt;span&gt;U0lMDwT4n1AjjdLT&#x2F;FX5APssw9v2fgmClmHl8YC1ojZ2msPfHd85q90YdzB5G4Q6
+&lt;&#x2F;span&gt;&lt;span&gt;g3zAgv9ADkYkkvy4ElFl1ePwrUtD+EcszWZgYnqVRt1NBoo4J200fJSRmkq9qYh9
+&lt;&#x2F;span&gt;&lt;span&gt;4WDLIeX+DnB2ofqJrxJFX5P7elsn3ic4WVxtpkpoCbwuVsMWi8vBBU3fyxxqwGIv
+&lt;&#x2F;span&gt;&lt;span&gt;aOErCGy9Vd4iuDUu7GymDjMxJi+uYvjGncjasPRmBToCZzY94FIHgn8cxJdkrPaV
+&lt;&#x2F;span&gt;&lt;span&gt;FbyE8BkxLlbaiRNLcu79EHYqs2UxygGWlglMA9Z&#x2F;QmuGcHsAzUtlkcFdPLg7+KvU
+&lt;&#x2F;span&gt;&lt;span&gt;xzMiBFmdh0Eabn8AEQEAAbQsQXJhdmludGggTWFuaXZhbm5hbiA8YXJhdmludGg3
+&lt;&#x2F;span&gt;&lt;span&gt;ODIwQGdtYWlsLmNvbT6JAcQEEwEIAC4ECwkIBwIVCgIWAQKeAQKbAxYhBO3wOyzk
+&lt;&#x2F;span&gt;&lt;span&gt;G1g2vjW6O62fDwjoVe2IBQJe7G0jAAoJEK2fDwjoVe2IPLkL&#x2F;icH+eresFyQrv7S
+&lt;&#x2F;span&gt;&lt;span&gt;qSUWLkTlK+Ht7qURBeb4TV+nkJshcvnxHoaDiov1ZFyvyhzLi3Ncw17ntRD+tIlr
+&lt;&#x2F;span&gt;&lt;span&gt;IYZ6YWekpkYIjWRcyU0DWJI2u6OAcT&#x2F;l7EbxKJzywRLi8cGJQyLxSQMFK2GsU6dt
+&lt;&#x2F;span&gt;&lt;span&gt;7VSOshoXpUGApxJ0tkRZX2xQ+3LSvCNKK0VCFnT+MyJW+4&#x2F;r9+NCjxyEw0FR5Rka
+&lt;&#x2F;span&gt;&lt;span&gt;28kIaq8E4MwP1O1cyFAXmT9FVBAEEoAwLM7GRFguacr8EHi0W&#x2F;NZKNsu87e4&#x2F;oL3
+&lt;&#x2F;span&gt;&lt;span&gt;lh2vetIv7+rUdH5hf2WRZcNxNJllJc7povrdUl8+5mLlRB0JAogz5nLfacr2affw
+&lt;&#x2F;span&gt;&lt;span&gt;0esNL&#x2F;g+Futgip3I5lLla4izMy62EsRIjqaafHpZZPfl0FmUchCZKMKaG38dyAN+
+&lt;&#x2F;span&gt;&lt;span&gt;yPvxpoQuqCp&#x2F;+Mch5aSijOb7tcXIzTDev38dYBW+0afrzKlMubvWTOMfwj6bo1qS
+&lt;&#x2F;span&gt;&lt;span&gt;sTtxYNRt2DPOD4&#x2F;ZVOSz0Flx4VxfZJ5E&#x2F;a82bw3UPQaBvrk7XokBsAQTAQoAGgQL
+&lt;&#x2F;span&gt;&lt;span&gt;CQgHAhUKAhYBAhkABYJe573AAp4BApsDAAoJEK2fDwjoVe2I2&#x2F;QL+QHs5QblIP4C
+&lt;&#x2F;span&gt;&lt;span&gt;2tPj0hE+stU5EjXipLdkO5KuLEe3qn+QtfxFFXRmsGolaWxypWIzX5A7RE28XJ+i
+&lt;&#x2F;span&gt;&lt;span&gt;aaULK&#x2F;YeqVzuF&#x2F;UcpGuJ771v8cvJYgUcAUsQfHOubwKltxRfCzRBBVcDLG0BUOiO
+&lt;&#x2F;span&gt;&lt;span&gt;alYZKZriN7R5Y&#x2F;Jx14roQcC5k&#x2F;RnJCLu1W3bxi&#x2F;0mdmqE3fj7fkCTQeJQKNoUggt
+&lt;&#x2F;span&gt;&lt;span&gt;w4uzXMqEwy0SRZeGvhZI6Mdw5TOdJO8NAy08tK4vLGVYQpQD&#x2F;iOyj5NLg7PgSQTk
+&lt;&#x2F;span&gt;&lt;span&gt;vt7ejl6ff7TTCcW&#x2F;nEq+lymDGktxrRBeb4A1LMlSy59LSTJhk96+RXyTpmSYDmAx
+&lt;&#x2F;span&gt;&lt;span&gt;T&#x2F;tIL7PEjj9byzWJUrBAOeT47q0dwNMqL8Bn1mICf3OHg&#x2F;dVtT61Zd&#x2F;qp86vBYXx
+&lt;&#x2F;span&gt;&lt;span&gt;2WZwGVKA64qJgrsFxeRfjhJHTet6SCgPygC+&#x2F;k7H+YGSQ5kwwrbaTS&#x2F;YOwjtgobL
+&lt;&#x2F;span&gt;&lt;span&gt;pnNHKi&#x2F;yoCr4cS&#x2F;NUEpOeHx7+MNxf3bvz+Qk40UUEgzeqINUsQKIGIkBsAQTAQoA
+&lt;&#x2F;span&gt;&lt;span&gt;GgQLCQgHAhUKAhYBAhkBBYJe4ybTAp4BApsDAAoJEK2fDwjoVe2IA54MAOe1eX6V
+&lt;&#x2F;span&gt;&lt;span&gt;k3Lyse0pOdfRmaTdctLyRd3ERZecxPh8RVXoIv1U1AhoQQLfFMSUiniJvGNInWp1
+&lt;&#x2F;span&gt;&lt;span&gt;qY0iPnXgLDU51mRuGw06YuBxWIEGy1oTJQ2KQ+ClA1tF75e7eX6N5PVxioKvDLSN
+&lt;&#x2F;span&gt;&lt;span&gt;lzIugJIIHTeOy8uIf9vZJrduTMOADtjXKbJIh6cDyCU+t3rdPOcNrqspEVOgKpN1
+&lt;&#x2F;span&gt;&lt;span&gt;2XmsD2xBkkmWpiL+CU47ZkJ49r9y6F2ojBnymceFtwc3OXKsoamzUY75cBEW+Gcm
+&lt;&#x2F;span&gt;&lt;span&gt;kFVcWmffaf1VHjXCYfpki+YKxJEq7u2UwtbqAWBjGLVAC6SBPbQGUxa5tTb3MuSP
+&lt;&#x2F;span&gt;&lt;span&gt;PtWF4j8LqD5ZlbNxvv&#x2F;c&#x2F;zOh8o0Vb2jQLUBMsaxUB6RQU1D+zSbQMr0nBJmc2Gkt
+&lt;&#x2F;span&gt;&lt;span&gt;OKib&#x2F;v83iM&#x2F;+XfVRFy8eurPAHRIhYPuKKxHbkhUYFAqQ32sb2Y4gR8UBLsBIZj5J
+&lt;&#x2F;span&gt;&lt;span&gt;TJdDSaZ36e&#x2F;knxfg80GLQEBD2FF&#x2F;yHlSTipeDAjF&#x2F;hq7kfazRNwx5ePHubQ0QXJh
+&lt;&#x2F;span&gt;&lt;span&gt;dmludGggTWFuaXZhbm5hbiA8YXJhdmludGguMTliY2U3NDE1QHZpdGFwLmFjLmlu
+&lt;&#x2F;span&gt;&lt;span&gt;PokBsAQTAQoAGgQLCQgHAhUKAhYBAhkABYJe4ybTAp4BApsDAAoJEK2fDwjoVe2I
+&lt;&#x2F;span&gt;&lt;span&gt;ougL&#x2F;AtxgTK591CPdbb4n0J0i7raWZABJD&#x2F;kjZ&#x2F;5HmdypCj8l2utyw405pJsAZrg
+&lt;&#x2F;span&gt;&lt;span&gt;F7QOuJ6UjLyd6hIbtTXNdC6rp1ayXudTEeJSYJzvkeWCxuY6yjDjcfKInv9&#x2F;Sr3q
+&lt;&#x2F;span&gt;&lt;span&gt;1XfA7N3uRIiDmyewE1scOttA8BAqGYcHYi6fPoLioHDM+yrgJUeBxSW1BpLp4jZ6
+&lt;&#x2F;span&gt;&lt;span&gt;zGof4uRrFX7NtQdNJJ1A6M&#x2F;+oMVxnnGDA9BN4CjQBxMfAHFVGXLNfVVhJ9g+995f
+&lt;&#x2F;span&gt;&lt;span&gt;OjntCtS+fWW&#x2F;PwPN5OO5mHfMleexigrx6Ju79qC69pMKGef+rVuzQBH9reg1QeSt
+&lt;&#x2F;span&gt;&lt;span&gt;x7hHOoSXC&#x2F;YMl8GvItqhhR84xb9EFF6WsCWlg5LwMet2vS9TYY&#x2F;zbY4SO2FUvWZz
+&lt;&#x2F;span&gt;&lt;span&gt;CgvxnWNasNfzMS08U1tvUH4k+Gt1m2toPacSIx1DyNExseY8FaRoXOHB8ojRcmNe
+&lt;&#x2F;span&gt;&lt;span&gt;jAbpWx7tOk8hhiyvQkVFXpU&#x2F;U3mzzKWNMrVIQX&#x2F;ZZV4W1XQA5pIvbvgNVoSoC36C
+&lt;&#x2F;span&gt;&lt;span&gt;lT8Ck7QvQXJhdmludGggTWFuaXZhbm5hbiA8cmVhbGFyYXZpbnRoQGJhdHNlbnNl
+&lt;&#x2F;span&gt;&lt;span&gt;Lm5ldD6JAccEEwEIADEECwkIBwIVCgIWAQKeAQKbAxYhBO3wOyzkG1g2vjW6O62f
+&lt;&#x2F;span&gt;&lt;span&gt;DwjoVe2IBQJe7G0qAhkBAAoJEK2fDwjoVe2IiusMAJYC7hrMnJFKp7JOhpj12H1H
+&lt;&#x2F;span&gt;&lt;span&gt;JDKSyrok7uRCCBLCTDbKx0nDvqQqYjIlM3&#x2F;ZyQruezBxgh92o6ti8wXSuygtLvmf
+&lt;&#x2F;span&gt;&lt;span&gt;qQbSOzugw1nCis5WxW1g2pmZbbnTgq9KBR4dQnjSB8AVy1l6EU6bUJiQPwT5&#x2F;TWo
+&lt;&#x2F;span&gt;&lt;span&gt;cSPEmlycLSCNgZkUsgOSJDqb10P0PmKXbr8U0VVtUlmODDDgXtjGnvTEa76Dyryp
+&lt;&#x2F;span&gt;&lt;span&gt;9uGFG+vBt6r51xn3Qdbx&#x2F;fRsQMhsYZkxFlh3Uh5LgVOOCTbCUJON7mj8G6Mfl&#x2F;Ek
+&lt;&#x2F;span&gt;&lt;span&gt;y2zpF9+xAbpRcbgADas5hLDsoPZ6D5XglRek3lWmYjYLEYt5WOCjLgoAbLuYzH5P
+&lt;&#x2F;span&gt;&lt;span&gt;1L1BAJaaXMvgxw62YA6sPnlopfglctopL0cCHo3N8TlSuYiL1p3C9jqPXc&#x2F;y6zfi
+&lt;&#x2F;span&gt;&lt;span&gt;4Gxq7e&#x2F;y9L+TZr1BQMoWpqkzDq1ruLL3GgIairs+byHZN8vA3L5UkqsN14SLwmLb
+&lt;&#x2F;span&gt;&lt;span&gt;dr50QW9vDyrHGJIPKf0W2CG25RO87RpW2QIZMdYNt4kBsAQTAQoAGgQLCQgHAhUK
+&lt;&#x2F;span&gt;&lt;span&gt;AhYBAhkABYJe4ybTAp4BApsDAAoJEK2fDwjoVe2IArQL&#x2F;AwOsQJUIyni9v7DhQsl
+&lt;&#x2F;span&gt;&lt;span&gt;CVTGmB05xRVF7wHjuwEuFR4R8sVCqNRcFL1JcRDGjGZ+ir+VvTA1Z5a7FA+tpEFR
+&lt;&#x2F;span&gt;&lt;span&gt;TVt6wZH0ewDNd47anKFJadkbdnI2fVKLZ0AIGtiohB0LWMw4LWKmfi0BZkJQnL5E
+&lt;&#x2F;span&gt;&lt;span&gt;E1dvkM0oQx&#x2F;KItkO+19ykTLivUyuy&#x2F;cVPb3rLS4elmztxRSrjqTd3Ti7JB&#x2F;FbK1X
+&lt;&#x2F;span&gt;&lt;span&gt;noso7i79L63k31j8tGL1nhMF+q+0trZXWv&#x2F;1iQwD+8o6WnON02VmyOpVrWnoxRos
+&lt;&#x2F;span&gt;&lt;span&gt;BB7XpkDxkCreF5pU5yl5F8c9jYXyssfiyQM&#x2F;37O3LLoivfzlgRC+3lW3glfO6ykt
+&lt;&#x2F;span&gt;&lt;span&gt;6tggEi5wm24ojmcrlhrL0qJvwaD&#x2F;5x5aOgXtgbUu7IR7smyt+l4r0xQg3Z8fTBxb
+&lt;&#x2F;span&gt;&lt;span&gt;yn3FoVod97shg3X2Sq4Fo15N3TP53vRXQmVGXtwWwOPeFI0ro2aR3cjgURUrhYlm
+&lt;&#x2F;span&gt;&lt;span&gt;GpfS1Sv4FMsYLWqqhdr&#x2F;&#x2F;TsL8WI71zUoLMTuYOeqB+hDQYkBsAQTAQoAGgQLCQgH
+&lt;&#x2F;span&gt;&lt;span&gt;AhUKAhYBAhkBBYJe573AAp4BApsDAAoJEK2fDwjoVe2Iu10L&#x2F;1sI0nbA6GRc2BgA
+&lt;&#x2F;span&gt;&lt;span&gt;dRtCTLSg809Zn1CD+6Iju4o3conFYsmRri2sbP2yVx6yJyn0004TRwqNaSx6pGWc
+&lt;&#x2F;span&gt;&lt;span&gt;KLmjLDwc9WQ4CQ1FLrwxGFXs0DV3Mrgo2PuQsKzPDZ6sEh&#x2F;RQutoa4aC94ShddQC
+&lt;&#x2F;span&gt;&lt;span&gt;ywJ5nu2vlqnU1uchERzuwRlvLzbC0yPVz7WXhNGxji4KNs2t9r079iiTYyRYZqic
+&lt;&#x2F;span&gt;&lt;span&gt;LQIHwsbmPIMo4&#x2F;bqSrz3lPuft2ZZYILya&#x2F;PSvfjmQC7Lz6HG&#x2F;VE42yGg3iCQqMSI
+&lt;&#x2F;span&gt;&lt;span&gt;WZJrVkJBxrkAbad6vf&#x2F;t&#x2F;FYppDrlTGtYKck+jA0UFDXSAVHKAPdJO31K4oQ2igyA
+&lt;&#x2F;span&gt;&lt;span&gt;a6Db5a1AUo9Z4m9gJs&#x2F;SC2+7JNusF&#x2F;OR6+fLEMgOsuBgxNIIKdRGaJV2SW7wMGZY
+&lt;&#x2F;span&gt;&lt;span&gt;ywUOsJA0IXw5UvJvyn0uZ5pEMKgkw0J5mhLvZPmLqwNIvuFoVdLSkofA4wzP8AaO
+&lt;&#x2F;span&gt;&lt;span&gt;qr46XoZsbNfba1Rle6llEvuzUT7gjBmN4dkSbRORT9H7WcnXYbQwQXJhdmludGgg
+&lt;&#x2F;span&gt;&lt;span&gt;TWFuaXZhbm5hbiA8YXJhdmludGhyZWNlaXB0c0BnbWFpbC5jb20+iQGwBBMBCgAa
+&lt;&#x2F;span&gt;&lt;span&gt;BAsJCAcCFQoCFgECGQAFgl7jJtMCngECmwMACgkQrZ8PCOhV7YjJuQv9FIineflp
+&lt;&#x2F;span&gt;&lt;span&gt;Yxf+Qam6thJbjY4n6N5U48s5SKx35bkFCD9YlkDsGyhNx0aTSmMSHUNTbBov&#x2F;l5&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;F4h7omCPVL1hSFjlzqttupsTaQKD76Z5qFRAcj2osOUOiieVOqRaCElUSERI45DA
+&lt;&#x2F;span&gt;&lt;span&gt;LIHiwAFSczJ5wpkQg2gGEbH7BBWBqceLPBbxrcb82QfiKR7jUg+lpXONVZd1Sbph
+&lt;&#x2F;span&gt;&lt;span&gt;VMocsPEX4mdetZNDZaodJ8nX8yEhOZGIuBrfQFpscyE3Ydg3JrZq+a+K32CKk1l6
+&lt;&#x2F;span&gt;&lt;span&gt;PxXfJJh48wKePt9NmezkcJ1Gw&#x2F;ITZywlufXMQj8Sqfto1fLzkMsmCFt1T9VQ6HNR
+&lt;&#x2F;span&gt;&lt;span&gt;E4uw8QOSnHCnaRRPAbdFYY3rB0EIfqtM2WDV4M&#x2F;4IVtVL4OGDQ9AmAp1R6j5W2Pz
+&lt;&#x2F;span&gt;&lt;span&gt;EPitMteTo&#x2F;0L28aB5PbAxpA+P0RROHPpqqrHtbWZ03jF4ev8NBA8DE82GkNIJlio
+&lt;&#x2F;span&gt;&lt;span&gt;+MCs4QeSge1OcPAb8aMJ+7+KYOYlPDYFLb&#x2F;1ubiVGcmmQjwhNIM6fo&#x2F;YtCxBcmF2
+&lt;&#x2F;span&gt;&lt;span&gt;aW50aCBNYW5pdmFubmFuIDxhcmF2bnRoQHByb3Rvbm1haWwuY29tPokBsAQTAQoA
+&lt;&#x2F;span&gt;&lt;span&gt;GgQLCQgHAhUKAhYBAhkABYJe4ybTAp4BApsDAAoJEK2fDwjoVe2IdGAL&#x2F;00PcW0k
+&lt;&#x2F;span&gt;&lt;span&gt;M2PqzJXogxWBELPTTaP4Yd4vEuGZfAoXlUsAFqmgqnM8GGEWnVA2Axr6f1i8IEV&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;vRgpEd9HBka8Uftv5luVU9SS9KXExALqfai19&#x2F;R1AE0QNTAm&#x2F;2ZsWAb6fWC1o9yQ
+&lt;&#x2F;span&gt;&lt;span&gt;l7HaBsX3DPtKYwwOJGwdbdStqRlH90T&#x2F;+VoVLLVdrewo2Gk0k&#x2F;37pExl0v04Wt3m
+&lt;&#x2F;span&gt;&lt;span&gt;JR1+Gh6nFDRDRlZkuX0EGLhWIoOn9F&#x2F;HFpNElVwkuSIToTASTZhM+WgX2PxAyw9t
+&lt;&#x2F;span&gt;&lt;span&gt;Gb9u2vavvWrR0bnhlrn5kmnW8O633bzwL4WdnP0bhOhSH6l&#x2F;rQob5QnEU4Ur4&#x2F;HS
+&lt;&#x2F;span&gt;&lt;span&gt;F+yw8lCjF3gS7U3NlXgD3IMxBzKuAXgEF69NKYJEd4a2P3MWVRuy7eQz21v1dEot
+&lt;&#x2F;span&gt;&lt;span&gt;KuUsRbe5BU4Ya20nKU102Z63dIdRXi3Z1XazKmwSTPYaS&#x2F;Rt1GUeU3cZ0b6u8DL4
+&lt;&#x2F;span&gt;&lt;span&gt;TgjfrEZXYp+4&#x2F;UWVa6l+B44fmfiyBgialyZnhwluq56UeWr6t+NtPnuUcbQxQXJh
+&lt;&#x2F;span&gt;&lt;span&gt;dmludGggTWFuaXZhbm5hbiA8cmVhbGFyYXZpbnRoQHByb3Rvbm1haWwuY29uPokB
+&lt;&#x2F;span&gt;&lt;span&gt;sAQTAQoAGgQLCQgHAhUKAhYBAhkABYJe4ybTAp4BApsDAAoJEK2fDwjoVe2IV90M
+&lt;&#x2F;span&gt;&lt;span&gt;AL4u9dGEZcOY9HqPduqv+i&#x2F;IWlY&#x2F;ws3BSQyihR0HTobtWq0u&#x2F;5Hti60HOqQ+Kenj
+&lt;&#x2F;span&gt;&lt;span&gt;9fVwzraEyub6BheajU86iqACKnkTSV32fQGe2ccnioLTNXsyPWTSI8iaJdJIJVhg
+&lt;&#x2F;span&gt;&lt;span&gt;5K+3bScKE&#x2F;spjH38fQWtyy2myZyGZASj6DEjpbbKIqJBjcWNJ3&#x2F;byXRmg94mfS1P
+&lt;&#x2F;span&gt;&lt;span&gt;H+hXZ3BbbhTklQ6iZS+X6B1tlvdEHd3I7zXDcT4nqUt0VqdSjX+ivfWYJqwkMDw4
+&lt;&#x2F;span&gt;&lt;span&gt;GmcACHqATurJMmFX+INFbdtM7IASpfCsHuVMoibifyb+YpGcS9IgB&#x2F;qOfWmicCl8
+&lt;&#x2F;span&gt;&lt;span&gt;HvJ7hKV1MfZQtwSos63tbg3R37aQbSsebvfE+Vqs2vVUB1VkmYvDsqZQwy&#x2F;ek+yB
+&lt;&#x2F;span&gt;&lt;span&gt;pvKP0gAUOoOziIfr3nxtKEEQwNuJkb9d+Ef3+cEPBdt8R+oQpiw194QPFDsLvXW6
+&lt;&#x2F;span&gt;&lt;span&gt;DoJzcJ8kt8V0JCEEkbkLa2NX9xZ89TqnVopaWd8IZueqR4eLAcgBorwDYpq13+ix
+&lt;&#x2F;span&gt;&lt;span&gt;dIkBnwQwAQoACQIdAAWCXuORlgAKCRCtnw8I6FXtiPrzDAC9m3dUOPwXTXv1qCst
+&lt;&#x2F;span&gt;&lt;span&gt;+Cd&#x2F;h3mwlwKaGNbQkqP498vG4BNGeOmGkFl3TI17yaK7T1jCaxNmvnoX6b2IE+uO
+&lt;&#x2F;span&gt;&lt;span&gt;CCNq4t98dsvVw5M8K3SX9NRO6hUZRKq1l7&#x2F;9MhsATpSus7jfJIkFs4++6MngHzA2
+&lt;&#x2F;span&gt;&lt;span&gt;F0fLcuVpeWNtp8kE4hPFQvvNl1kAQc0IQ+tzJeLG5j1K8BUX68HmiSj&#x2F;ZzoYjNGc
+&lt;&#x2F;span&gt;&lt;span&gt;IF&#x2F;XlXyJXnrtoId1SmFk8iBvmwkEfzs5uZNd&#x2F;jqLoWj3JDgfxGBOzC8n+V5jlQAP
+&lt;&#x2F;span&gt;&lt;span&gt;7PHedw2TX+iCs2KDdSatbY09GXi1mTfYxqFmLlxSFeuB7GqerwpqmIR2n7iJxh1q
+&lt;&#x2F;span&gt;&lt;span&gt;O5121cR4xY1WR+LjTpGUJ3c0oKwbDi&#x2F;RYq2KEzH5zt1Wz5rEq&#x2F;Rch8coo+q0gn&#x2F;n
+&lt;&#x2F;span&gt;&lt;span&gt;a3Ab6OB8Y4JJ8lFlM0oO0dInT3nmdFA9hxFtwLBlmZkmB0wtq1gM3uwTc1yMDknW
+&lt;&#x2F;span&gt;&lt;span&gt;iqVD7gRaw0audTs7c0OxopyI58e+5qdk9BWKwLIkpGHz13K0LEFyYXZpbnRoIE1h
+&lt;&#x2F;span&gt;&lt;span&gt;bml2YW5uYW4gPHJlYWxhcmF2aW50aEBnbWFpbC5jb20+iQGwBBMBCgAaBAsJCAcC
+&lt;&#x2F;span&gt;&lt;span&gt;FQoCFgECGQAFgl7jkZYCngECmwMACgkQrZ8PCOhV7YgayAv&#x2F;dEbOEAbW2qGcT46Y
+&lt;&#x2F;span&gt;&lt;span&gt;PJe1mjNkc6ll4CER5Pa8armuM0a+XAKrKOyfejlN6vbKCe&#x2F;yV8elGWau6P8D2QbF
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;dmm4yzm7qNiCND932e3skqloR8xu3jSfscc7tH07aZaxDtEa7f0na4&#x2F;n&#x2F;PYBHV9
+&lt;&#x2F;span&gt;&lt;span&gt;LQN&#x2F;8OdeZbWSYtEQiX6iD5w5sw74wdOKZbPXgkJPOQ5dn5RFAsqvRfZiHWnHwQnT
+&lt;&#x2F;span&gt;&lt;span&gt;RbtBsWbQA2nCdPgm36Jd6L3WzLOg0OD8dS0xQKvApg4+zzYsemB+E0tevko4ywld
+&lt;&#x2F;span&gt;&lt;span&gt;nogdo83buiqh5Q3XlqK5SSlJtEVW5mF&#x2F;kxxIGIzcpsalMvM5pmHxDquDM8+f6mE2
+&lt;&#x2F;span&gt;&lt;span&gt;AYHza0nBERvaeG8bJ7DvGAGlIz40aiy1LlSwqYSDy8sR813sAPBpxgoevUQ1hEQ&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;p1LtlRY&#x2F;WANFuY3oOxSMQ1m1zG8E1yMiMfC+mQHxEkCONeOfYbk3k+&#x2F;a0YOKepZq
+&lt;&#x2F;span&gt;&lt;span&gt;ixNf5XiUnEa6zWehtB9WEAWvDIqmJaF9k8Wt9UWgpfnx1LGbtDFBcmF2aW50aCBN
+&lt;&#x2F;span&gt;&lt;span&gt;YW5pdmFubmFuIDxyZWFsYXJhdmludGhAcHJvdG9ubWFpbC5jb20+iQGwBBMBCgAa
+&lt;&#x2F;span&gt;&lt;span&gt;BAsJCAcCFQoCFgECGQAFgl7jkZYCngECmwMACgkQrZ8PCOhV7YjxKgwAm4BThlJI
+&lt;&#x2F;span&gt;&lt;span&gt;JIcDFuqfDDQQEwRR3ZVIPw9hnO5Z2xQp+uJndMSVSKs31GddYW5M69ksjkm9kcLQ
+&lt;&#x2F;span&gt;&lt;span&gt;oTZc&#x2F;z&#x2F;paSIRjPc1RUTPSNwtjmP7LN1h4v9lHahQD++FnoA61vrwWPN74U1rhYPI
+&lt;&#x2F;span&gt;&lt;span&gt;8vs+0pKDcShHIikv0a9hz13VTQls7QWOnCDB3xtyVn1mCRQdTN4Nk6fNZL0WYVGP
+&lt;&#x2F;span&gt;&lt;span&gt;K5UhFOiXD2YC+9bxkp66bSyngriftCb4v&#x2F;BONaNEydYYQLRcFje8S5oomdCUyHbX
+&lt;&#x2F;span&gt;&lt;span&gt;YhdIzucAK3nPfHITHNdjTSe1iE3mDOWmu04KM&#x2F;BMIXtzv7T4&#x2F;B0YaZ2MrrC+8kdE
+&lt;&#x2F;span&gt;&lt;span&gt;I2QtOKm4FpOvn1LK6ZopOzi5oB&#x2F;Ffg5nGesBmP7CDxFVjo+z9Yyg3dnrzvD2OmZ0
+&lt;&#x2F;span&gt;&lt;span&gt;603m6z5PGs2q1bLDcPAU+cy7X0A5va98VvsqKybgeSjrNR61Jlp4iJdUXxmRML7J
+&lt;&#x2F;span&gt;&lt;span&gt;PRfq891t+saJDivhtvmpwShqILGv5qDBCqS2bYYdwFfqPTIBJtdIneWCuQGNBF7j
+&lt;&#x2F;span&gt;&lt;span&gt;JtMBDACbpNg346AJzKI2unuBlR2OtTKra7jtEJTxDSZg0HhiDz752gCguA2UV2Kl
+&lt;&#x2F;span&gt;&lt;span&gt;qmXhTycIwYD+gYyz0ly3l&#x2F;dKyHDItF4DHRT7ba8+wQcnWyiGX7WZepIcj8KJfDvJ
+&lt;&#x2F;span&gt;&lt;span&gt;dTtpZUauPhNEPH0qZEFL9waOZIbFUdpv9zmcAJ&#x2F;NAAVDFbn9NQlyKskbNrNMjA8u
+&lt;&#x2F;span&gt;&lt;span&gt;JnzYMN3fP1pNAJRJ5UX9aBsYONhagUBCSj6AdZc8YFENCz9ZznBNqjVyqHQyixA1
+&lt;&#x2F;span&gt;&lt;span&gt;5xLs715hgWA8BlKLOvowTWYGQUeVpzEaA05DBo33XnQzfDRb5JecC7vmLJld7RWs
+&lt;&#x2F;span&gt;&lt;span&gt;e3KrGTANskM1NffGnmBmujiQGXJiU5flzN0pCwPJexsZGXkd10Y3SKB7lrz&#x2F;Sac0
+&lt;&#x2F;span&gt;&lt;span&gt;&#x2F;L9ORSiGNre&#x2F;rx7W0H+7vJwYSuZjI3gg5w9UADwLxMQ68Hu6zgSi&#x2F;Y3hEdUbMcrn
+&lt;&#x2F;span&gt;&lt;span&gt;nbuZC7irjCtiXRuyQCWD6an&#x2F;SFZsG6fnVfYVqcLb8GIb24uLMBnW+xX62aPaxszC
+&lt;&#x2F;span&gt;&lt;span&gt;eFkQpb0AEQEAAYkBnwQYAQoACQWCXuMm0wKbDAAKCRCtnw8I6FXtiC6xC&#x2F;4xQqBq
+&lt;&#x2F;span&gt;&lt;span&gt;n1x53JxF938xiZMYxWXOELZk106&#x2F;prs7F5&#x2F;vM6XvZ+ZSnqa1&#x2F;IrdUYjwXYRx27A0
+&lt;&#x2F;span&gt;&lt;span&gt;DkfFqXeREBQDxEWZlaNH615MGfF+tg1F&#x2F;IN0ERI187sbezLhRFXf2srqyQh2WvHm
+&lt;&#x2F;span&gt;&lt;span&gt;htE+DVgnYhv+aqJxNxTPT0lpgu5M6bSWdj938mruLoyo&#x2F;wFamWlokuZmHEf4uuV+
+&lt;&#x2F;span&gt;&lt;span&gt;Xc9ZaOWY0Q50vk675OXJyH8haaewt2aN28JS7dNY5ArohRj6r4spxrik5VfLtei1
+&lt;&#x2F;span&gt;&lt;span&gt;KcJGwB4O3&#x2F;VbRh9OfzPqK&#x2F;ZnYpWrrz2PDlqpcvJiXeFWEf4MIjbAEHte1YbAJ3CE
+&lt;&#x2F;span&gt;&lt;span&gt;yLhn0Ut5RSd7zCg8DMXTWdMr1hoUSshiF71F&#x2F;Wxji1TN5vYZGGHykhjfeubl21dV
+&lt;&#x2F;span&gt;&lt;span&gt;NXxBvA5ABkcHzULubZWLB3QoKDP5DgEXB4cA7kMDryFPnN2shSdBsWt69g1E3gVo
+&lt;&#x2F;span&gt;&lt;span&gt;zKdOEDuIPIv4f7HhhCDCylGwfwqar5XJwnHQrBXLpwlTm4neDsnEOvOzyd8=
+&lt;&#x2F;span&gt;&lt;span&gt;=gpUQ
+&lt;&#x2F;span&gt;&lt;span&gt;-----END PGP PUBLIC KEY BLOCK-----
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;ssh-key&quot;&gt;SSH Key&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Download: &lt;a href=&quot;&#x2F;realaravinth-ssh.pub&quot;&gt;&lt;code&gt;realaravinth-ssh.pub&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;ssh&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-ssh &quot;&gt;&lt;code class=&quot;language-ssh&quot; data-lang=&quot;ssh&quot;&gt;&lt;span&gt;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC&#x2F;wXdHpwpY&#x2F;4ubhYTmuNdGepQp
+&lt;&#x2F;span&gt;&lt;span&gt;j1kchvTUTApxMZyfyVW4uzrPRTYsle1y9QbTBV35qLkNajRC&#x2F;wmC5&#x2F;xPchdXpsJp
+&lt;&#x2F;span&gt;&lt;span&gt;uD9st1HMhLeR8qwaPyptiYJYT+z&#x2F;WisWw2k6oWhG3QKvPoRtBdW9nhZnkG+O6zku
+&lt;&#x2F;span&gt;&lt;span&gt;GXiRHpS7j2VVboDPpWEe1UdELQFVCwfraRal2g3ENFZ&#x2F;9V1UrW&#x2F;4ahRnQnSxERpl
+&lt;&#x2F;span&gt;&lt;span&gt;ZUm&#x2F;fgSxQtmXubTkW68ut7yasBsrKFffMm8JztW0tWgTlTKONd3LCjv4juM0t5+c
+&lt;&#x2F;span&gt;&lt;span&gt;JDotNDnUR86Tq2PG8io7no&#x2F;h8BWtazmjdpfGgn02ibX26BkdU0LDEYbJt5q9&#x2F;Fh9
+&lt;&#x2F;span&gt;&lt;span&gt;TGk2ZwcMQeyepO1AWQgkmHXZWZELqu6MLQpqdtsOjHp9k0MeSpuIbdwzgf10Ydy7
+&lt;&#x2F;span&gt;&lt;span&gt;vK1z8irS24tVNNnJaMBwOlVOPwfyztHRADPkFcv2lKSjS1uyKR0FIkV8Kvs4txaI
+&lt;&#x2F;span&gt;&lt;span&gt;jmwv2LfMg6lF5W6j3ZPLyeE4cplJP0DDjzorSanu31xVnqVb3A8V9awsJ&#x2F;4H7d59
+&lt;&#x2F;span&gt;&lt;span&gt;bI99c7QHL4K3fBVP3O0gqd31xAVRsdGs5Tj2P+RpiI6o5JJiOa1+DuBdWzrVIXYc
+&lt;&#x2F;span&gt;&lt;span&gt;hQ30ZjaJp1wTNsYLmAsjeYuQZE2tf1xvywdzD4MB4avugDEWikzRWN9V5PHDZr1b
+&lt;&#x2F;span&gt;&lt;span&gt;amTCCjOrb2PRCd7eSQ==
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+	</entry>
+</feed>
