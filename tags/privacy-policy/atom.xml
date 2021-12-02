@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - Privacy Policy</title>
+	<link href="https://batsense.net/tags/privacy-policy/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-12-02T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/privacy-policy/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Privacy Policy</title>
+		<published>2021-12-02T00:00:00+00:00</published>
+		<updated>2021-12-02T00:00:00+00:00</updated>
+		<link href="https://batsense.net/privacy-policy/" type="text/html"/>
+		<id>https://batsense.net/privacy-policy/</id>
+		<content type="html">&lt;p&gt;&lt;strong&gt;TLDR&lt;&#x2F;strong&gt;: All services on this domain respect your privacy. No tracking
+methods are employed and no personal information collected outside of
+what is voluntarily provided by the user(for instance, email address
+during sign up). And logs are stored for a period of one month and
+aren&#x27;t shared with third-parties.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;website-visitors&quot;&gt;Website visitors&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;No personal information is collected.&lt;&#x2F;li&gt;
+&lt;li&gt;No information is stored in the browser.&lt;&#x2F;li&gt;
+&lt;li&gt;No information is shared with, sent to or sold to third-parties.&lt;&#x2F;li&gt;
+&lt;li&gt;No information is shared with advertising companies.&lt;&#x2F;li&gt;
+&lt;li&gt;No information is mined and harvested for personal and behavioral trends.&lt;&#x2F;li&gt;
+&lt;li&gt;No information is monetized.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;information-is-collected-and-its-purposes&quot;&gt;Information is collected and its purposes&lt;&#x2F;h3&gt;
+&lt;p&gt;Website activity is logged and stored for a period of one month for
+debugging purposes. This information is not shared with anyone and I
+don&#x27;t run any analytics on it.&lt;&#x2F;p&gt;
+&lt;p&gt;I don&#x27;t share this information with anyone nor do I run analytics on it.&lt;&#x2F;p&gt;
+&lt;p&gt;The following information is collected:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page URL:&lt;&#x2F;strong&gt; The page URL of each page view on this website. For
+example: &lt;em&gt;https:&#x2F;&#x2F;batsense.net&#x2F;contact&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Browser:&lt;&#x2F;strong&gt; Sometimes search engine bots are very aggressive and
+the only way to detect their aggressiveness is by logging
+&lt;a href=&quot;https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTTP&#x2F;Headers&#x2F;User-Agent&quot;&gt;User-Agent&lt;&#x2F;a&gt;.
+This has the side effect of logging all visitors&#x27; User-Agents but
+it&#x27;s unavoidable.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;&#x2F;h2&gt;
+&lt;p&gt;If you have any questions, please feel free to &lt;a href=&quot;&#x2F;contact&quot;&gt;contact me&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Effective Date: &lt;em&gt;02 December, 2021&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
