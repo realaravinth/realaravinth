@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - cookies</title>
+	<link href="https://batsense.net/tags/cookies/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-12-26T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/cookies/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Gotta Love  Europe</title>
+		<published>2021-12-26T00:00:00+00:00</published>
+		<updated>2021-12-26T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/26-12-2021-gotta-love-europe/" type="text/html"/>
+		<id>https://batsense.net/blog/26-12-2021-gotta-love-europe/</id>
+		<content type="html">&lt;p&gt;After getting a static IP for my internet connection at home, I decided
+I had to get a VPN subscription(&lt;a href=&quot;https:&#x2F;&#x2F;mullvad.net&#x2F;en&#x2F;&quot;&gt;Mullvad&lt;&#x2F;a&gt;, not a
+paid endorsement; but man, are they fantastic!).&lt;&#x2F;p&gt;
+&lt;p&gt;Using the VPN, I was able to &amp;quot;visit&amp;quot; countries. You&#x27;d think you&#x27;d see
+idempotent behavior from websites but, no. They go out of their way to
+treat us like crap. See for yourself:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;26-12-2021-gotta-love-europe&#x2F;consent-google-com-basic.jpg&quot; alt=&quot;consent.google.com basic consent form&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;consent.google.com&lt;&#x2F;code&gt;? I didn&#x27;t know Google was capable of saying the C-word&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;26-12-2021-gotta-love-europe&#x2F;consent-google-com-advance.jpg&quot; alt=&quot;consent.google.com advance consent form&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And they ask consent for YouTube too!&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;You will be greeted by the above webpage when you visit &lt;em&gt;any&lt;&#x2F;em&gt; Google
+website, search included, for the first time. And Google wasn&#x27;t the only
+service that was suddenly privacy-respecting when I switched to Europe.&lt;&#x2F;p&gt;
+&lt;p&gt;In my opinion, ad blockers, JavaScript-disabling plugins, and a host of
+other privacy tools are only trying to compensate for the lack of good
+policy. And sometimes, no matter how good and technically sound the
+circumvention mechanisms are, a lack of policies will always come back
+to bite us.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
