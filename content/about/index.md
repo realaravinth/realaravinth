@@ -68,7 +68,7 @@ breaking software.
 
 I'm passionate about decentralisation and digital privacy therefore, I
 hope to make a career out of free software. If you are a free software
-company and like what I'm doing, please consider hiring me. My resume is
+company and like what I'm doing, please consider hiring me. My résumé is
 attached bellow and my contacts are available [here](/contact).
 
 **- Résumé:** [click here to download](/realaravinth-resume.pdf)
