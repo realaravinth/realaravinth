@@ -23,13 +23,11 @@ aren't shared with third-parties.
 -   No information is mined and harvested for personal and behavioral trends.
 -   No information is monetized.
 
-### Information is collected and its purposes
+### Information collected and its purposes
 
 Website activity is logged and stored for a period of one month for
-debugging purposes. This information is not shared with anyone and I
-don't run any analytics on it.
-
-I don't share this information with anyone nor do I run analytics on it.
+debugging purposes. This information is not shared with anyone nor I
+don't run analytics on it.
 
 The following information is collected:
 
