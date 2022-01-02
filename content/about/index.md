@@ -25,28 +25,28 @@ breaking software.
     Also the World Wide Web Consortium reports [that existing CAPTCHA
     systems pose accessibility
     problems](https://www.w3.org/TR/turingtest/) to users with special
-    needs. The proof of work algorithm that mCaptcha uses requires minal
+    needs. The proof of work algorithm that mCaptcha uses requires minimal
     user interaction as it only requires the click of a button!
 
--   [forgefed.io](https://forgefed.io)(unrelated to the original
-    [ForgeFed](https://forgefed.peers.community/)): this is an attempt at
-    [software forge](<https://en.wikipedia.org/wiki/Forge_(software)>)
-    federation.
+-   [ForgeFlux](https://forgeflux.org): an attempt at [software
+    forge](<https://en.wikipedia.org/wiki/Forge_(software)>) federation.
 
-    The original ForgeFed required involvement from forge
-    developers themselves to enable federation. While it's a reasonable
-    approach, such an endeavor from the forge developers' side will
-    require massive commitment. Our approach is different as we are trying
-    to implement federation entirely using the APIs exposed by the
-    software forges. If successful, the lessons learnt from
-    [forgefed.io](https://forgefed.io) can be used to externally enable
+    The original [ForgeFed](https://forgefed.peers.community/)
+    required involvement from forge developers themselves to enable
+    federation. While it's a reasonable approach, such an endeavor from
+    the forge developers' side will require massive commitment. Our
+    approach is different as we are trying to implement federation
+    entirely using the APIs exposed by the software forges. If
+    successful, the lessons learnt from
+    [ForgeFlux](https://forgeflux.org) can be used to externally enable
     federation in a variety of services.
 
--   [kavasam](https://github.com/kavasam): Privacy-focused phone and email
-    spam protection. In India, [Truecaller](https://www.truecaller.com/)
-    is the most popular method to block spam phone calls. While effective,
-    it uploads its users' entire phone book to its servers. This has the undesirable effect
-    of creepy phone calls from stalkers(I uninstalled Truecaller in 2017,
+-   [kavasam](https://github.com/kavasam): Privacy-focused phone and
+    email spam protection. In India,
+    [Truecaller](https://www.truecaller.com/) is the most popular method
+    to block spam phone calls. While effective, it uploads its users'
+    entire phone book to its servers. This has the undesirable effect of
+    creepy phone calls from stalkers(I uninstalled Truecaller in 2017,
     my experience might be outdated).
 
     Kavasam's approach is to use [cryptographic hash
@@ -54,15 +54,16 @@ breaking software.
     and [digital
     signatures](https://en.wikipedia.org/wiki/Digital_signature) to both
     anonymously blacklist an identifier(phone number, email ID, etc) and
-    anonymously file the blacklist report. And it employs a peer-validation
-    mechanism for effective blacklisting: most spam calls are the effect
-    of database leaks or irresponsible service providers selling their
-    customers' contacts. Usually, spammers work through the contents
-    of the database in their spam campaign. So if Alice, a victim of a campaign,
-    blacklists the spam calls she receives and Bob, a victim of the
-    same campaign, has noticed Alice's blacklist reports against the
-    spam calls he received, can instruct Kavasam to implicitly block phone calls
-    based on Alice's reports, both future and current.
+    anonymously file the blacklist report. And it employs a
+    peer-validation mechanism for effective blacklisting: most spam
+    calls are the effect of database leaks or irresponsible service
+    providers selling their customers' contacts. Usually, spammers work
+    through the contents of the database in their spam campaign. So if
+    Alice, a victim of a campaign, blacklists the spam calls she
+    receives and Bob, a victim of the same campaign, has noticed Alice's
+    blacklist reports against the spam calls he received, can instruct
+    Kavasam to implicitly block phone calls based on Alice's reports,
+    both future and current.
 
 ## Available for hire
 
