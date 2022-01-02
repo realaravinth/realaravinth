@@ -122,44 +122,45 @@ regard.</p>
 <p>Also the World Wide Web Consortium reports <a href="https://www.w3.org/TR/turingtest/">that existing CAPTCHA
 systems pose accessibility
 problems</a> to users with special
-needs. The proof of work algorithm that mCaptcha uses requires minal
+needs. The proof of work algorithm that mCaptcha uses requires minimal
 user interaction as it only requires the click of a button!</p>
 </li>
 <li>
-<p><a href="https://forgefed.io">forgefed.io</a>(unrelated to the original
-<a href="https://forgefed.peers.community/">ForgeFed</a>): this is an attempt at
-<a href="https://en.wikipedia.org/wiki/Forge_(software)">software forge</a>
-federation.</p>
-<p>The original ForgeFed required involvement from forge
-developers themselves to enable federation. While it's a reasonable
-approach, such an endeavor from the forge developers' side will
-require massive commitment. Our approach is different as we are trying
-to implement federation entirely using the APIs exposed by the
-software forges. If successful, the lessons learnt from
-<a href="https://forgefed.io">forgefed.io</a> can be used to externally enable
+<p><a href="https://forgeflux.org">ForgeFlux</a>: an attempt at <a href="https://en.wikipedia.org/wiki/Forge_(software)">software
+forge</a> federation.</p>
+<p>The original <a href="https://forgefed.peers.community/">ForgeFed</a>
+required involvement from forge developers themselves to enable
+federation. While it's a reasonable approach, such an endeavor from
+the forge developers' side will require massive commitment. Our
+approach is different as we are trying to implement federation
+entirely using the APIs exposed by the software forges. If
+successful, the lessons learnt from
+<a href="https://forgeflux.org">ForgeFlux</a> can be used to externally enable
 federation in a variety of services.</p>
 </li>
 <li>
-<p><a href="https://github.com/kavasam">kavasam</a>: Privacy-focused phone and email
-spam protection. In India, <a href="https://www.truecaller.com/">Truecaller</a>
-is the most popular method to block spam phone calls. While effective,
-it uploads its users' entire phone book to its servers. This has the undesirable effect
-of creepy phone calls from stalkers(I uninstalled Truecaller in 2017,
+<p><a href="https://github.com/kavasam">kavasam</a>: Privacy-focused phone and
+email spam protection. In India,
+<a href="https://www.truecaller.com/">Truecaller</a> is the most popular method
+to block spam phone calls. While effective, it uploads its users'
+entire phone book to its servers. This has the undesirable effect of
+creepy phone calls from stalkers(I uninstalled Truecaller in 2017,
 my experience might be outdated).</p>
 <p>Kavasam's approach is to use <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">cryptographic hash
 functions</a>
 and <a href="https://en.wikipedia.org/wiki/Digital_signature">digital
 signatures</a> to both
 anonymously blacklist an identifier(phone number, email ID, etc) and
-anonymously file the blacklist report. And it employs a peer-validation
-mechanism for effective blacklisting: most spam calls are the effect
-of database leaks or irresponsible service providers selling their
-customers' contacts. Usually, spammers work through the contents
-of the database in their spam campaign. So if Alice, a victim of a campaign,
-blacklists the spam calls she receives and Bob, a victim of the
-same campaign, has noticed Alice's blacklist reports against the
-spam calls he received, can instruct Kavasam to implicitly block phone calls
-based on Alice's reports, both future and current.</p>
+anonymously file the blacklist report. And it employs a
+peer-validation mechanism for effective blacklisting: most spam
+calls are the effect of database leaks or irresponsible service
+providers selling their customers' contacts. Usually, spammers work
+through the contents of the database in their spam campaign. So if
+Alice, a victim of a campaign, blacklists the spam calls she
+receives and Bob, a victim of the same campaign, has noticed Alice's
+blacklist reports against the spam calls he received, can instruct
+Kavasam to implicitly block phone calls based on Alice's reports,
+both future and current.</p>
 </li>
 </ul>
 <h2 id="available-for-hire">Available for hire</h2>
