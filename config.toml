@@ -19,7 +19,5 @@ highlight_code = true
 
 [extra]
 # Put all your custom variables here
-disclaimer = "All opinions expressed are personal"
+disclaimer = "Opinions are personal"
 author = "Aravinth Manivannan"
-
-     
