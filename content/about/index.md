@@ -5,9 +5,9 @@ draft: false
 
 Hello, I'm Aravinth.
 
-I find computers fascinating and making them do a certain thing a
-certain even more fascinating. So I spend most of my time building and
-breaking software.
+I find computers fascinating and making them do a specific thing in a
+specific manner even more fascinating. So I spend most of my time
+building and breaking software.
 
 ## Projects that I'm currently working on
 
