@@ -8,7 +8,6 @@
 * {
 	padding: 0;
 	margin: 0;
-	color: #333;
 	font-family: "Inter UI", -apple-system, BlinkMacSystemFont, "Roboto",
 		"Segoe UI", Helvetica, Arial, sans-serif;
 }
@@ -35,6 +34,10 @@ a:visited {
 	min-height: 100%;
 	justify-content: space-between;
 	flex: 2;
+}
+
+p, h1, h2, h3, h4, li, ol, ul {
+	color: #333;
 }
 
 main {
