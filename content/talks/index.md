@@ -59,3 +59,24 @@ quick tour of bugs arising from manual memory management.
 -   [slides](/talks/mem/slides/)
 -   [stack vs heap benchmark source code](https://github.com/realaravinth/realaravinth/tree/master/static/talks/mem/bench)
 -   [memory error demo source code](https://github.com/realaravinth/realaravinth/tree/master/static/talks/mem/valgrind/)
+
+
+## 4. ForgeFlux: API-space software forge federation
+
+Why software forge federation is needed, failings of earlier attempts,
+how ForgeFlux overcomes those problems and a quick demo of ForgeFlux's
+Activity Pub demonstration.
+
+### Details:
+
+-   **date:** 19<sup>th</sup> January, 2022
+-   **venue:** Online
+-   **organised by:** [forgefriends.org](https://forgefriends.org)
+
+### Resources
+
+-   [presentation recording](https://cloud.forgefriends.org/s/W7NNZEfE8Y2Dbzt?path=%2Ffunding-transparency&openfile=7051)
+-   [Q&A recording](https://cloud.forgefriends.org/s/W7NNZEfE8Y2Dbzt?path=%2Ffunding-transparency&openfile=7052)
+-   [slides(ODP)](/talks/forgefriends-forgeflux-19-01-22/19-01-2022-forgefriends-webinar.odp)
+-   [slides(PDF)](/talks/forgefriends-forgeflux-19-01-22/19-01-2022-forgefriends-webinar.pdf)
+-	[other speakers and their resources](https://forum.forgefriends.org/t/forge-federation-webinar-january-19th-2022-10am-noon-utc-1/538)
