@@ -129,4 +129,8 @@
     <url>
         <loc>https://batsense.net/tags/sysadmin/</loc>
     </url>
+    <url>
+        <loc>https://batsense.net/talks/</loc>
+        <lastmod>2022-02-06</lastmod>
+    </url>
 </urlset>
