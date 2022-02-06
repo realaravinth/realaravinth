@@ -80,3 +80,17 @@ Activity Pub demonstration.
 -   [slides(ODP)](/talks/forgefriends-forgeflux-19-01-22/19-01-2022-forgefriends-webinar.odp)
 -   [slides(PDF)](/talks/forgefriends-forgeflux-19-01-22/19-01-2022-forgefriends-webinar.pdf)
 -	[other speakers and their resources](https://forum.forgefriends.org/t/forge-federation-webinar-january-19th-2022-10am-noon-utc-1/538)
+
+## 5. Etheirum Pentesting
+
+Common security issues encountered in Solidity programming and
+solutions
+
+### Details:
+
+-   **date:** 06<sup>th</sup> February, 2022
+-   **venue:** Online
+
+### Resources
+
+-   [slides](/talks/etherium-pentesting/)
