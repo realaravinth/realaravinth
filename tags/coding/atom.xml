@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - coding</title>
+	<link href="https://batsense.net/tags/coding/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-04-30T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/coding/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Secure Coding: Static and Dynamic Analysis of source code</title>
+		<published>2021-04-30T00:00:00+00:00</published>
+		<updated>2021-04-30T00:00:00+00:00</updated>
+		<link href="https://batsense.net/talks/30-04-2021-static-and-dynamic-analysis/" type="text/html"/>
+		<id>https://batsense.net/talks/30-04-2021-static-and-dynamic-analysis/</id>
+		<content type="html">&lt;p&gt;Overview of static and dynamic analysis of source code with live
+demonstration of &lt;a href=&quot;https:&#x2F;&#x2F;www.sonarqube.org&#x2F;&quot;&gt;SonarQube&lt;&#x2F;a&gt; and Valgrind and
+quick tour of bugs arising from manual memory management.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;details&quot;&gt;Details:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 30&lt;sup&gt;th&lt;&#x2F;sup&gt; April, 2021&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Online&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tube.batsense.net&#x2F;watch?v=KXkVHTp3u8Q&quot;&gt;recording&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;res&#x2F;slides&#x2F;&quot;&gt;slides&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;realaravinth&#x2F;realaravinth&#x2F;tree&#x2F;master&#x2F;content&#x2F;talks&#x2F;30-04-2021-static-and-dynamic-analysis&#x2F;res&#x2F;bench&#x2F;&quot;&gt;stack vs heap benchmark source code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;realaravinth&#x2F;realaravinth&#x2F;tree&#x2F;master&#x2F;content&#x2F;talks&#x2F;30-04-2021-static-and-dynamic-analysis&#x2F;res&#x2F;valgrind&#x2F;&quot;&gt;memory error demo source code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - OSINT</title>
+	<link href="https://batsense.net/tags/osint/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2020-04-12T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/osint/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Open-Source Intelligence(OSINT)</title>
+		<published>2020-04-12T00:00:00+00:00</published>
+		<updated>2020-04-12T00:00:00+00:00</updated>
+		<link href="https://batsense.net/talks/12-04-2020-osint/" type="text/html"/>
+		<id>https://batsense.net/talks/12-04-2020-osint/</id>
+		<content type="html">&lt;p&gt;What is OSINT? Active and passive reconnaissance techniques and live
+demo of &lt;a href=&quot;https:&#x2F;&#x2F;www.shodan.io&quot;&gt;shodan.io&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;organised by:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;nullchapter.github.io&quot;&gt;Null Chapter, VIT
+AP&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 12&lt;sup&gt;th&lt;&#x2F;sup&gt; April, 2020&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Room 302- AB1, VIT AP&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;osint.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;osint.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

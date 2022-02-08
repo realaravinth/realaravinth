@@ -67,10 +67,34 @@
         <loc>https://batsense.net/tags/act-fibernet/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/activity-pub/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/cctv/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/coding/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/cookies/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/decentralisation/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/devops/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/etherium/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/forgefed/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/forgeflux/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/forgefriends/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/frp/</loc>
@@ -97,6 +121,9 @@
         <loc>https://batsense.net/tags/mcaptcha/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/memory-safety/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/nat/</loc>
     </url>
     <url>
@@ -104,6 +131,9 @@
     </url>
     <url>
         <loc>https://batsense.net/tags/opinion/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/osint/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/personal/</loc>
@@ -121,7 +151,16 @@
         <loc>https://batsense.net/tags/rant/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/security/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/self-hosting/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/software-forge-federation/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/solidity/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/ssh/</loc>
@@ -131,6 +170,25 @@
     </url>
     <url>
         <loc>https://batsense.net/talks/</loc>
-        <lastmod>2022-02-06</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/07-02-2022-etherium-pentesting/</loc>
+        <lastmod>2022-02-07</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/12-04-2020-osint/</loc>
+        <lastmod>2020-04-12</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/18-04-2021-fighting-censorship/</loc>
+        <lastmod>2021-04-18</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/19-01-2022-forgeflux-forgefriends-webinar/</loc>
+        <lastmod>2022-01-19</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/30-04-2021-static-and-dynamic-analysis/</loc>
+        <lastmod>2021-04-30</lastmod>
     </url>
 </urlset>

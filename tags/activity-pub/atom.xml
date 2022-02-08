@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - activity-pub</title>
+	<link href="https://batsense.net/tags/activity-pub/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2022-01-19T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/activity-pub/atom.xml</id>
+	<entry xml:lang="en">
+		<title>ForgeFlux: API-space software forge federation</title>
+		<published>2022-01-19T00:00:00+00:00</published>
+		<updated>2022-01-19T00:00:00+00:00</updated>
+		<link href="https://batsense.net/talks/19-01-2022-forgeflux-forgefriends-webinar/" type="text/html"/>
+		<id>https://batsense.net/talks/19-01-2022-forgeflux-forgefriends-webinar/</id>
+		<content type="html">&lt;p&gt;Why software forge federation is needed, failings of earlier attempts,
+how ForgeFlux overcomes those problems and a quick demo of ForgeFlux&#x27;s
+Activity Pub demonstration.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;details&quot;&gt;Details:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 19&lt;sup&gt;th&lt;&#x2F;sup&gt; January, 2022&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Online&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;organised by:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;forgefriends.org&quot;&gt;forgefriends.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cloud.forgefriends.org&#x2F;s&#x2F;W7NNZEfE8Y2Dbzt?path=%2Ffunding-transparency&amp;amp;openfile=7051&quot;&gt;presentation recording&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cloud.forgefriends.org&#x2F;s&#x2F;W7NNZEfE8Y2Dbzt?path=%2Ffunding-transparency&amp;amp;openfile=7052&quot;&gt;Q&amp;amp;A recording&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;19-01-2022-forgefriends-webinar.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;19-01-2022-forgefriends-webinar.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;forum.forgefriends.org&#x2F;t&#x2F;forge-federation-webinar-january-19th-2022-10am-noon-utc-1&#x2F;538&quot;&gt;other speakers and their resources&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>
