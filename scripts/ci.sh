@@ -18,7 +18,7 @@
 set -euo pipefail
 
 readonly TARBALL=zola.tar.gz
-readonly SOURCE="https://github.com/getzola/zola/releases/download/v0.14.0/zola-v0.14.0-x86_64-unknown-linux-gnu.tar.gz"
+readonly SOURCE="https://github.com/getzola/zola/releases/download/v0.15.3/zola-v0.15.3-x86_64-unknown-linux-gnu.tar.gz"
 
 readonly BIN_PATH=bin
 readonly BIN=$BIN_PATH/zola
