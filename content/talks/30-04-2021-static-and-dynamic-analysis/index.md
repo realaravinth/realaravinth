@@ -20,7 +20,7 @@ quick tour of bugs arising from manual memory management.
 
 ### Resources
 
--   [recording](https://tube.batsense.net/watch?v=KXkVHTp3u8Q)
+-   [recording](https://tube.batsense.net/watch?v=KXkVHTp3u8Q) - courtesy of [Dr. Sibi Chakkaravarthy](https://sibichakkaravarthy.github.io/)
 -   [slides](./res/slides/)
 -   [stack vs heap benchmark source code](https://github.com/realaravinth/realaravinth/tree/master/content/talks/30-04-2021-static-and-dynamic-analysis/res/bench/)
 -   [memory error demo source code](https://github.com/realaravinth/realaravinth/tree/master/content/talks/30-04-2021-static-and-dynamic-analysis/res/valgrind/)
