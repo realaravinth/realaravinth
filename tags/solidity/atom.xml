@@ -7,16 +7,16 @@
 	<updated>2022-02-07T00:00:00+00:00</updated>
 	<id>https://batsense.net/tags/solidity/atom.xml</id>
 	<entry xml:lang="en">
-		<title>Etheirum Pentesting</title>
+		<title>Ethereum Pentesting</title>
 		<published>2022-02-07T00:00:00+00:00</published>
 		<updated>2022-02-07T00:00:00+00:00</updated>
-		<link href="https://batsense.net/talks/07-02-2022-etherium-pentesting/" type="text/html"/>
-		<id>https://batsense.net/talks/07-02-2022-etherium-pentesting/</id>
+		<link href="https://batsense.net/talks/07-02-2022-ethereum-pentesting/" type="text/html"/>
+		<id>https://batsense.net/talks/07-02-2022-ethereum-pentesting/</id>
 		<content type="html">&lt;p&gt;Common security issues encountered in Solidity programming and
 solutions&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;details&quot;&gt;Details:&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 06&lt;sup&gt;th&lt;&#x2F;sup&gt; February, 2022&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 07&lt;sup&gt;th&lt;&#x2F;sup&gt; February, 2022&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Online&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;

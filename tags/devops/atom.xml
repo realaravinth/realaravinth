@@ -22,7 +22,7 @@ quick tour of bugs arising from manual memory management.&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tube.batsense.net&#x2F;watch?v=KXkVHTp3u8Q&quot;&gt;recording&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;tube.batsense.net&#x2F;watch?v=KXkVHTp3u8Q&quot;&gt;recording&lt;&#x2F;a&gt; - courtesy of &lt;a href=&quot;https:&#x2F;&#x2F;sibichakkaravarthy.github.io&#x2F;&quot;&gt;Dr. Sibi Chakkaravarthy&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;.&#x2F;res&#x2F;slides&#x2F;&quot;&gt;slides&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;realaravinth&#x2F;realaravinth&#x2F;tree&#x2F;master&#x2F;content&#x2F;talks&#x2F;30-04-2021-static-and-dynamic-analysis&#x2F;res&#x2F;bench&#x2F;&quot;&gt;stack vs heap benchmark source code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;realaravinth&#x2F;realaravinth&#x2F;tree&#x2F;master&#x2F;content&#x2F;talks&#x2F;30-04-2021-static-and-dynamic-analysis&#x2F;res&#x2F;valgrind&#x2F;&quot;&gt;memory error demo source code&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
