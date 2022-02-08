@@ -1,0 +1,6 @@
+projectKey=memory-err
+serverUrl=https://dev.batsense.net
+serverVersion=8.8.0.42792
+dashboardUrl=https://dev.batsense.net/dashboard?id=memory-err
+ceTaskId=AXkY2DkigEL5W_UlLoUu
+ceTaskUrl=https://dev.batsense.net/api/ce/task?id=AXkY2DkigEL5W_UlLoUu
