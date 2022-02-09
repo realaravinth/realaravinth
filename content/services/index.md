@@ -31,6 +31,11 @@ of charge. Below is a list with descriptions of each.
     infrastructure is available on request but I want to add more storage
     and compute power([donate?](/donate)).
 
+-   **[HedgeDoc](https://hedgedoc.batsense.net):** A libre collaborative
+    markdown editor to create and share notes, graphs and even
+    presentations in real-time. Learn more about the project at
+    [hedgedoc.org](https://hedgedoc.org/)
+
 -   **[Linx](https://linx.batsense.net):** A pastebin-Mozilla Send hybrid.
     Both text(with syntax highlighting) and files can be uploaded to it.
     Learn more about it at https://github.com/andreimarcu/linx-server
