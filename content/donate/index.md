@@ -25,4 +25,4 @@ Thank you :)
 
 ## Liberapay
 
-[![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/realaravinth/donate">)
+[![Donate using Liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/realaravinth/donate)
