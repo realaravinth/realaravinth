@@ -6,6 +6,9 @@
     style={{ style }}
   {% endif %}
 
+  {% if alt %}
+  alt="{{ alt }}"
+  {% endif %}
   controls {{ attr }} width="{{width}}">
   <source src="{{ source }}" type="video/mp4" />
 </video>

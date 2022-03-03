@@ -48,6 +48,7 @@ But then again, I might simply lack the lobes for it :)
 {{ video(
 		source="/img/blog/13-09-2021-math-second-systems-effect/firengi-meme.mp4",
 		attr="autoplay loop muted playsinline"
+		alt="lobes reference: Rom, in classic Ferengi style, tries to cheat his brother Quark and take over his bar. Any normal species would call it a betrayal and generally burn bridges but not the Ferengi. Quark is impressed by how deceitful Rom was and praises Rom: I didn't think you had the lobs"
 		width="350px"
 		style="display:block;margin:auto;")
 }}
