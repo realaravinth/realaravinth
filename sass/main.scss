@@ -12,7 +12,7 @@
 		"Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -36,10 +36,36 @@ a:visited {
 	flex: 2;
 }
 
-p, h1, h2, h3, h4, li, ol, ul {
+p,
+h1,
+h2,
+h3,
+h4,
+li,
+ol,
+ul {
 	color: #333;
 }
 
 main {
 	width: 100%;
+}
+
+blockquote {
+	border-left: 0.3em solid rgba(55, 55, 55, 0.4);
+	margin-bottom: 16px;
+	//padding-left: 20px;
+	padding: 0 1em;
+	color: #707070;
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	li,
+	ol,
+	ul {
+		color: inherit;
+	}
 }
