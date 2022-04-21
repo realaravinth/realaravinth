@@ -41,6 +41,19 @@ building and breaking software.
     [ForgeFlux](https://forgeflux.org) can be used to externally enable
     federation in a variety of services.
 
+-   [Hostea](https://hostea.org): A 100% Free software forge suite with
+    [Gitea](https://gitea.io) for the forge, [Woodpecker
+    CI](https://woodpecker-ci.org) for CI/CD,
+    [Pages](https://github.com/realaravinth/pages) for static sites and
+    [GitPad](https://gitpad.org) for gists.
+
+    [Loïc Dachary](https://dachary.org) and I wanted to create a 100%
+    Free business, based on the idea [discussed
+    here](../blog/16-02-2022-gitea-managed-hosting-plans.md), we have
+    now dropped the business part and are now working towards a
+    reliable, self-hostable software development suite, with a
+    payments processor, that may optionally be used to manage users.
+
 -   [kavasam](https://github.com/kavasam): Privacy-focused phone and
     email spam protection. In India,
     [Truecaller](https://www.truecaller.com/) is the most popular method
@@ -70,6 +83,6 @@ building and breaking software.
 I'm passionate about decentralisation and digital privacy therefore, I
 hope to make a career out of free software. If you are a free software
 company and like what I'm doing, please consider hiring me. My résumé is
-attached bellow and my contacts are available [here](/contact).
+attached below and my contacts are available [here](/contact).
 
 **- Résumé:** [click here to download](/realaravinth-resume.pdf)
