@@ -31,4 +31,5 @@ to learn more about the event.
 
 ## Resources
 
-TODO
+-   [slides(ODP)](./slides/2022-04-22-forgefriends-introducing-hostea.odp)
+-   [slides(PDF)](./slides/2022-04-22-forgefriends-introducing-hostea.pdf)
