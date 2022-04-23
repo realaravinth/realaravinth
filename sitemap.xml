@@ -71,6 +71,9 @@
         <loc>https://batsense.net/tags/act-fibernet/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/activity-pib/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/activity-pub/</loc>
     </url>
     <url>
@@ -120,6 +123,9 @@
     </url>
     <url>
         <loc>https://batsense.net/tags/home-defense/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/hostea/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/kiss/</loc>
@@ -179,6 +185,9 @@
         <loc>https://batsense.net/tags/ssh/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/starchart/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/sysadmin/</loc>
     </url>
     <url>
@@ -199,6 +208,14 @@
     <url>
         <loc>https://batsense.net/talks/19-01-2022-forgeflux-forgefriends-webinar/</loc>
         <lastmod>2022-01-19</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/22-04-2022-forgeflux-introducing-starchart-forgefriends-monthly-meet/</loc>
+        <lastmod>2022-04-22</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/22-04-2022-hostea-introducing-hostea-forgefriends-monthly-meet/</loc>
+        <lastmod>2022-04-22</lastmod>
     </url>
     <url>
         <loc>https://batsense.net/talks/30-04-2021-static-and-dynamic-analysis/</loc>

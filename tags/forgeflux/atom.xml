@@ -4,8 +4,30 @@
 	<link href="https://batsense.net/tags/forgeflux/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://batsense.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-01-19T00:00:00+00:00</updated>
+	<updated>2022-04-22T00:00:00+00:00</updated>
 	<id>https://batsense.net/tags/forgeflux/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Introducing ForgeFlux&#x2F;Starchart</title>
+		<published>2022-04-22T00:00:00+00:00</published>
+		<updated>2022-04-22T00:00:00+00:00</updated>
+		<link href="https://batsense.net/talks/22-04-2022-forgeflux-introducing-starchart-forgefriends-monthly-meet/" type="text/html"/>
+		<id>https://batsense.net/talks/22-04-2022-forgeflux-introducing-starchart-forgefriends-monthly-meet/</id>
+		<content type="html">&lt;p&gt;Introducing &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;forgeflux-org&#x2F;starchart&quot;&gt;Starchart&lt;&#x2F;a&gt;, a
+ForgeFlux initiative to build a spider to crawl the indie forge space
+consensually and share the crawled data in a decentralised manner.
+Please see
+&lt;a href=&quot;https:&#x2F;&#x2F;forum.forgefriends.org&#x2F;t&#x2F;forgefriends-monthly-update-april-22st-2022-5pm-6pm-utc-2&#x2F;673&quot;&gt;here&lt;&#x2F;a&gt;
+to learn more about the event.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;organised by:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;forgefriends.org&quot;&gt;forgefriends.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 2022&lt;sup&gt;th&lt;&#x2F;sup&gt; April, 2022&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Online&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h2&gt;
+&lt;p&gt;TODO&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>ForgeFlux: API-space software forge federation</title>
 		<published>2022-01-19T00:00:00+00:00</published>
