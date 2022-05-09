@@ -41,4 +41,4 @@ jobs:
       - name: deploy
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' && github.repository == 'realaravinth/realaravinth' }}
         run: >-
-          curl --location --request POST "https://deploy.batsense.net/api/v1/update" --header 'Content-Type: application/json' --data-raw "{ \"secret\": \"${{ secrets.DEPLOY_TOKEN }}\", \"branch\": \"gh-pages\" }"
+          curl -vvv --location --request POST "https://deploy.batsense.net/api/v1/update" --header 'Content-Type: application/json' --data-raw "{ \"secret\": \"${{ secrets.DEPLOY_TOKEN }}\", \"branch\": \"gh-pages\" }"
