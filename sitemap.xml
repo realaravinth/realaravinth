@@ -46,6 +46,10 @@
         <lastmod>2021-12-26</lastmod>
     </url>
     <url>
+        <loc>https://batsense.net/blog/im-on-the-fediverse/</loc>
+        <lastmod>2022-06-07</lastmod>
+    </url>
+    <url>
         <loc>https://batsense.net/blog/mxn-contact-discovery-system/</loc>
         <lastmod>2022-05-09</lastmod>
     </url>
@@ -99,6 +103,9 @@
         <loc>https://batsense.net/tags/ethereum/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/fediverse/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/forgefed/</loc>
     </url>
     <url>
@@ -121,6 +128,9 @@
     </url>
     <url>
         <loc>https://batsense.net/tags/gitea/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/gotosocial/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/hikvision/</loc>
@@ -181,6 +191,9 @@
     </url>
     <url>
         <loc>https://batsense.net/tags/self-hosting/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/social-media/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/software-forge-federation/</loc>
