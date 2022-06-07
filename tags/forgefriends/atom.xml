@@ -4,8 +4,35 @@
 	<link href="https://batsense.net/tags/forgefriends/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://batsense.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-04-22T00:00:00+00:00</updated>
+	<updated>2022-05-19T00:00:00+00:00</updated>
 	<id>https://batsense.net/tags/forgefriends/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Presenting ForgeFlux&#x2F;Starchart: MVP Demo</title>
+		<published>2022-05-19T00:00:00+00:00</published>
+		<updated>2022-05-19T00:00:00+00:00</updated>
+		<link href="https://batsense.net/talks/19-05-2022-forgeflux-starchart-mvp-demo-forgefriends-monthly-meet/" type="text/html"/>
+		<id>https://batsense.net/talks/19-05-2022-forgeflux-starchart-mvp-demo-forgefriends-monthly-meet/</id>
+		<content type="html">&lt;p&gt;A Minimal demo of Starchart with support for publishing crawled data
+&lt;a href=&quot;https:&#x2F;&#x2F;yml.publiccode.tools&#x2F;&quot;&gt;publiccodeyml&lt;&#x2F;a&gt;-based format. This talk
+also summarizes the discussion that lead to finalizing a format to
+publish the crawled data.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;organised by:&lt;&#x2F;strong&gt; &lt;a href=&quot;https:&#x2F;&#x2F;forgefriends.org&quot;&gt;forgefriends.org&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 19&lt;sup&gt;th&lt;&#x2F;sup&gt; May, 2022&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Online&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;19-05-2022-forgefriends-webinar.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;19-05-2022-forgefriends-webinar.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Special thanks to &lt;a href=&quot;http:&#x2F;&#x2F;portfolio.datadi.xyz&#x2F;&quot;&gt;Datta Adithya&lt;&#x2F;a&gt; for
+assisting me with the presentation and &lt;a href=&quot;http:&#x2F;&#x2F;vijaybalaji.me&#x2F;&quot;&gt;Vijay
+Balaji&lt;&#x2F;a&gt; for lending his computer when mine
+failed(it always seems to do ¯\_(-_-)_&#x2F;¯).&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>Introducing ForgeFlux&#x2F;Starchart</title>
 		<published>2022-04-22T00:00:00+00:00</published>

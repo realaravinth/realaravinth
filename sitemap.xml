@@ -97,6 +97,9 @@
         <loc>https://batsense.net/tags/decentralisation/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/demo/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/devops/</loc>
     </url>
     <url>
@@ -228,6 +231,10 @@
     <url>
         <loc>https://batsense.net/talks/19-01-2022-forgeflux-forgefriends-webinar/</loc>
         <lastmod>2022-01-19</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/19-05-2022-forgeflux-starchart-mvp-demo-forgefriends-monthly-meet/</loc>
+        <lastmod>2022-05-19</lastmod>
     </url>
     <url>
         <loc>https://batsense.net/talks/22-04-2022-forgeflux-introducing-starchart-forgefriends-monthly-meet/</loc>
