@@ -88,6 +88,9 @@
         <loc>https://batsense.net/tags/cctv/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/codeberg/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/coding/</loc>
     </url>
     <url>
@@ -247,5 +250,9 @@
     <url>
         <loc>https://batsense.net/talks/30-04-2021-static-and-dynamic-analysis/</loc>
         <lastmod>2021-04-30</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/codeberg-introducing-mcaptcha/</loc>
+        <lastmod>2022-07-21</lastmod>
     </url>
 </urlset>
