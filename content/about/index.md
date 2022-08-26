@@ -11,7 +11,7 @@ building and breaking software.
 
 ## Projects that I'm currently working on
 
--   [mCaptcha](https:://mcaptcha.org): a privacy focused, [proof of work
+-   [mCaptcha](https://mcaptcha.org): a privacy focused, [proof of work
     based](https://en.wikipedia.org/wiki/Proof_of_work) libre CAPTCHA
     system.
 
