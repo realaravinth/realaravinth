@@ -4,8 +4,21 @@
 	<link href="https://batsense.net/blog/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://batsense.net/blog/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-07T00:00:00+00:00</updated>
+	<updated>2022-09-03T00:00:00+00:00</updated>
 	<id>https://batsense.net/blog/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Is privacy really possible?</title>
+		<published>2022-09-03T00:00:00+00:00</published>
+		<updated>2022-09-03T00:00:00+00:00</updated>
+		<link href="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/" type="text/html"/>
+		<id>https://batsense.net/blog/03-08-2022-is-privacy-really-possible/</id>
+		<content type="html">&lt;p&gt;My mind is a mess. Deep, focused thinking is rare. I have discovered that writing helps. Writing on paper, that is. I&#x27;m environmentally conscious, so I use my computer and only fallback to paper, when I feel like it is insufficient. Or when the thought is too intimate. Digital is scary, it is easy to spy computer activity than real life. But the physical environment is not safe either. Notes can be leaked, journals read and secrets exposed. So I briefly considered getting a cigarette lighter: burn the note as soon as it is written and has helped me gain clarity.&lt;&#x2F;p&gt;
+&lt;p&gt;But is that private enough? What if we invent a gizmo to recover paper from its ashes. Chemistry tells its impossible but for the sake of this argument, &lt;em&gt;what if?&lt;&#x2F;em&gt; Or what if we invent time travel tech to go back and read the note before it was burnt?&lt;&#x2F;p&gt;
+&lt;p&gt;So writing notes isn&#x27;t safe. That&#x27;s okay, I will hold secrets in my head. But if what we invent mind reading tech? It will threaten our thoughts too. Combine that with time travel and the threat becomes eternal.&lt;&#x2F;p&gt;
+&lt;p&gt;It is scary, and it seems like there is no privacy even in the seemingly safe cocoon of one&#x27;s own mind. But is far from the truth. In fact, this is one of the reasons why privacy should more strongly be pursued. We must recognise that thoughts are worthless and inconsequential and until they are acted upon. It is through thoughts and in collectives through discussion, will we be able to figure out what&#x27;s right and what isn&#x27;t.&lt;&#x2F;p&gt;
+&lt;p&gt;So please don&#x27;t spy and invade someone&#x27;s privacy. It doesn&#x27;t matter if you are a programmer or just a normal person, respect the other person&#x27;s privacy. Don&#x27;t read stuff that isn&#x27;t meant for you. Leave us alone and we can all have privacy.&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>I&#x27;m on the Fediverse!</title>
 		<published>2022-06-07T00:00:00+00:00</published>
