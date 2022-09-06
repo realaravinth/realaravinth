@@ -1,7 +1,7 @@
 +++
 title = "Ideal backup situation"
 date = "2021-09-10"
-description = "Toughts on backup and what an ideal backup situation should be like"
+description = "Tough's on backup and what an ideal backup situation should be like"
 draft = false
 [taxonomies]
 tags = ['self-hosting', 'rant', 'sysadmin']
