@@ -18,9 +18,9 @@ to learn more about the event.
 ## Details
 
 -   **organised by:** [forgefriends.org](https://forgefriends.org)
--   **date:** 2022<sup>th</sup> April, 2022
+-   **date:** 2022<sup>th</sup> April, 22
 -   **venue:** Online
 
 ## Resources
 
-TODO
+- [Slides (PDF)](./slides/22-04-2022-forgefriends-webinar.pdf)
