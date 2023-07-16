@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title> - terraform</title>
+	<link href="https://batsense.net/tags/terraform/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://batsense.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2023-07-16T00:00:00+00:00</updated>
+	<id>https://batsense.net/tags/terraform/atom.xml</id>
+	<entry xml:lang="en">
+		<title>SRM Institute&#x27;s data science tools FDP</title>
+		<published>2023-07-16T00:00:00+00:00</published>
+		<updated>2023-07-16T00:00:00+00:00</updated>
+		<link href="https://batsense.net/talks/smr-data-science-fdp/" type="text/html"/>
+		<id>https://batsense.net/talks/smr-data-science-fdp/</id>
+		<content type="html">&lt;p&gt;This talk is a prelude to containerization, we explore how to deploy,
+configure, test, and scale virtual machines using Terraform, Ansible,
+KVM&#x2F;QEMU, libvirt and Testinfra.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;details&quot;&gt;Details:&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;date:&lt;&#x2F;strong&gt; 16&lt;sup&gt;th&lt;&#x2F;sup&gt; July, 2023&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;venue:&lt;&#x2F;strong&gt; Online&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;organised by:&lt;&#x2F;strong&gt; SRM Institute&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;2023-07-16-on-prod-vms.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;2023-07-16-on-prod-vms.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

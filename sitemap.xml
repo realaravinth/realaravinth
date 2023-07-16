@@ -129,6 +129,9 @@
         <loc>https://batsense.net/tags/forgefriends/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/foss/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/tags/free-software-sustainability/</loc>
     </url>
     <url>
@@ -160,6 +163,12 @@
     </url>
     <url>
         <loc>https://batsense.net/tags/kiss/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/kvm/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/libvirt/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/math/</loc>
@@ -225,6 +234,12 @@
         <loc>https://batsense.net/tags/sysadmin/</loc>
     </url>
     <url>
+        <loc>https://batsense.net/tags/terraform/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/virtualization/</loc>
+    </url>
+    <url>
         <loc>https://batsense.net/talks/</loc>
     </url>
     <url>
@@ -262,5 +277,9 @@
     <url>
         <loc>https://batsense.net/talks/codeberg-introducing-mcaptcha/</loc>
         <lastmod>2022-07-21</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/talks/smr-data-science-fdp/</loc>
+        <lastmod>2023-07-16</lastmod>
     </url>
 </urlset>
