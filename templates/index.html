@@ -48,20 +48,30 @@ Manivannan" %}
         <h1 class="home__name">realaravinth | Aravinth Manivannan</h1>
         <p class="home__role">Free Software Activist. Student Developer.</p>
         <div class="home__socials">
+          <a href="https://git.batsense.net/realaravinth" target="_blank" rel="noopener" title="Self-hosted Forgejo">
+            <img src="{{ get_url(path='/icons/forgejo.svg', cachebust=true) }}" alt="account on self-hosted forgejo">
+          </a>
+          <a href="https://codeberg.org/realaravinth" target="_blank" rel="noopener" title="Codeberg">
+            <img src="{{ get_url(path='/icons/codeberg.svg', cachebust=true) }}" alt="Codeberg account">
+          </a>
+
           <a href="https://github.com/realaravinth" target="_blank" rel="noopener" title="GitHub">
-            <img src="{{ get_url(path='/icons/github.svg', cachebust=true) }}" alt="GitHub icon">
+            <img src="{{ get_url(path='/icons/github.svg', cachebust=true) }}" alt="GitHub account">
+          </a>
+          <a href="https://gts.batsense.net/@realaravinth" target="_blank" rel="me">
+            <img src="{{ get_url(path='/icons/gotosocial.svg', cachebust=true) }}" alt="Fediverse account">
           </a>
           &nbsp;
           <a href="/realaravinth-resume.pdf" target="_blank" rel="noopener" title="résumé">
-            <img src="{{ get_url(path='/icons/file-text.svg', cachebust=true) }}" alt="Matrix icon">
+            <img src="{{ get_url(path='/icons/file-text.svg', cachebust=true) }}" alt="My résumé">
           </a>
           &nbsp;
           <a href="mailto:realaravinth@batsense.net" target="_blank" rel="noopener" title="email">
-            <img src="{{ get_url(path='/icons/email.svg', cachebust=true) }}" alt="Email icon">
+            <img src="{{ get_url(path='/icons/email.svg', cachebust=true) }}" alt="my email">
           </a>
           &nbsp;
           <a href="https://matrix.to/#/@realaravinth:matrix.batsense.net" target="_blank" rel="noopener" title="Matrix">
-            <img src="{{ get_url(path='/icons/matrix.svg', cachebust=true) }}" alt="Matrix icon">
+            <img src="{{ get_url(path='/icons/matrix.svg', cachebust=true) }}" alt="my matrix ID">
           </a>
         </div>
         <p class="home__disclaimer">{{ config.extra.disclaimer }}</p>
