@@ -7,11 +7,11 @@ draft = false
 tags = ['opinion', 'personal']
 +++
 
-As social creatures, our responsibility and our needs
-don't just stop at taking care of ourselves. Being nice integral to our
-growth and the well-being of our society. So to say that humans need only
-leisure and the ability to engage in creative pursuits to sustain
-themselves is only partly true.
+As social creatures, our responsibility and our needs don't just stop at
+taking care of ourselves. Being nice to the people around us is integral
+to our growth and the well-being of our society. So to say that humans
+need only leisure and the ability to engage in creative pursuits to
+sustain themselves is only partly true.
 
 We need opportunities and the privilege to exercise compassion. Those of
 us that are fortunate enough to have enough capital to become
