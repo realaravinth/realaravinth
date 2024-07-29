@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - sysadmin</title>
-	<link href="https://batsense.net/tags/sysadmin/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-09-10T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/sysadmin/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Ideal backup situation</title>
-		<published>2021-09-10T00:00:00+00:00</published>
-		<updated>2021-09-10T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/" type="text/html"/>
-		<id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
-		<content type="html">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
+    <title> - sysadmin</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/sysadmin/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-09-10T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/sysadmin/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Ideal backup situation</title>
+        <published>2021-09-10T00:00:00+00:00</published>
+        <updated>2021-09-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/"/>
+        <id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/10-09-2021-ideal-backup-situation/">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
 fortunate to have not suffered any serious system failures or data
 loses. I recently recovered from systems failures on my Raspberry Pis
 caused by upgrading Debian Buster to Bullseye. The outage wasn&#x27;t a
@@ -79,14 +89,25 @@ cost.&lt;&#x2F;p&gt;
 &lt;p&gt;Of course, there should be proper measures taken to prevent unauthorized
 access and trespassing, but they are implementation details.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>My Matrix (mis)adventures</title>
-		<published>2020-12-22T00:00:00+00:00</published>
-		<updated>2020-12-22T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/" type="text/html"/>
-		<id>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</id>
-		<content type="html">&lt;p&gt;Matrix is probably the largest federated network in production (Mastadon
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My Matrix (mis)adventures</title>
+        <published>2020-12-22T00:00:00+00:00</published>
+        <updated>2020-12-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/"/>
+        <id>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/26-12-2020-matrix-certificate-error/">&lt;p&gt;Matrix is probably the largest federated network in production (Mastadon
 might be close). I run an instance at https:&#x2F;&#x2F;matrix.batsense.net and I
 absolutely love it. It was also the project that got me into the whole
 decentralization thing. I loved the idea that I could run a server that
@@ -97,7 +118,7 @@ parties and they would all somehow magically work!&lt;&#x2F;p&gt;
 files were sufficiently detailed but after about six months of running
 the server, my instance broke! The federation was no longer working. I
 could still chat with people that are on my own server but I could
-interact with rooms on other servers or even on matrix.org. &lt;&#x2F;p&gt;
+interact with rooms on other servers or even on matrix.org.&lt;&#x2F;p&gt;
 &lt;p&gt;The initial error massages were vague. The client complained that it had
 hit some JSON related error. So I went to look for solutions on the
 project&#x27;s issue tracker. There was an open issue that said that when the
@@ -106,14 +127,14 @@ also the time when my ISP moved us to IPv6 lookups so I figured that was
 what was causing problems. At this time, I wasn&#x27;t really using matrix
 that much so it didn&#x27;t bother me. I figured, eventually, massive project
 such as matrix might roll out a patch. Several weeks and several updates
-later, the issue still persisted. So I tried my hands at it once again. &lt;&#x2F;p&gt;
+later, the issue still persisted. So I tried my hands at it once again.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;diagnosis&quot;&gt;Diagnosis&lt;&#x2F;h2&gt;
 &lt;p&gt;See, decentralization is complicated. Some matrix dev on Hackernews
 remarked that building a decentralized system is six times harder than
 building a centralized system. The bug that I was experiencing, wasn&#x27;t
 really a bug. I misdiagnosed it to be one in the first place. I use
 Let&#x27;s encrypt for TLS and their certs are valid for a maximum of three
-months. So when I hit that &amp;quot;bug&amp;quot;, I was through two cycles and was
+months. So when I hit that &quot;bug&quot;, I was through two cycles and was
 beginning the third. Synapse, the matrix homeserver variant that I run,
 listens on two ports: one for regular client-server interactions and the
 other for federation. The client-server port is proxied by an Nginx
@@ -137,10 +158,11 @@ federation feels necessary. It is a HTTP endpoint so I don&#x27;t see why
 it needs to be separated. It could&#x27;ve simply be scoped differently.
 That way, the maintenance and deployment complexity can be
 significantly reduced. In this case, firewall rules can become simpler
-and the federation stuff will be handled by the Nginx instance itself. &lt;&#x2F;li&gt;
+and the federation stuff will be handled by the Nginx instance itself.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;But seriously, I should have maintained notes. Three months  without
 federation over a stupid error is nuts.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

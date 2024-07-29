@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - codeberg</title>
-	<link href="https://batsense.net/tags/codeberg/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-21T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/codeberg/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Introducing mCaptcha</title>
-		<published>2022-07-21T00:00:00+00:00</published>
-		<updated>2022-07-21T00:00:00+00:00</updated>
-		<link href="https://batsense.net/talks/codeberg-introducing-mcaptcha/" type="text/html"/>
-		<id>https://batsense.net/talks/codeberg-introducing-mcaptcha/</id>
-		<content type="html">&lt;p&gt;Codeberg is on the lookout for a new, accessible CAPTCHA to protect
+    <title> - codeberg</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/codeberg/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-07-21T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/codeberg/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Introducing mCaptcha</title>
+        <published>2022-07-21T00:00:00+00:00</published>
+        <updated>2022-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/talks/codeberg-introducing-mcaptcha/"/>
+        <id>https://batsense.net/talks/codeberg-introducing-mcaptcha/</id>
+        
+        <content type="html" xml:base="https://batsense.net/talks/codeberg-introducing-mcaptcha/">&lt;p&gt;Codeberg is on the lookout for a new, accessible CAPTCHA to protect
 their registration endpoint. mCaptcha&#x27;s proof of work validation
 mechanism fully presents a seamless UX, which is also highly accessible:
 all the user has to do is to click a button to go through validation!&lt;&#x2F;p&gt;
@@ -24,9 +34,10 @@ all the user has to do is to click a button to go through validation!&lt;&#x2F;p
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;batsense.net&#x2F;talks&#x2F;codeberg-introducing-mcaptcha&#x2F;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;batsense.net&#x2F;talks&#x2F;codeberg-introducing-mcaptcha&#x2F;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

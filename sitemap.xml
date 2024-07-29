@@ -38,6 +38,10 @@
         <lastmod>2022-02-16</lastmod>
     </url>
     <url>
+        <loc>https://batsense.net/blog/16-03-2023-navigating-with-openstreetmap/</loc>
+        <lastmod>2023-06-12</lastmod>
+    </url>
+    <url>
         <loc>https://batsense.net/blog/18-07-21-nat-troubles/</loc>
         <lastmod>2021-07-18</lastmod>
     </url>
@@ -60,6 +64,9 @@
     <url>
         <loc>https://batsense.net/blog/mxn-contact-discovery-system/</loc>
         <lastmod>2022-05-09</lastmod>
+    </url>
+    <url>
+        <loc>https://batsense.net/categories/</loc>
     </url>
     <url>
         <loc>https://batsense.net/contact/</loc>
@@ -187,6 +194,9 @@
     </url>
     <url>
         <loc>https://batsense.net/tags/nginx/</loc>
+    </url>
+    <url>
+        <loc>https://batsense.net/tags/openstreetmap/</loc>
     </url>
     <url>
         <loc>https://batsense.net/tags/opinion/</loc>

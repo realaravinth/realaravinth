@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - GDPR</title>
-	<link href="https://batsense.net/tags/gdpr/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-12-26T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/gdpr/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Gotta Love  Europe</title>
-		<published>2021-12-26T00:00:00+00:00</published>
-		<updated>2021-12-26T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/26-12-2021-gotta-love-europe/" type="text/html"/>
-		<id>https://batsense.net/blog/26-12-2021-gotta-love-europe/</id>
-		<content type="html">&lt;p&gt;After getting a static IP for my internet connection at home, I decided
+    <title> - GDPR</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/gdpr/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-12-26T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/gdpr/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Gotta Love  Europe</title>
+        <published>2021-12-26T00:00:00+00:00</published>
+        <updated>2021-12-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/26-12-2021-gotta-love-europe/"/>
+        <id>https://batsense.net/blog/26-12-2021-gotta-love-europe/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/26-12-2021-gotta-love-europe/">&lt;p&gt;After getting a static IP for my internet connection at home, I decided
 I had to get a VPN subscription(&lt;a href=&quot;https:&#x2F;&#x2F;mullvad.net&#x2F;en&#x2F;&quot;&gt;Mullvad&lt;&#x2F;a&gt;, not a
 paid endorsement; but man, are they fantastic!).&lt;&#x2F;p&gt;
-&lt;p&gt;Using the VPN, I was able to &amp;quot;visit&amp;quot; countries. You&#x27;d think you&#x27;d see
+&lt;p&gt;Using the VPN, I was able to &quot;visit&quot; countries. You&#x27;d think you&#x27;d see
 idempotent behavior from websites but, no. They go out of their way to
 treat us like crap. See for yourself:&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;26-12-2021-gotta-love-europe&#x2F;consent-google-com-basic.jpg&quot; alt=&quot;consent.google.com basic consent form&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
@@ -35,5 +45,6 @@ policy. And sometimes, no matter how good and technically sound the
 circumvention mechanisms are, a lack of policies will always come back
 to bite us.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

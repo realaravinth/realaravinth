@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - SSH</title>
-	<link href="https://batsense.net/tags/ssh/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2020-12-25T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/ssh/atom.xml</id>
-	<entry xml:lang="en">
-		<title>keys</title>
-		<published>2020-12-25T00:00:00+00:00</published>
-		<updated>2020-12-25T00:00:00+00:00</updated>
-		<link href="https://batsense.net/keys/" type="text/html"/>
-		<id>https://batsense.net/keys/</id>
-		<content type="html">&lt;h2 id=&quot;gpg-key&quot;&gt;GPG Key&lt;&#x2F;h2&gt;
+    <title> - SSH</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/ssh/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-12-25T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/ssh/atom.xml</id>
+    <entry xml:lang="en">
+        <title>keys</title>
+        <published>2020-12-25T00:00:00+00:00</published>
+        <updated>2020-12-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/keys/"/>
+        <id>https://batsense.net/keys/</id>
+        
+        <content type="html" xml:base="https://batsense.net/keys/">&lt;h2 id=&quot;gpg-key&quot;&gt;GPG Key&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Download: &lt;a href=&quot;&#x2F;realaravinth-gpg.asc&quot;&gt;&lt;code&gt;realaravinth-gpg.asc&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -398,5 +408,6 @@ soon. Please click to see&lt;&#x2F;summary&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;amTCCjOrb2PRCd7eSQ==
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - Posts</title>
-	<link href="https://batsense.net/blog/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net/blog/"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2023-06-14T00:00:00+00:00</updated>
-	<id>https://batsense.net/blog/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Social responsibility and basic needs</title>
-		<published>2023-06-14T00:00:00+00:00</published>
-		<updated>2023-06-14T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/" type="text/html"/>
-		<id>https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/</id>
-		<content type="html">&lt;p&gt;As social creatures, our responsibility and our needs don&#x27;t just stop at
+    <title> - Posts</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net/blog/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-06-14T00:00:00+00:00</updated>
+    <id>https://batsense.net/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Social responsibility and basic needs</title>
+        <published>2023-06-14T00:00:00+00:00</published>
+        <updated>2023-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/"/>
+        <id>https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/">&lt;p&gt;As social creatures, our responsibility and our needs don&#x27;t just stop at
 taking care of ourselves. Being nice to the people around us is integral
 to our growth and the well-being of our society. So to say that humans
 need only leisure and the ability to engage in creative pursuits to
@@ -25,27 +35,107 @@ creating a positive, strong, meaningful impact in someone&#x27;s life is
 critical to reconnect with our humanity and truly realise what it is
 like to be human.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Is privacy really possible?</title>
-		<published>2022-09-03T00:00:00+00:00</published>
-		<updated>2022-09-03T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/" type="text/html"/>
-		<id>https://batsense.net/blog/03-08-2022-is-privacy-really-possible/</id>
-		<content type="html">&lt;p&gt;My mind is a mess. Deep, focused thinking is rare. I have discovered that writing helps. Writing on paper, that is. I&#x27;m environmentally conscious, so I use my computer and only fallback to paper, when I feel like it is insufficient. Or when the thought is too intimate. Digital is scary, it is easy to spy computer activity than real life. But the physical environment is not safe either. Notes can be leaked, journals read and secrets exposed. So I briefly considered getting a cigarette lighter: burn the note as soon as it is written and has helped me gain clarity.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Navigating with OpenStreetMap</title>
+        <published>2023-06-12T00:00:00+00:00</published>
+        <updated>2023-06-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/16-03-2023-navigating-with-openstreetmap/"/>
+        <id>https://batsense.net/blog/16-03-2023-navigating-with-openstreetmap/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/16-03-2023-navigating-with-openstreetmap/">&lt;p&gt;I don&#x27;t use Free Software exclusively but I do try to avoid non-free
+crap as much as I can. As a result, I don&#x27;t have the Android PlayStore
+or Google Maps on my phone. I normally rely on my friends for navigation
+(they have Google Maps) whenever OpenStreetMaps (OSM) doesn&#x27;t have the
+places I&#x27;m looking for, but I think I found a combination that allows me
+to rely (almost) exclusively on OSM!&lt;&#x2F;p&gt;
+&lt;p&gt;OSM isn&#x27;t widely adopted in India, so not all shops and other places of
+interests are marked in it. But Google Maps has just about every
+location charted. When I don&#x27;t have friends around, I&#x27;ve used the web
+version of Google Maps on the phone with temporary location privileges.
+The web version, thankfully, is limited (at least on Fennec): it doesn&#x27;t
+update movement. So out of frustration, I tried sharing the Google Maps
+location URI to &lt;a href=&quot;https:&#x2F;&#x2F;f-droid.org&#x2F;packages&#x2F;app.fedilab.nitterizeme&#x2F;&quot;&gt;UntrackdMe&lt;&#x2F;a&gt; and open it with &lt;a href=&quot;https:&#x2F;&#x2F;osmand.net&#x2F;&quot;&gt;OSMAnd&lt;&#x2F;a&gt;. And guess what? IT
+WORKS!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;16-03-2023-navigating-with-openstreetmap&#x2F;google-maps.jpg&quot; alt=&quot;Screenshot of web version of Google Maps on Fennec Android browser with search result for &amp;quot;Serinity Beach, Pondicherry, India&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Search places on the web version of Google Maps&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;16-03-2023-navigating-with-openstreetmap&#x2F;untrackme.jpg&quot; alt=&quot;Screenshot of UntrackMe translating Google Maps URL to OSM URL&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Translate Google Maps URL to OSM URL using UntrackME&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;16-03-2023-navigating-with-openstreetmap&#x2F;osmand.jpg&quot; alt=&quot;Screenshot of OSMAnd showing Serenity Beach location&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;ol start=&quot;3&quot;&gt;
+&lt;li&gt;Open it via OSMAnd&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;Navigating with OSM isn&#x27;t as flashy as Google Maps, it doesn&#x27;t have live
+traffic updates but it gets the job done. The Android app is flawless,
+it redirects when you take a different route, can work with offline maps
+and has voice announcements.&lt;&#x2F;p&gt;
+&lt;p&gt;The only downside of OSM, at least personally, is that it is not very
+good at calculating long-distance routes (&amp;gt;150 km). But I mostly use it
+for running errands, so it doesn&#x27;t bother me as much :)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Is privacy really possible?</title>
+        <published>2022-09-03T00:00:00+00:00</published>
+        <updated>2022-09-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/"/>
+        <id>https://batsense.net/blog/03-08-2022-is-privacy-really-possible/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/">&lt;p&gt;My mind is a mess. Deep, focused thinking is rare. I have discovered that writing helps. Writing on paper, that is. I&#x27;m environmentally conscious, so I use my computer and only fallback to paper, when I feel like it is insufficient. Or when the thought is too intimate. Digital is scary, it is easy to spy computer activity than real life. But the physical environment is not safe either. Notes can be leaked, journals read and secrets exposed. So I briefly considered getting a cigarette lighter: burn the note as soon as it is written and has helped me gain clarity.&lt;&#x2F;p&gt;
 &lt;p&gt;But is that private enough? What if we invent a gizmo to recover paper from its ashes. Chemistry tells it is impossible but for the sake of this argument, &lt;em&gt;what if?&lt;&#x2F;em&gt; Or what if we invent time travel tech to go back and read the note before it was burnt?&lt;&#x2F;p&gt;
 &lt;p&gt;So writing notes isn&#x27;t safe. That&#x27;s okay, I will hold secrets in my head. But if what we invent mind reading tech? It will threaten our thoughts too. Combine that with time travel and the threat becomes eternal.&lt;&#x2F;p&gt;
 &lt;p&gt;It is scary, and it seems like there is no privacy even in the seemingly safe cocoon of one&#x27;s own mind. But it is far from the truth. In fact, this is one of the reasons why privacy should be more strongly be pursued. We must recognise that thoughts are worthless and inconsequential until they are acted upon. It is through thoughts and in collectives through discussion, will we be able to figure out what&#x27;s right and what isn&#x27;t.&lt;&#x2F;p&gt;
 &lt;p&gt;So please don&#x27;t spy and invade someone&#x27;s privacy. It doesn&#x27;t matter if you are a programmer or just a normal person, respect the other person&#x27;s privacy. Don&#x27;t read stuff that isn&#x27;t meant for you. Leave us alone and we can all have privacy.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>I&#x27;m on the Fediverse!</title>
-		<published>2022-06-07T00:00:00+00:00</published>
-		<updated>2022-06-07T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/im-on-the-fediverse/" type="text/html"/>
-		<id>https://batsense.net/blog/im-on-the-fediverse/</id>
-		<content type="html">&lt;p&gt;and I have ideas for it. Well, they are more like opinions, really.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I&#x27;m on the Fediverse!</title>
+        <published>2022-06-07T00:00:00+00:00</published>
+        <updated>2022-06-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/im-on-the-fediverse/"/>
+        <id>https://batsense.net/blog/im-on-the-fediverse/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/im-on-the-fediverse/">&lt;p&gt;and I have ideas for it. Well, they are more like opinions, really.&lt;&#x2F;p&gt;
 &lt;p&gt;I recently launched a &lt;a href=&quot;https:&#x2F;&#x2F;gts.batsense.net&#x2F;&quot;&gt;GotoSocial&lt;&#x2F;a&gt;
 instance to join
 the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fediverse&quot;&gt;Fediverse&lt;&#x2F;a&gt;. I was very apprehensive about re-joining the social media
@@ -98,14 +188,25 @@ uploading my newly created posts to other people&#x27;s feeds. This way, we
 will only be catching up with each other rather than anxiously scrolling
 and constantly refreshing for new updates.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Quitting non-free services and search for blood donor: idea for an MxN contact discovery system</title>
-		<published>2022-05-09T00:00:00+00:00</published>
-		<updated>2022-05-09T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/mxn-contact-discovery-system/" type="text/html"/>
-		<id>https://batsense.net/blog/mxn-contact-discovery-system/</id>
-		<content type="html">&lt;h2 id=&quot;background&quot;&gt;Background&lt;&#x2F;h2&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Quitting non-free services and search for blood donor: idea for an MxN contact discovery system</title>
+        <published>2022-05-09T00:00:00+00:00</published>
+        <updated>2022-05-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/mxn-contact-discovery-system/"/>
+        <id>https://batsense.net/blog/mxn-contact-discovery-system/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/mxn-contact-discovery-system/">&lt;h2 id=&quot;background&quot;&gt;Background&lt;&#x2F;h2&gt;
 &lt;p&gt;I use a few non-free services, mostly instant messaging services to talk
 to my friends and acquaintances, but had plans to &#x27;sunset&#x27; them by the
 end of the year. I was going to make a public post or the equivalent for
@@ -199,14 +300,25 @@ interested in implementing this system, they are most welcome to do it.
 My contacts are available &lt;a href=&quot;&#x2F;contacts&quot;&gt;here&lt;&#x2F;a&gt; if someone wants to
 brainstorm ideas :)&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Project plans for a hosted Gitea online service</title>
-		<published>2022-02-16T00:00:00+00:00</published>
-		<updated>2022-02-16T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/" type="text/html"/>
-		<id>https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/</id>
-		<content type="html">&lt;p&gt;&lt;em&gt;This post was originally published on &lt;a href=&quot;https:&#x2F;&#x2F;blog.dachary.org&#x2F;2022&#x2F;02&#x2F;16&#x2F;project-plans-for-a-hosted-gitea-online-service&#x2F;&quot;&gt;Loïc Dachary&#x27;s
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Project plans for a hosted Gitea online service</title>
+        <published>2022-02-16T00:00:00+00:00</published>
+        <updated>2022-02-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/"/>
+        <id>https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/">&lt;p&gt;&lt;em&gt;This post was originally published on &lt;a href=&quot;https:&#x2F;&#x2F;blog.dachary.org&#x2F;2022&#x2F;02&#x2F;16&#x2F;project-plans-for-a-hosted-gitea-online-service&#x2F;&quot;&gt;Loïc Dachary&#x27;s
 blog&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Loïc and I are in the process of creating a 100% libre, managed Gitea
 hosting service. Successfully monetizing such a service to a point where
@@ -416,17 +528,28 @@ few years, a percentage of the user base would convert to being paid
 customers or donors to sustain the activity and part of the income would
 be used to sustain the development of the service.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Gotta Love  Europe</title>
-		<published>2021-12-26T00:00:00+00:00</published>
-		<updated>2021-12-26T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/26-12-2021-gotta-love-europe/" type="text/html"/>
-		<id>https://batsense.net/blog/26-12-2021-gotta-love-europe/</id>
-		<content type="html">&lt;p&gt;After getting a static IP for my internet connection at home, I decided
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Gotta Love  Europe</title>
+        <published>2021-12-26T00:00:00+00:00</published>
+        <updated>2021-12-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/26-12-2021-gotta-love-europe/"/>
+        <id>https://batsense.net/blog/26-12-2021-gotta-love-europe/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/26-12-2021-gotta-love-europe/">&lt;p&gt;After getting a static IP for my internet connection at home, I decided
 I had to get a VPN subscription(&lt;a href=&quot;https:&#x2F;&#x2F;mullvad.net&#x2F;en&#x2F;&quot;&gt;Mullvad&lt;&#x2F;a&gt;, not a
 paid endorsement; but man, are they fantastic!).&lt;&#x2F;p&gt;
-&lt;p&gt;Using the VPN, I was able to &amp;quot;visit&amp;quot; countries. You&#x27;d think you&#x27;d see
+&lt;p&gt;Using the VPN, I was able to &quot;visit&quot; countries. You&#x27;d think you&#x27;d see
 idempotent behavior from websites but, no. They go out of their way to
 treat us like crap. See for yourself:&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;&#x2F;img&#x2F;blog&#x2F;26-12-2021-gotta-love-europe&#x2F;consent-google-com-basic.jpg&quot; alt=&quot;consent.google.com basic consent form&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
@@ -446,14 +569,25 @@ policy. And sometimes, no matter how good and technically sound the
 circumvention mechanisms are, a lack of policies will always come back
 to bite us.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Basic needs</title>
-		<published>2021-12-03T00:00:00+00:00</published>
-		<updated>2021-12-03T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/03-12-2021-basic-needs/" type="text/html"/>
-		<id>https://batsense.net/blog/03-12-2021-basic-needs/</id>
-		<content type="html">&lt;p&gt;I think definition of basic needs is a little outdated. I mean, a
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Basic needs</title>
+        <published>2021-12-03T00:00:00+00:00</published>
+        <updated>2021-12-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/03-12-2021-basic-needs/"/>
+        <id>https://batsense.net/blog/03-12-2021-basic-needs/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/03-12-2021-basic-needs/">&lt;p&gt;I think definition of basic needs is a little outdated. I mean, a
 roof over your head, food on the table, clothes on your back and a bed
 to sleep in? They sound like the needs of cattle than that of a
 complexed, civilized human.&lt;&#x2F;p&gt;
@@ -468,14 +602,25 @@ healthy, sustainable and happy life, is it not?&lt;&#x2F;p&gt;
 to meet these needs, we will be free of suffering, gleaming with joy and
 have a sense of fulfilment!&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Math and second systems effect</title>
-		<published>2021-09-13T00:00:00+00:00</published>
-		<updated>2021-09-13T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/13-09-2021-math-second-systems-effect/" type="text/html"/>
-		<id>https://batsense.net/blog/13-09-2021-math-second-systems-effect/</id>
-		<content type="html">&lt;p&gt;I think math is suffering from &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Second-system_effect&quot;&gt;second-system
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Math and second systems effect</title>
+        <published>2021-09-13T00:00:00+00:00</published>
+        <updated>2021-09-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/13-09-2021-math-second-systems-effect/"/>
+        <id>https://batsense.net/blog/13-09-2021-math-second-systems-effect/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/13-09-2021-math-second-systems-effect/">&lt;p&gt;I think math is suffering from &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Second-system_effect&quot;&gt;second-system
 effect&lt;&#x2F;a&gt;. Right from
 7th grade onwards, kids are taught about symmetric functions and whatnot
 but are rarely told where they become useful. And as years go by and as
@@ -522,14 +667,25 @@ collapsed under its own weight.&lt;&#x2F;p&gt;
   &lt;source src=&quot;&amp;#x2F;img&amp;#x2F;blog&amp;#x2F;13-09-2021-math-second-systems-effect&amp;#x2F;firengi-meme.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
 &lt;&#x2F;video&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Ideal backup situation</title>
-		<published>2021-09-10T00:00:00+00:00</published>
-		<updated>2021-09-10T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/" type="text/html"/>
-		<id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
-		<content type="html">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ideal backup situation</title>
+        <published>2021-09-10T00:00:00+00:00</published>
+        <updated>2021-09-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/"/>
+        <id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/10-09-2021-ideal-backup-situation/">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
 fortunate to have not suffered any serious system failures or data
 loses. I recently recovered from systems failures on my Raspberry Pis
 caused by upgrading Debian Buster to Bullseye. The outage wasn&#x27;t a
@@ -596,14 +752,25 @@ cost.&lt;&#x2F;p&gt;
 &lt;p&gt;Of course, there should be proper measures taken to prevent unauthorized
 access and trespassing, but they are implementation details.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>NAT Troubles or how my ISP screwed me over</title>
-		<published>2021-07-18T00:00:00+00:00</published>
-		<updated>2021-07-18T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/18-07-21-nat-troubles/" type="text/html"/>
-		<id>https://batsense.net/blog/18-07-21-nat-troubles/</id>
-		<content type="html">&lt;p&gt;Couple of days ago, I woke with my inbox filled with alerts from my
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>NAT Troubles or how my ISP screwed me over</title>
+        <published>2021-07-18T00:00:00+00:00</published>
+        <updated>2021-07-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/18-07-21-nat-troubles/"/>
+        <id>https://batsense.net/blog/18-07-21-nat-troubles/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/18-07-21-nat-troubles/">&lt;p&gt;Couple of days ago, I woke with my inbox filled with alerts from my
 &lt;a href=&quot;https:&#x2F;&#x2F;stats.uptimerobot.com&#x2F;EQ7VJHWylx&quot;&gt;monitoring service&lt;&#x2F;a&gt;, the
 dashboard was lit up like a Christmas tree. I&#x27;m not new to having
 downtimes, but this was the most unusual one: the servers were alright,
@@ -660,14 +827,25 @@ two reverse proxies instead of one. But it&#x27;s usable.&lt;&#x2F;p&gt;
 but if there&#x27;s someone out there who&#x27;s trying to get past the NAT and
 requires assistance, feel free to contact me!&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Home defense adventures with Hikvision CCTV cameras</title>
-		<published>2021-03-26T00:00:00+00:00</published>
-		<updated>2021-03-26T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/26-03-21-hikvision-cctv/" type="text/html"/>
-		<id>https://batsense.net/blog/26-03-21-hikvision-cctv/</id>
-		<content type="html">&lt;p&gt;We recently got robbed, so we decided to secure the house with some CCTV
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Home defense adventures with Hikvision CCTV cameras</title>
+        <published>2021-03-26T00:00:00+00:00</published>
+        <updated>2021-03-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/26-03-21-hikvision-cctv/"/>
+        <id>https://batsense.net/blog/26-03-21-hikvision-cctv/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/26-03-21-hikvision-cctv/">&lt;p&gt;We recently got robbed, so we decided to secure the house with some CCTV
 cameras. Ours is a modest setup with nine 5MP cameras and a DVR
 recording all the footage from those cameras at 1080p. The DVR can
 connect to Hikvision&#x27;s cloud infrastructure so that owners can see live
@@ -678,7 +856,7 @@ companies is certainly not acceptable.&lt;&#x2F;p&gt;
 &lt;p&gt;So I decided to set up the DVR in an isolated network(without access to
 the internet), expose its web interface(the DVR has a web interface) via
 a reverse proxy to the internet. This post is an attempt to record my
-findings. &lt;&#x2F;p&gt;
+findings.&lt;&#x2F;p&gt;
 &lt;p&gt;I&#x27;m using Nginx for reverse proxying. Setting up the reverse proxy
 wasn&#x27;t straightforward. The web interface has many quirks and no
 documentation.&lt;&#x2F;p&gt;
@@ -727,7 +905,7 @@ was handled by WebSocket connections. And so:&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Some files were taking forever to download, so I hooked it up with a
 cache to speed things up. Video playback wouldn&#x27;t work even with these
-modifications. So I had to dig deeper with the browser dev tools. &lt;&#x2F;p&gt;
+modifications. So I had to dig deeper with the browser dev tools.&lt;&#x2F;p&gt;
 &lt;p&gt;Server ports are hardcoded in the frontend application. The DVR system
 listens on four ports:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -797,14 +975,25 @@ systems are designed to Just Work™ but software design should be
 intuitive and it certainly shouldn&#x27;t take a whole day to set up a simple
 reverse proxy!&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>mCaptcha - to hell with captchas!</title>
-		<published>2021-03-04T00:00:00+00:00</published>
-		<updated>2021-03-04T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/04-03-21-mcaptcha/" type="text/html"/>
-		<id>https://batsense.net/blog/04-03-21-mcaptcha/</id>
-		<content type="html">&lt;p&gt;While working on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shuttlecraft&#x2F;identity&quot;&gt;Identity&lt;&#x2F;a&gt;, I
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>mCaptcha - to hell with captchas!</title>
+        <published>2021-03-04T00:00:00+00:00</published>
+        <updated>2021-03-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/04-03-21-mcaptcha/"/>
+        <id>https://batsense.net/blog/04-03-21-mcaptcha/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/04-03-21-mcaptcha/">&lt;p&gt;While working on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shuttlecraft&#x2F;identity&quot;&gt;Identity&lt;&#x2F;a&gt;, I
 noticed some of the endpoints were computationally expensive. The target
 platforms for Shuttlecraft systems are cheap computers such as Raspberry
 Pis so I learned a &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;new language&lt;&#x2F;a&gt; and picked up a
@@ -856,12 +1045,12 @@ automated this stuff a long time ago!&lt;&#x2F;p&gt;
 assignments and view scorecards. They have a dumb captcha at the
 sign-in page to keep bots away. The IT staff figured they&#x27;ll be better
 protected if they replace it with reCaptcha. And they did.
-{{&amp;lt; figure src=&amp;quot;&#x2F;img&#x2F;blog&#x2F;04-03-21-mcaptcha&#x2F;portal-dumb-captcha.png&amp;quot; caption=&amp;quot;dumb captcha university portal&amp;quot; alt=&amp;quot;dumb captcha university portal&amp;quot; &amp;gt;}} &amp;gt;
+{{&amp;lt; figure src=&quot;&#x2F;img&#x2F;blog&#x2F;04-03-21-mcaptcha&#x2F;portal-dumb-captcha.png&quot; caption=&quot;dumb captcha university portal&quot; alt=&quot;dumb captcha university portal&quot; &amp;gt;}} &amp;gt;
 I have terrible luck with captcha systems. They always flag me as
 a bot. So after this change, when I went online to upload an
 assignment, I had to solve 49 captchas &lt;em&gt;and&lt;&#x2F;em&gt; get flagged as a bot and do
 another 49 only to get flagged as a bot again. Only this time, Google
-wouldn&#x27;t let me try again and asked me to &amp;quot;try again later&amp;quot;.&lt;&#x2F;p&gt;
+wouldn&#x27;t let me try again and asked me to &quot;try again later&quot;.&lt;&#x2F;p&gt;
 &lt;p&gt;Luckily I wasn&#x27;t alone. You see, my university is behind a
 &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Network_address_translation&quot;&gt;NAT&lt;&#x2F;a&gt; so
 10,000 people share a single public IP address. From Google&#x27;s
@@ -906,14 +1095,25 @@ action(submitting forms, etc.). This enforces a rate-limit.&lt;&#x2F;p&gt;
 clients spend more time preparing the request than the server processing
 the request. This makes DoS attacks expensive for the attackers as well.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>My Matrix (mis)adventures</title>
-		<published>2020-12-22T00:00:00+00:00</published>
-		<updated>2020-12-22T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/" type="text/html"/>
-		<id>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</id>
-		<content type="html">&lt;p&gt;Matrix is probably the largest federated network in production (Mastadon
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>My Matrix (mis)adventures</title>
+        <published>2020-12-22T00:00:00+00:00</published>
+        <updated>2020-12-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/26-12-2020-matrix-certificate-error/"/>
+        <id>https://batsense.net/blog/26-12-2020-matrix-certificate-error/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/26-12-2020-matrix-certificate-error/">&lt;p&gt;Matrix is probably the largest federated network in production (Mastadon
 might be close). I run an instance at https:&#x2F;&#x2F;matrix.batsense.net and I
 absolutely love it. It was also the project that got me into the whole
 decentralization thing. I loved the idea that I could run a server that
@@ -924,7 +1124,7 @@ parties and they would all somehow magically work!&lt;&#x2F;p&gt;
 files were sufficiently detailed but after about six months of running
 the server, my instance broke! The federation was no longer working. I
 could still chat with people that are on my own server but I could
-interact with rooms on other servers or even on matrix.org. &lt;&#x2F;p&gt;
+interact with rooms on other servers or even on matrix.org.&lt;&#x2F;p&gt;
 &lt;p&gt;The initial error massages were vague. The client complained that it had
 hit some JSON related error. So I went to look for solutions on the
 project&#x27;s issue tracker. There was an open issue that said that when the
@@ -933,14 +1133,14 @@ also the time when my ISP moved us to IPv6 lookups so I figured that was
 what was causing problems. At this time, I wasn&#x27;t really using matrix
 that much so it didn&#x27;t bother me. I figured, eventually, massive project
 such as matrix might roll out a patch. Several weeks and several updates
-later, the issue still persisted. So I tried my hands at it once again. &lt;&#x2F;p&gt;
+later, the issue still persisted. So I tried my hands at it once again.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;diagnosis&quot;&gt;Diagnosis&lt;&#x2F;h2&gt;
 &lt;p&gt;See, decentralization is complicated. Some matrix dev on Hackernews
 remarked that building a decentralized system is six times harder than
 building a centralized system. The bug that I was experiencing, wasn&#x27;t
 really a bug. I misdiagnosed it to be one in the first place. I use
 Let&#x27;s encrypt for TLS and their certs are valid for a maximum of three
-months. So when I hit that &amp;quot;bug&amp;quot;, I was through two cycles and was
+months. So when I hit that &quot;bug&quot;, I was through two cycles and was
 beginning the third. Synapse, the matrix homeserver variant that I run,
 listens on two ports: one for regular client-server interactions and the
 other for federation. The client-server port is proxied by an Nginx
@@ -964,10 +1164,11 @@ federation feels necessary. It is a HTTP endpoint so I don&#x27;t see why
 it needs to be separated. It could&#x27;ve simply be scoped differently.
 That way, the maintenance and deployment complexity can be
 significantly reduced. In this case, firewall rules can become simpler
-and the federation stuff will be handled by the Nginx instance itself. &lt;&#x2F;li&gt;
+and the federation stuff will be handled by the Nginx instance itself.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;But seriously, I should have maintained notes. Three months  without
 federation over a stupid error is nuts.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

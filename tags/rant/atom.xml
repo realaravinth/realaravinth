@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - rant</title>
-	<link href="https://batsense.net/tags/rant/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-09-10T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/rant/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Ideal backup situation</title>
-		<published>2021-09-10T00:00:00+00:00</published>
-		<updated>2021-09-10T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/" type="text/html"/>
-		<id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
-		<content type="html">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
+    <title> - rant</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/rant/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-09-10T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/rant/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Ideal backup situation</title>
+        <published>2021-09-10T00:00:00+00:00</published>
+        <updated>2021-09-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/10-09-2021-ideal-backup-situation/"/>
+        <id>https://batsense.net/blog/10-09-2021-ideal-backup-situation/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/10-09-2021-ideal-backup-situation/">&lt;p&gt;I&#x27;ve been playing fast and loose with backups, and I&#x27;ve been extremely
 fortunate to have not suffered any serious system failures or data
 loses. I recently recovered from systems failures on my Raspberry Pis
 caused by upgrading Debian Buster to Bullseye. The outage wasn&#x27;t a
@@ -79,14 +89,25 @@ cost.&lt;&#x2F;p&gt;
 &lt;p&gt;Of course, there should be proper measures taken to prevent unauthorized
 access and trespassing, but they are implementation details.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>NAT Troubles or how my ISP screwed me over</title>
-		<published>2021-07-18T00:00:00+00:00</published>
-		<updated>2021-07-18T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/18-07-21-nat-troubles/" type="text/html"/>
-		<id>https://batsense.net/blog/18-07-21-nat-troubles/</id>
-		<content type="html">&lt;p&gt;Couple of days ago, I woke with my inbox filled with alerts from my
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>NAT Troubles or how my ISP screwed me over</title>
+        <published>2021-07-18T00:00:00+00:00</published>
+        <updated>2021-07-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/18-07-21-nat-troubles/"/>
+        <id>https://batsense.net/blog/18-07-21-nat-troubles/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/18-07-21-nat-troubles/">&lt;p&gt;Couple of days ago, I woke with my inbox filled with alerts from my
 &lt;a href=&quot;https:&#x2F;&#x2F;stats.uptimerobot.com&#x2F;EQ7VJHWylx&quot;&gt;monitoring service&lt;&#x2F;a&gt;, the
 dashboard was lit up like a Christmas tree. I&#x27;m not new to having
 downtimes, but this was the most unusual one: the servers were alright,
@@ -143,5 +164,6 @@ two reverse proxies instead of one. But it&#x27;s usable.&lt;&#x2F;p&gt;
 but if there&#x27;s someone out there who&#x27;s trying to get past the NAT and
 requires assistance, feel free to contact me!&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

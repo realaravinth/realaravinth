@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - GoToSocial</title>
-	<link href="https://batsense.net/tags/gotosocial/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-06-07T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/gotosocial/atom.xml</id>
-	<entry xml:lang="en">
-		<title>I&#x27;m on the Fediverse!</title>
-		<published>2022-06-07T00:00:00+00:00</published>
-		<updated>2022-06-07T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/im-on-the-fediverse/" type="text/html"/>
-		<id>https://batsense.net/blog/im-on-the-fediverse/</id>
-		<content type="html">&lt;p&gt;and I have ideas for it. Well, they are more like opinions, really.&lt;&#x2F;p&gt;
+    <title> - GoToSocial</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/gotosocial/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-06-07T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/gotosocial/atom.xml</id>
+    <entry xml:lang="en">
+        <title>I&#x27;m on the Fediverse!</title>
+        <published>2022-06-07T00:00:00+00:00</published>
+        <updated>2022-06-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/im-on-the-fediverse/"/>
+        <id>https://batsense.net/blog/im-on-the-fediverse/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/im-on-the-fediverse/">&lt;p&gt;and I have ideas for it. Well, they are more like opinions, really.&lt;&#x2F;p&gt;
 &lt;p&gt;I recently launched a &lt;a href=&quot;https:&#x2F;&#x2F;gts.batsense.net&#x2F;&quot;&gt;GotoSocial&lt;&#x2F;a&gt;
 instance to join
 the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fediverse&quot;&gt;Fediverse&lt;&#x2F;a&gt;. I was very apprehensive about re-joining the social media
@@ -65,5 +75,6 @@ uploading my newly created posts to other people&#x27;s feeds. This way, we
 will only be catching up with each other rather than anxiously scrolling
 and constantly refreshing for new updates.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

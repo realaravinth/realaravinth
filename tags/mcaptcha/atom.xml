@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - mCaptcha</title>
-	<link href="https://batsense.net/tags/mcaptcha/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-07-21T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/mcaptcha/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Introducing mCaptcha</title>
-		<published>2022-07-21T00:00:00+00:00</published>
-		<updated>2022-07-21T00:00:00+00:00</updated>
-		<link href="https://batsense.net/talks/codeberg-introducing-mcaptcha/" type="text/html"/>
-		<id>https://batsense.net/talks/codeberg-introducing-mcaptcha/</id>
-		<content type="html">&lt;p&gt;Codeberg is on the lookout for a new, accessible CAPTCHA to protect
+    <title> - mCaptcha</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/mcaptcha/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-07-21T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/mcaptcha/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Introducing mCaptcha</title>
+        <published>2022-07-21T00:00:00+00:00</published>
+        <updated>2022-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/talks/codeberg-introducing-mcaptcha/"/>
+        <id>https://batsense.net/talks/codeberg-introducing-mcaptcha/</id>
+        
+        <content type="html" xml:base="https://batsense.net/talks/codeberg-introducing-mcaptcha/">&lt;p&gt;Codeberg is on the lookout for a new, accessible CAPTCHA to protect
 their registration endpoint. mCaptcha&#x27;s proof of work validation
 mechanism fully presents a seamless UX, which is also highly accessible:
 all the user has to do is to click a button to go through validation!&lt;&#x2F;p&gt;
@@ -24,18 +34,29 @@ all the user has to do is to click a button to go through validation!&lt;&#x2F;p
 &lt;&#x2F;ul&gt;
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;batsense.net&#x2F;talks&#x2F;codeberg-introducing-mcaptcha&#x2F;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.odp&quot;&gt;slides(ODP)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;batsense.net&#x2F;talks&#x2F;codeberg-introducing-mcaptcha&#x2F;.&#x2F;slides&#x2F;2022-07-21-codeberg-introducing-mcaptcha.pdf&quot;&gt;slides(PDF)&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>mCaptcha - to hell with captchas!</title>
-		<published>2021-03-04T00:00:00+00:00</published>
-		<updated>2021-03-04T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/04-03-21-mcaptcha/" type="text/html"/>
-		<id>https://batsense.net/blog/04-03-21-mcaptcha/</id>
-		<content type="html">&lt;p&gt;While working on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shuttlecraft&#x2F;identity&quot;&gt;Identity&lt;&#x2F;a&gt;, I
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>mCaptcha - to hell with captchas!</title>
+        <published>2021-03-04T00:00:00+00:00</published>
+        <updated>2021-03-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/04-03-21-mcaptcha/"/>
+        <id>https://batsense.net/blog/04-03-21-mcaptcha/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/04-03-21-mcaptcha/">&lt;p&gt;While working on &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;shuttlecraft&#x2F;identity&quot;&gt;Identity&lt;&#x2F;a&gt;, I
 noticed some of the endpoints were computationally expensive. The target
 platforms for Shuttlecraft systems are cheap computers such as Raspberry
 Pis so I learned a &lt;a href=&quot;https:&#x2F;&#x2F;rust-lang.org&quot;&gt;new language&lt;&#x2F;a&gt; and picked up a
@@ -87,12 +108,12 @@ automated this stuff a long time ago!&lt;&#x2F;p&gt;
 assignments and view scorecards. They have a dumb captcha at the
 sign-in page to keep bots away. The IT staff figured they&#x27;ll be better
 protected if they replace it with reCaptcha. And they did.
-{{&amp;lt; figure src=&amp;quot;&#x2F;img&#x2F;blog&#x2F;04-03-21-mcaptcha&#x2F;portal-dumb-captcha.png&amp;quot; caption=&amp;quot;dumb captcha university portal&amp;quot; alt=&amp;quot;dumb captcha university portal&amp;quot; &amp;gt;}} &amp;gt;
+{{&amp;lt; figure src=&quot;&#x2F;img&#x2F;blog&#x2F;04-03-21-mcaptcha&#x2F;portal-dumb-captcha.png&quot; caption=&quot;dumb captcha university portal&quot; alt=&quot;dumb captcha university portal&quot; &amp;gt;}} &amp;gt;
 I have terrible luck with captcha systems. They always flag me as
 a bot. So after this change, when I went online to upload an
 assignment, I had to solve 49 captchas &lt;em&gt;and&lt;&#x2F;em&gt; get flagged as a bot and do
 another 49 only to get flagged as a bot again. Only this time, Google
-wouldn&#x27;t let me try again and asked me to &amp;quot;try again later&amp;quot;.&lt;&#x2F;p&gt;
+wouldn&#x27;t let me try again and asked me to &quot;try again later&quot;.&lt;&#x2F;p&gt;
 &lt;p&gt;Luckily I wasn&#x27;t alone. You see, my university is behind a
 &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Network_address_translation&quot;&gt;NAT&lt;&#x2F;a&gt; so
 10,000 people share a single public IP address. From Google&#x27;s
@@ -137,5 +158,6 @@ action(submitting forms, etc.). This enforces a rate-limit.&lt;&#x2F;p&gt;
 clients spend more time preparing the request than the server processing
 the request. This makes DoS attacks expensive for the attackers as well.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

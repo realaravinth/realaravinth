@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - personal</title>
-	<link href="https://batsense.net/tags/personal/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2023-06-14T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/personal/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Social responsibility and basic needs</title>
-		<published>2023-06-14T00:00:00+00:00</published>
-		<updated>2023-06-14T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/" type="text/html"/>
-		<id>https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/</id>
-		<content type="html">&lt;p&gt;As social creatures, our responsibility and our needs don&#x27;t just stop at
+    <title> - personal</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/personal/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-06-14T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/personal/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Social responsibility and basic needs</title>
+        <published>2023-06-14T00:00:00+00:00</published>
+        <updated>2023-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/"/>
+        <id>https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/14-06-2023-social-responsibility-and-basic-needs/">&lt;p&gt;As social creatures, our responsibility and our needs don&#x27;t just stop at
 taking care of ourselves. Being nice to the people around us is integral
 to our growth and the well-being of our society. So to say that humans
 need only leisure and the ability to engage in creative pursuits to
@@ -25,27 +35,49 @@ creating a positive, strong, meaningful impact in someone&#x27;s life is
 critical to reconnect with our humanity and truly realise what it is
 like to be human.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Is privacy really possible?</title>
-		<published>2022-09-03T00:00:00+00:00</published>
-		<updated>2022-09-03T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/" type="text/html"/>
-		<id>https://batsense.net/blog/03-08-2022-is-privacy-really-possible/</id>
-		<content type="html">&lt;p&gt;My mind is a mess. Deep, focused thinking is rare. I have discovered that writing helps. Writing on paper, that is. I&#x27;m environmentally conscious, so I use my computer and only fallback to paper, when I feel like it is insufficient. Or when the thought is too intimate. Digital is scary, it is easy to spy computer activity than real life. But the physical environment is not safe either. Notes can be leaked, journals read and secrets exposed. So I briefly considered getting a cigarette lighter: burn the note as soon as it is written and has helped me gain clarity.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Is privacy really possible?</title>
+        <published>2022-09-03T00:00:00+00:00</published>
+        <updated>2022-09-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/"/>
+        <id>https://batsense.net/blog/03-08-2022-is-privacy-really-possible/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/03-08-2022-is-privacy-really-possible/">&lt;p&gt;My mind is a mess. Deep, focused thinking is rare. I have discovered that writing helps. Writing on paper, that is. I&#x27;m environmentally conscious, so I use my computer and only fallback to paper, when I feel like it is insufficient. Or when the thought is too intimate. Digital is scary, it is easy to spy computer activity than real life. But the physical environment is not safe either. Notes can be leaked, journals read and secrets exposed. So I briefly considered getting a cigarette lighter: burn the note as soon as it is written and has helped me gain clarity.&lt;&#x2F;p&gt;
 &lt;p&gt;But is that private enough? What if we invent a gizmo to recover paper from its ashes. Chemistry tells it is impossible but for the sake of this argument, &lt;em&gt;what if?&lt;&#x2F;em&gt; Or what if we invent time travel tech to go back and read the note before it was burnt?&lt;&#x2F;p&gt;
 &lt;p&gt;So writing notes isn&#x27;t safe. That&#x27;s okay, I will hold secrets in my head. But if what we invent mind reading tech? It will threaten our thoughts too. Combine that with time travel and the threat becomes eternal.&lt;&#x2F;p&gt;
 &lt;p&gt;It is scary, and it seems like there is no privacy even in the seemingly safe cocoon of one&#x27;s own mind. But it is far from the truth. In fact, this is one of the reasons why privacy should be more strongly be pursued. We must recognise that thoughts are worthless and inconsequential until they are acted upon. It is through thoughts and in collectives through discussion, will we be able to figure out what&#x27;s right and what isn&#x27;t.&lt;&#x2F;p&gt;
 &lt;p&gt;So please don&#x27;t spy and invade someone&#x27;s privacy. It doesn&#x27;t matter if you are a programmer or just a normal person, respect the other person&#x27;s privacy. Don&#x27;t read stuff that isn&#x27;t meant for you. Leave us alone and we can all have privacy.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>I&#x27;m on the Fediverse!</title>
-		<published>2022-06-07T00:00:00+00:00</published>
-		<updated>2022-06-07T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/im-on-the-fediverse/" type="text/html"/>
-		<id>https://batsense.net/blog/im-on-the-fediverse/</id>
-		<content type="html">&lt;p&gt;and I have ideas for it. Well, they are more like opinions, really.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I&#x27;m on the Fediverse!</title>
+        <published>2022-06-07T00:00:00+00:00</published>
+        <updated>2022-06-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/im-on-the-fediverse/"/>
+        <id>https://batsense.net/blog/im-on-the-fediverse/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/im-on-the-fediverse/">&lt;p&gt;and I have ideas for it. Well, they are more like opinions, really.&lt;&#x2F;p&gt;
 &lt;p&gt;I recently launched a &lt;a href=&quot;https:&#x2F;&#x2F;gts.batsense.net&#x2F;&quot;&gt;GotoSocial&lt;&#x2F;a&gt;
 instance to join
 the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Fediverse&quot;&gt;Fediverse&lt;&#x2F;a&gt;. I was very apprehensive about re-joining the social media
@@ -98,14 +130,25 @@ uploading my newly created posts to other people&#x27;s feeds. This way, we
 will only be catching up with each other rather than anxiously scrolling
 and constantly refreshing for new updates.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Basic needs</title>
-		<published>2021-12-03T00:00:00+00:00</published>
-		<updated>2021-12-03T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/03-12-2021-basic-needs/" type="text/html"/>
-		<id>https://batsense.net/blog/03-12-2021-basic-needs/</id>
-		<content type="html">&lt;p&gt;I think definition of basic needs is a little outdated. I mean, a
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Basic needs</title>
+        <published>2021-12-03T00:00:00+00:00</published>
+        <updated>2021-12-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/03-12-2021-basic-needs/"/>
+        <id>https://batsense.net/blog/03-12-2021-basic-needs/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/03-12-2021-basic-needs/">&lt;p&gt;I think definition of basic needs is a little outdated. I mean, a
 roof over your head, food on the table, clothes on your back and a bed
 to sleep in? They sound like the needs of cattle than that of a
 complexed, civilized human.&lt;&#x2F;p&gt;
@@ -120,14 +163,25 @@ healthy, sustainable and happy life, is it not?&lt;&#x2F;p&gt;
 to meet these needs, we will be free of suffering, gleaming with joy and
 have a sense of fulfilment!&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Math and second systems effect</title>
-		<published>2021-09-13T00:00:00+00:00</published>
-		<updated>2021-09-13T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/13-09-2021-math-second-systems-effect/" type="text/html"/>
-		<id>https://batsense.net/blog/13-09-2021-math-second-systems-effect/</id>
-		<content type="html">&lt;p&gt;I think math is suffering from &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Second-system_effect&quot;&gt;second-system
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Math and second systems effect</title>
+        <published>2021-09-13T00:00:00+00:00</published>
+        <updated>2021-09-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/13-09-2021-math-second-systems-effect/"/>
+        <id>https://batsense.net/blog/13-09-2021-math-second-systems-effect/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/13-09-2021-math-second-systems-effect/">&lt;p&gt;I think math is suffering from &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Second-system_effect&quot;&gt;second-system
 effect&lt;&#x2F;a&gt;. Right from
 7th grade onwards, kids are taught about symmetric functions and whatnot
 but are rarely told where they become useful. And as years go by and as
@@ -174,5 +228,6 @@ collapsed under its own weight.&lt;&#x2F;p&gt;
   &lt;source src=&quot;&amp;#x2F;img&amp;#x2F;blog&amp;#x2F;13-09-2021-math-second-systems-effect&amp;#x2F;firengi-meme.mp4&quot; type=&quot;video&#x2F;mp4&quot; &#x2F;&gt;
 &lt;&#x2F;video&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

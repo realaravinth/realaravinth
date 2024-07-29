@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - Privacy Policy</title>
-	<link href="https://batsense.net/tags/privacy-policy/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-12-02T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/privacy-policy/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Privacy Policy</title>
-		<published>2021-12-02T00:00:00+00:00</published>
-		<updated>2021-12-02T00:00:00+00:00</updated>
-		<link href="https://batsense.net/privacy-policy/" type="text/html"/>
-		<id>https://batsense.net/privacy-policy/</id>
-		<content type="html">&lt;p&gt;&lt;strong&gt;TLDR&lt;&#x2F;strong&gt;: All services on this domain respect your privacy. No tracking
+    <title> - Privacy Policy</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/privacy-policy/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-12-02T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/privacy-policy/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Privacy Policy</title>
+        <published>2021-12-02T00:00:00+00:00</published>
+        <updated>2021-12-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/privacy-policy/"/>
+        <id>https://batsense.net/privacy-policy/</id>
+        
+        <content type="html" xml:base="https://batsense.net/privacy-policy/">&lt;p&gt;&lt;strong&gt;TLDR&lt;&#x2F;strong&gt;: All services on this domain respect your privacy. No tracking
 methods are employed and no personal information collected outside of
 what is voluntarily provided by the user(for instance, email address
 during sign up). And logs are stored for a period of one month and
@@ -44,5 +54,6 @@ it&#x27;s unavoidable.&lt;&#x2F;li&gt;
 &lt;p&gt;If you have any questions, please feel free to &lt;a href=&quot;&#x2F;contact&quot;&gt;contact me&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Effective Date: &lt;em&gt;02 December, 2021&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

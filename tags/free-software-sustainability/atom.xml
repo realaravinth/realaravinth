@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title> - free-software-sustainability</title>
-	<link href="https://batsense.net/tags/free-software-sustainability/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://batsense.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-02-16T00:00:00+00:00</updated>
-	<id>https://batsense.net/tags/free-software-sustainability/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Project plans for a hosted Gitea online service</title>
-		<published>2022-02-16T00:00:00+00:00</published>
-		<updated>2022-02-16T00:00:00+00:00</updated>
-		<link href="https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/" type="text/html"/>
-		<id>https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/</id>
-		<content type="html">&lt;p&gt;&lt;em&gt;This post was originally published on &lt;a href=&quot;https:&#x2F;&#x2F;blog.dachary.org&#x2F;2022&#x2F;02&#x2F;16&#x2F;project-plans-for-a-hosted-gitea-online-service&#x2F;&quot;&gt;Loïc Dachary&#x27;s
+    <title> - free-software-sustainability</title>
+    <link rel="self" type="application/atom+xml" href="https://batsense.net/tags/free-software-sustainability/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://batsense.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-02-16T00:00:00+00:00</updated>
+    <id>https://batsense.net/tags/free-software-sustainability/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Project plans for a hosted Gitea online service</title>
+        <published>2022-02-16T00:00:00+00:00</published>
+        <updated>2022-02-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/"/>
+        <id>https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/</id>
+        
+        <content type="html" xml:base="https://batsense.net/blog/16-02-2022-gitea-managed-hosting-plans/">&lt;p&gt;&lt;em&gt;This post was originally published on &lt;a href=&quot;https:&#x2F;&#x2F;blog.dachary.org&#x2F;2022&#x2F;02&#x2F;16&#x2F;project-plans-for-a-hosted-gitea-online-service&#x2F;&quot;&gt;Loïc Dachary&#x27;s
 blog&lt;&#x2F;a&gt;.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Loïc and I are in the process of creating a 100% libre, managed Gitea
 hosting service. Successfully monetizing such a service to a point where
@@ -222,5 +232,6 @@ few years, a percentage of the user base would convert to being paid
 customers or donors to sustain the activity and part of the income would
 be used to sustain the development of the service.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>
